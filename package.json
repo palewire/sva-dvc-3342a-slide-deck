@@ -1,0 +1,46 @@
+{
+  "name": "sva-dvc-3342a-slide-deck",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "lint": "pnpm run check && eslint . && prettier --check .",
+    "format": "prettier --write .",
+    "test": "playwright test"
+  },
+  "dependencies": {
+    "reveal.js": "^5.2.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.59.1",
+    "@sveltejs/adapter-static": "^3.0.0",
+    "@sveltejs/kit": "^2.59.0",
+    "@sveltejs/vite-plugin-svelte": "^7.0.0",
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.2.1",
+    "@types/node": "^25.6.0",
+    "@types/reveal.js": "^5.2.2",
+    "eslint": "^10.3.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-svelte": "^3.17.1",
+    "globals": "^17.6.0",
+    "mdsvex": "^0.12.7",
+    "prettier": "^3.8.3",
+    "prettier-plugin-svelte": "^3.5.1",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "svelte": "^5.55.5",
+    "svelte-check": "^4.4.7",
+    "tailwindcss": "^4.2.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.59.1",
+    "vite": "^8.0.10"
+  }
+}

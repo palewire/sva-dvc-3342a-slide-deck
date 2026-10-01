@@ -1,0 +1,48 @@
+<script lang="ts">
+  import Slide from '$lib/components/Slide.svelte';
+  import Notes from '$lib/components/Notes.svelte';
+</script>
+
+<Slide variant="title">
+
+<p class="slide-eyebrow">Truth-Telling 101 · Sample lecture</p>
+
+# Interview the Data
+
+<p class="slide-subtitle">A starting point for your own lecture.</p>
+
+<Notes>
+
+Replace these sample slides with your material. Press S during a presentation
+to open the speaker view.
+
+</Notes>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">An opening question</p>
+
+# What do you want to know?
+
+Begin with a question that matters. Then ask what evidence might help answer it.
+
+<Notes>
+
+Speaker notes can hold reminders, sources, or discussion prompts without
+appearing on the projected slide.
+
+</Notes>
+
+</Slide>
+
+<Slide variant="section">
+
+<p class="slide-eyebrow">Your next move</p>
+
+# Make this deck your own.
+
+Edit <code>src/lib/presentations/sample-opening.svx</code> or add another lecture.
+
+</Slide>
