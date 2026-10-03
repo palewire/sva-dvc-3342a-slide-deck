@@ -1,6 +1,5 @@
 <script lang="ts">
   import { onMount, type Component } from 'svelte';
-  import { base } from '$app/paths';
   import Reveal from 'reveal.js';
   import RevealNotes from 'reveal.js/plugin/notes/notes.esm.js';
 
@@ -56,7 +55,6 @@
   });
 </script>
 
-<a class="deck-back" href={base + '/'}>← All lectures</a>
 <div class="reveal" bind:this={container}>
   <div class="slides">
     <Presentation />

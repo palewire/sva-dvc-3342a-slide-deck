@@ -5,6 +5,10 @@ course, **Truth-Telling 101: Artists Meet Data Journalism**. It uses SvelteKit,
 Reveal.js, and MDsveX. The two decks in this repo are examples, not a published
 class schedule.
 
+The shared design follows the course syllabus: Ringside headings, a white
+canvas, red and cyan accents, and thin blue rules. The sample decks remain
+placeholders until the first lecture is drafted.
+
 ## Run it
 
 Use Node.js 24 and pnpm 11:
@@ -14,20 +18,26 @@ pnpm install
 pnpm dev
 ```
 
-Open the local URL printed by Vite. The index links to each lecture, and each
-lecture has its own direct URL. In a deck, use the arrow keys or space to move,
-`S` for speaker view, and `O` for the slide overview. On narrow screens,
-Reveal.js switches to a vertically scrollable view. Add
+There is no homepage. Open a deck directly, for example
+`http://localhost:5173/lectures/sample-opening/` or
+`http://localhost:5173/lectures/sample-next/`. In a deck, use the arrow keys or
+space to move, `S` for speaker view, and `O` for the slide overview. On narrow
+screens, Reveal.js switches to a vertically scrollable view. Add
 `?controls=1&progress=1` to show controls and a progress bar in slide view.
+
+The syllabus site owns navigation. Once a real lecture and its matching lesson
+detail page are ready, link to the deck's published direct URL from that lesson
+page. These sample decks are not linked from the syllabus. Hosting for this
+repository has not been selected yet.
 
 ## Add a lecture
 
 1. Copy one of the files in `src/lib/presentations/` to a new `.svx` file.
    Write slides inside `<Slide>` components. Keep blank lines around Markdown
    inside component tags; MDsveX needs them.
-2. Add its slug, title, and description to `src/lib/lectures.ts`. The index
-   lists lectures in that order. These are independent presentations, not
-   chapters of one long deck.
+2. Add its slug, title, and description to `src/lib/lectures.ts`. Each slug
+   becomes a direct URL at `/lectures/<slug>/`. These are independent
+   presentations, not chapters of one long deck.
 3. Import the new file and map its slug in `src/lib/presentations.ts`. TypeScript
    will flag a listed lecture that has no presentation.
 4. Run `pnpm run lint`, `pnpm run build`, and `pnpm test`. The static build
@@ -56,7 +66,7 @@ Only the presenter sees this note in speaker view.
 </Slide>
 ```
 
-`<Slide>` also accepts `variant="section"` for a pale-yellow divider and
+`<Slide>` also accepts `variant="section"` for a section divider and
 `animate`, `restart`, and `id` for Reveal.js auto-animate. The reusable
 `<Screenshot>` component frames a chart or image with a source label. Put
 assets in `static/`, give images useful alt text, and prefix their paths with
@@ -77,7 +87,7 @@ once with `pnpm exec playwright install chromium` if needed. CI runs lint,
 build, and browser tests on pushes and pull requests.
 
 No hosting or production deployment is configured. `BASE_PATH` defaults to
-empty for a domain root; set it to a path such as `/lectures` before building
+empty for a domain root; set it to a path such as `/slides` before building
 for a subdirectory. Set `VITE_CANONICAL_URL` only after choosing a public URL;
 use the full site root including `BASE_PATH`, with no trailing slash. See
 `.env.example`. Do not copy the deployment settings from another presentation

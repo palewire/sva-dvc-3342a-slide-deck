@@ -18,7 +18,7 @@ export default defineConfig({
   projects: [{ name: 'chromium', use: { browserName: 'chromium' } }],
   webServer: {
     command: 'pnpm preview --host 127.0.0.1 --port 4173',
-    url: siteUrl,
+    url: `${siteUrl}lectures/sample-opening/`,
     reuseExistingServer: !process.env.CI,
     timeout: 120_000
   }

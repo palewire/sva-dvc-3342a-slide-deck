@@ -5,9 +5,12 @@ Welsh's Fall 2026 SVA course. Keep it useful for more than one lecture.
 
 ## Content and structure
 
-- The index and lecture metadata live in `src/lib/lectures.ts`. Each lecture
+- Lecture metadata lives in `src/lib/lectures.ts`. Each lecture
   has its own MDsveX file in `src/lib/presentations/` and is mapped in
   `src/lib/presentations.ts`.
+- There is no deck homepage or index. The syllabus site's matching lesson
+  detail page owns the link to each finished deck; do not add a link to a
+  placeholder deck or a lesson page that is not ready.
 - The two included decks are examples. Do not present them as scheduled class
   sessions or invent dates, assignments, guests, or student details.
 - Keep blank lines around Markdown inside `<Slide>`, `<Notes>`, and other
@@ -17,9 +20,12 @@ Welsh's Fall 2026 SVA course. Keep it useful for more than one lecture.
 
 ## Design and code
 
-- Keep the SVA palette and typography tokens in `src/app.css`. Ringside and
-  Sentinel font files are used with permission but are excluded from the MIT
-  code license. Do not add a school logo unless requested.
+- Keep the shared syllabus palette and Ringside typography tokens in
+  `src/app.css`. Slide title treatments use the syllabus's white, red, and cyan
+  design; the reusable slide layouts remain projection-friendly.
+  The included Ringside and Sentinel font files are used with permission but
+  are excluded from the MIT code license. Do not add a school logo unless
+  requested.
 - Preserve the static build, configurable `BASE_PATH`, keyboard navigation,
   phone layout, speaker notes, readable contrast, and useful slide semantics.
 - No backend, CMS, authentication, or production deployment is configured.

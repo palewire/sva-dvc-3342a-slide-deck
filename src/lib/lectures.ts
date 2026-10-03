@@ -1,6 +1,5 @@
 export type Lecture = {
   slug: string;
-  number: string;
   title: string;
   description: string;
 };
@@ -9,13 +8,11 @@ export type Lecture = {
 export const lectures = [
   {
     slug: 'sample-opening',
-    number: '01',
     title: 'Interview the Data',
     description: 'A sample opening deck with a title, an idea, and speaker notes.'
   },
   {
     slug: 'sample-next',
-    number: '02',
     title: 'Your Next Lecture',
     description: 'A second deck showing how independent lectures share the same design.'
   }
