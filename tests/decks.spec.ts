@@ -20,18 +20,16 @@ test('first lecture starts and advances without an index link', async ({ page })
     );
   }
   await expect(page.locator('.reveal')).toHaveClass(/ready/);
-  await expect(page.locator('.slides > section')).toHaveCount(46);
+  await expect(page.locator('.slides > section')).toHaveCount(37);
   await expect(page.locator('.slides > section.present h1')).toHaveText(
     'Social science in a hurry'
   );
-  await expect(page.locator('aside.notes')).toHaveCount(16);
+  await expect(page.locator('aside.notes')).toHaveCount(22);
   await expect(page.getByRole('link', { name: 'All lectures' })).toHaveCount(0);
   await expect(page.locator('body')).not.toContainText('archive.ire.org');
 
   await page.keyboard.press('ArrowRight');
-  await expect(page.locator('.slides > section.present h1')).toHaveText(
-    'Hi, I\u2019m Ben Welsh'
-  );
+  await expect(page.locator('.slides > section.present h1')).toHaveText('Headline TK');
 });
 
 test('second lecture has its own slides and placeholder for a visual', async ({ page }) => {
@@ -66,7 +64,7 @@ test('mobile lecture fits in scroll view', async ({ page }) => {
   await page.goto('./lectures/social-science-in-a-hurry/');
   await expect(page.locator('.reveal')).toHaveClass(/ready/);
   await expect(page.locator('body')).toHaveClass(/reveal-scroll/);
-  await expect(page.locator('.scroll-page')).toHaveCount(46);
+  await expect(page.locator('.scroll-page')).toHaveCount(37);
   await expect(
     page.getByRole('heading', { name: 'Social science in a hurry', exact: true })
   ).toBeVisible();

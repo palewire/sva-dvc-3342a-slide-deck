@@ -109,7 +109,7 @@ a:focus-visible {
   height: 100%;
   flex-direction: column;
   align-items: stretch;
-  padding: 70px 76px 58px;
+  padding: 56px 76px 44px;
   background: var(--white);
   text-align: left;
 }
@@ -117,7 +117,7 @@ a:focus-visible {
 .reveal .slides section.lecture-slide h1,
 .reveal .slides section.lecture-slide h2 {
   max-width: 100%;
-  margin: 0 0 30px;
+  margin: 0 0 20px;
   color: var(--sva-charcoal);
   font-family: var(--font-display);
   font-size: 2.45em;
@@ -128,7 +128,7 @@ a:focus-visible {
 
 .reveal .slides section.lecture-slide p {
   max-width: 31em;
-  margin: 0 0 22px;
+  margin: 0 0 16px;
   color: var(--sva-copy);
   font-family: var(--font-body);
   font-size: 1.08em;
@@ -136,7 +136,7 @@ a:focus-visible {
 }
 
 .reveal .slides section.lecture-slide .slide-eyebrow {
-  margin-bottom: 27px;
+  margin-bottom: 18px;
   color: var(--sva-red-on-surface);
   font-family: var(--font-ui);
   font-size: 0.8em;
@@ -219,7 +219,11 @@ a:focus-visible {
 }
 
 .reveal .slides .screenshot-frame {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   width: 100%;
+  min-height: 0;
   margin-top: 12px;
   overflow: hidden;
   border: 2px solid var(--rule);
@@ -229,6 +233,7 @@ a:focus-visible {
 
 .screenshot-bar {
   display: flex;
+  flex-shrink: 0;
   min-height: 36px;
   align-items: center;
   gap: 12px;
@@ -260,13 +265,17 @@ a:focus-visible {
 
 .screenshot-content {
   display: grid;
-  min-height: 255px;
+  flex: 1;
+  min-height: 0;
   place-items: center;
 }
 
 .screenshot-content img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
   height: auto;
+  object-fit: contain;
 }
 
 .reveal .slides .guest-grid {
@@ -316,7 +325,9 @@ a:focus-visible {
 
 .reveal .slides .guest-story {
   display: flex;
-  align-items: flex-start;
+  flex: 1;
+  min-height: 0;
+  align-items: stretch;
   gap: 32px;
   margin-top: 20px;
 }
@@ -325,10 +336,12 @@ a:focus-visible {
   width: 150px;
   height: 150px;
   flex-shrink: 0;
+  align-self: flex-start;
 }
 
 .reveal .slides .guest-story .screenshot-frame {
   flex: 1;
+  min-height: 0;
   margin-top: 0;
 }
 
@@ -338,6 +351,44 @@ a:focus-visible {
   font-family: var(--font-ui);
   font-size: 25px;
   text-align: center;
+}
+
+.reveal .slides .icon-heading {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.reveal .slides .icon-heading svg {
+  flex-shrink: 0;
+  color: var(--sva-red-on-surface);
+}
+
+.reveal .slides .icon-heading h1 {
+  margin: 0;
+}
+
+.reveal .slides .skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reveal .slides .skills-list li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--sva-copy);
+  font-family: var(--font-body);
+  font-size: 1.08em;
+}
+
+.reveal .slides .skills-list svg {
+  flex-shrink: 0;
+  color: var(--sva-red-on-surface);
 }
 
 @media print {

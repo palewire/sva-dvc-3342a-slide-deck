@@ -25,7 +25,7 @@
       margin: 0.04,
       minScale: 0.35,
       width: mobile() ? 480 : 960,
-      height: 700,
+      height: 760,
       plugins: [RevealNotes]
     });
 

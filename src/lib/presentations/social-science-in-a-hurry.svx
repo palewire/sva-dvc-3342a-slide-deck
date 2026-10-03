@@ -3,6 +3,7 @@
   import Notes from '$lib/components/Notes.svelte';
   import Screenshot from '$lib/components/Screenshot.svelte';
   import { base } from '$app/paths';
+  import { BarChart3, Database, Hammer, Lightbulb, Map, MessageCircle } from '@lucide/svelte';
 </script>
 
 <Slide variant="title">
@@ -28,11 +29,7 @@ diving into tonight's material.
 
 <p class="slide-eyebrow">Who I am</p>
 
-# Hi, I'm Ben Welsh
-
-I'm the News Applications Editor at Reuters. Most of my day job is building
-apps and automation that turn public data into daily journalism — not
-one-off stories.
+# Headline TK
 
 <Notes>
 
@@ -47,14 +44,11 @@ not solo investigative pieces, are most of the job day to day.
 
 <p class="slide-eyebrow">A recent story</p>
 
-# A quick example: sea temperatures
+# Headline TK
 
 <Screenshot url="reuters.com" label="Placeholder for the sea-temperature story">
   <div class="screenshot-placeholder">Add the sea-temperature story screenshot here</div>
 </Screenshot>
-
-One recent story — tracking ocean temperature anomalies — shows the reporting
-side of the job.
 
 <Notes>
 
@@ -69,14 +63,11 @@ chosen.
 
 <p class="slide-eyebrow">What I mostly do</p>
 
-# But most of the job is Climate Monitor
+# Headline TK
 
 <Screenshot url="reuters.com/graphics/climate-monitor" label="Placeholder for the Climate Monitor app">
   <div class="screenshot-placeholder">Add a Climate Monitor screenshot here</div>
 </Screenshot>
-
-Climate Monitor is an automated pipeline that re-reports climate data every
-month without a reporter re-typing a single number.
 
 <Notes>
 
@@ -91,14 +82,11 @@ runs.
 
 <p class="slide-eyebrow">Tomorrow, same pipeline</p>
 
-# Tomorrow: Brazil's election results
+# Headline TK
 
 <Screenshot url="reuters.com" label="Placeholder for tomorrow's Brazil results story">
   <div class="screenshot-placeholder">Add the Brazil results story screenshot here</div>
 </Screenshot>
-
-Tomorrow night, that same kind of automation will turn incoming results into
-a published story in minutes, not hours.
 
 <Notes>
 
@@ -116,8 +104,6 @@ published.
 <p class="slide-eyebrow">A question before we start</p>
 
 # When did data journalism start?
-
-Take a guess. Most people say sometime in the last fifteen years.
 
 <Notes>
 
@@ -139,12 +125,6 @@ Ask students for guesses out loud before revealing the answer.
     alt="ProPublica headline 'Antebellum Data Journalism: Or, How Big Data Busted Abe Lincoln,' with a portrait of Horace Greeley"
   />
 </Screenshot>
-
-In 1848, New York Tribune editor — and sitting congressman — Horace Greeley
-used U.S. Post Office route data to calculate how much each member of
-Congress should have been paid in mileage reimbursement, then compared it to
-what they actually charged. He published the full table. Abraham Lincoln
-came in $677 over, about $18,700 today — among the worst.
 
 <Notes>
 
@@ -172,11 +152,6 @@ century, and predates FOIA entirely.
   />
 </Screenshot>
 
-For the 1900 Paris Exposition, sociologist and journalist W.E.B. Du Bois and
-his students at Atlanta University hand-drew dozens of charts and maps —
-"The Georgia Negro" series — turning census data into a rigorous, visual
-argument about Black life in America.
-
 <Notes>
 
 Du Bois was already a trained empirical sociologist (The Philadelphia Negro,
@@ -199,10 +174,6 @@ Source: Library of Congress, "Du Bois in Paris – Exposition Universelle,
 
 > "Journalism must become social science in a hurry." — Philip Meyer
 
-In 1967, after the Detroit riots, Meyer argued that newsrooms needed to
-borrow the discipline of social science — survey design, hypothesis
-testing — to report accurately under deadline.
-
 <Notes>
 
 Ask students why this quote still holds up today. Point out that data
@@ -218,12 +189,6 @@ around.
 <p class="slide-eyebrow">The Detroit Free Press, 1967</p>
 
 # "People Beyond 12th Street"
-
-After the July 1967 uprising, the conventional wisdom blamed outsiders and
-the least educated. The Free Press — working with the Detroit Urban League
-and the University of Michigan Survey Research Center — surveyed Black
-residents in the riot areas directly. Education didn't cleanly separate
-people who said they took part from those who didn't.
 
 <Notes>
 
@@ -246,12 +211,14 @@ Riots," Nieman Reports (1968).
 
 # Six weeks, one arc
 
-1. Identifying newsworthy questions
-2. Locating data that can provide the answers
-3. Preparing raw data for rigorous analysis
-4. Interviewing data to develop meaningful findings
-5. Verifying your findings in the real world
-6. Ensuring subjects have an opportunity to respond
+<ul class="skills-list">
+  <li><Lightbulb aria-hidden="true" size={22} strokeWidth={2.25} /> Identifying newsworthy questions</li>
+  <li><Database aria-hidden="true" size={22} strokeWidth={2.25} /> Locating data that can provide the answers</li>
+  <li><Hammer aria-hidden="true" size={22} strokeWidth={2.25} /> Preparing raw data for rigorous analysis</li>
+  <li><BarChart3 aria-hidden="true" size={22} strokeWidth={2.25} /> Interviewing data to develop meaningful findings</li>
+  <li><Map aria-hidden="true" size={22} strokeWidth={2.25} /> Verifying your findings in the real world</li>
+  <li><MessageCircle aria-hidden="true" size={22} strokeWidth={2.25} /> Ensuring subjects have an opportunity to respond</li>
+</ul>
 
 <Notes>
 
@@ -325,10 +292,6 @@ the final schedule.
   </Screenshot>
 </div>
 
-A Wall Street Journal analysis of public trading data found nearly a million
-trades clustered around the same order size on the prediction market Kalshi —
-activity unusual enough to draw scrutiny from regulators and traders.
-
 <Notes>
 
 TODO: confirm this is still her most recent notable piece by class time, and
@@ -355,10 +318,6 @@ swap in a fresher one if needed.
     />
   </Screenshot>
 </div>
-
-Using data obtained by the Deportation Data Project through FOIA lawsuits,
-Chu and a colleague found the vast majority of people ICE apprehended in NYC
-had no interaction with the criminal justice system.
 
 <Notes>
 
@@ -387,10 +346,6 @@ swap in a fresher one if needed.
   </Screenshot>
 </div>
 
-Pallaro and her colleagues analyzed secret Ukrainian military audits and found
-seven of the country's top ten weapons contractors won new business despite
-open fraud and corruption investigations.
-
 <Notes>
 
 TODO: confirm this is still her most recent notable piece by class time, and
@@ -410,98 +365,67 @@ swap in a fresher one if needed.
 
 <Slide>
 
-<p class="slide-eyebrow">Step 1 of 9</p>
+<p class="slide-eyebrow">Step 1 of 6</p>
 
-# Find a newsworthy question
-
-Every data story starts as a question someone cares about — not a
-spreadsheet.
-
-</Slide>
-
-<Slide>
-
-<p class="slide-eyebrow">Step 2 of 9</p>
-
-# Work out how to measure it
-
-Decide what a newsworthy answer would look like, and how you'd know it when
-you saw it.
+<div class="icon-heading">
+  <Lightbulb aria-hidden="true" size={44} strokeWidth={2} />
+  <h1>Identifying newsworthy questions</h1>
+</div>
 
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Step 3 of 9</p>
+<p class="slide-eyebrow">Step 2 of 6</p>
 
-# Test the hypothesis
-
-Find out whether the answer is true — like science, but in a hurry.
-
-</Slide>
-
-<Slide>
-
-<p class="slide-eyebrow">Step 4 of 9</p>
-
-# Adopt a database frame of mind
-
-Identify the data you'll need to gather, acquire, or create to answer the
-question.
+<div class="icon-heading">
+  <Database aria-hidden="true" size={44} strokeWidth={2} />
+  <h1>Locating data that can provide the answers</h1>
+</div>
 
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Step 5 of 9</p>
+<p class="slide-eyebrow">Step 3 of 6</p>
 
-# Get or make the data
-
-Download it from a city portal, file a FOIA request, scrape the web,
-digitize public records, or observe it yourself.
-
-</Slide>
-
-<Slide>
-
-<p class="slide-eyebrow">Step 6 of 9</p>
-
-# Interview the data
-
-Treat it like a human source, plus the technical questions that are unique
-to data.
+<div class="icon-heading">
+  <Hammer aria-hidden="true" size={44} strokeWidth={2} />
+  <h1>Preparing raw data for rigorous analysis</h1>
+</div>
 
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Step 7 of 9</p>
+<p class="slide-eyebrow">Step 4 of 6</p>
 
-# Ask and answer questions
-
-Use spreadsheets, databases, and code — sorts, filters, aggregations,
-searches.
-
-</Slide>
-
-<Slide>
-
-<p class="slide-eyebrow">Step 8 of 9</p>
-
-# Ground-truth the findings
-
-Check your results against the real world, other sources, and outside
-standards.
+<div class="icon-heading">
+  <BarChart3 aria-hidden="true" size={44} strokeWidth={2} />
+  <h1>Interviewing data to develop meaningful findings</h1>
+</div>
 
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Step 9 of 9</p>
+<p class="slide-eyebrow">Step 5 of 6</p>
 
-# Find the people and places
+<div class="icon-heading">
+  <Map aria-hidden="true" size={44} strokeWidth={2} />
+  <h1>Verifying your findings in the real world</h1>
+</div>
 
-Bring the findings back to the real people the story is about.
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 6 of 6</p>
+
+<div class="icon-heading">
+  <MessageCircle aria-hidden="true" size={44} strokeWidth={2} />
+  <h1>Ensuring subjects have an opportunity to respond</h1>
+</div>
 
 </Slide>
 
@@ -509,7 +433,7 @@ Bring the findings back to the real people the story is about.
 
 <Slide variant="section">
 
-<p class="slide-eyebrow">Same nine steps, twice</p>
+<p class="slide-eyebrow">Same six steps, twice</p>
 
 # Run the model twice
 
@@ -517,190 +441,145 @@ Bring the findings back to the real people the story is about.
 
 <Slide>
 
-<p class="slide-eyebrow">Detroit, step 1 of 9</p>
+<p class="slide-eyebrow">Detroit, step 1 of 6</p>
 
-# Find a newsworthy question
-
-After the 1967 uprising, what happened — and did the popular explanations
-fit the evidence?
-
-</Slide>
-
-<Slide>
-
-<p class="slide-eyebrow">Detroit, step 2 of 9</p>
-
-# Work out how to measure it
-
-Survey residents in the affected neighborhoods; compare responses across
-groups, including education.
+<div class="icon-heading">
+  <Lightbulb aria-hidden="true" size={44} strokeWidth={2} />
+  <h1>Identifying newsworthy questions</h1>
+</div>
 
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Detroit, step 3 of 9</p>
+<p class="slide-eyebrow">Detroit, step 2 of 6</p>
 
-# Test the hypothesis
-
-Challenge the assumption that participants were mostly outsiders or the
-least educated — the survey didn't support a simple education-based story.
-
-</Slide>
-
-<Slide>
-
-<p class="slide-eyebrow">Detroit, step 4 of 9</p>
-
-# Adopt a database frame of mind
-
-Treat each completed questionnaire as a record, and each survey question or
-respondent characteristic as a field.
+<div class="icon-heading">
+  <Database aria-hidden="true" size={44} strokeWidth={2} />
+  <h1>Locating data that can provide the answers</h1>
+</div>
 
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Detroit, step 5 of 9</p>
+<p class="slide-eyebrow">Detroit, step 3 of 6</p>
 
-# Get or make the data
-
-The team created survey data — interviews designed and conducted with the
-Detroit Urban League and the University of Michigan Survey Research Center.
-
-</Slide>
-
-<Slide>
-
-<p class="slide-eyebrow">Detroit, step 6 of 9</p>
-
-# Interview the data
-
-Who designed and administered the survey? Who was reachable? How was
-nonresponse handled?
+<div class="icon-heading">
+  <Hammer aria-hidden="true" size={44} strokeWidth={2} />
+  <h1>Preparing raw data for rigorous analysis</h1>
+</div>
 
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Detroit, step 7 of 9</p>
+<p class="slide-eyebrow">Detroit, step 4 of 6</p>
 
-# Ask and answer questions
-
-Compare response patterns across groups, rank reported grievances, and
-present results in charts and maps.
-
-</Slide>
-
-<Slide>
-
-<p class="slide-eyebrow">Detroit, step 8 of 9</p>
-
-# Ground-truth the findings
-
-Check the survey's claims against other reporting and the lived conditions
-of the neighborhoods.
+<div class="icon-heading">
+  <BarChart3 aria-hidden="true" size={44} strokeWidth={2} />
+  <h1>Interviewing data to develop meaningful findings</h1>
+</div>
 
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Detroit, step 9 of 9</p>
+<p class="slide-eyebrow">Detroit, step 5 of 6</p>
 
-# Find the people and places
-
-Return to residents and neighborhoods — keep the racial and political
-context visible.
-
-</Slide>
-
-<Slide>
-
-<p class="slide-eyebrow">Sea temps, step 1 of 9</p>
-
-# Find a newsworthy question
-
-TODO: fill in once we lock the sea-temperature story's reporting specifics.
+<div class="icon-heading">
+  <Map aria-hidden="true" size={44} strokeWidth={2} />
+  <h1>Verifying your findings in the real world</h1>
+</div>
 
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Sea temps, step 2 of 9</p>
+<p class="slide-eyebrow">Detroit, step 6 of 6</p>
 
-# Work out how to measure it
-
-TODO: fill in once we lock the sea-temperature story's reporting specifics.
-
-</Slide>
-
-<Slide>
-
-<p class="slide-eyebrow">Sea temps, step 3 of 9</p>
-
-# Test the hypothesis
-
-TODO: fill in once we lock the sea-temperature story's reporting specifics.
+<div class="icon-heading">
+  <MessageCircle aria-hidden="true" size={44} strokeWidth={2} />
+  <h1>Ensuring subjects have an opportunity to respond</h1>
+</div>
 
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Sea temps, step 4 of 9</p>
+<p class="slide-eyebrow">Sea temps, step 1 of 6</p>
 
-# Adopt a database frame of mind
+<div class="icon-heading">
+  <Lightbulb aria-hidden="true" size={44} strokeWidth={2} />
+  <h1>Identifying newsworthy questions</h1>
+</div>
 
-TODO: fill in once we lock the sea-temperature story's reporting specifics.
-
-</Slide>
-
-<Slide>
-
-<p class="slide-eyebrow">Sea temps, step 5 of 9</p>
-
-# Get or make the data
-
-TODO: fill in once we lock the sea-temperature story's reporting specifics.
+<Notes>TODO: fill in once we lock the sea-temperature story's reporting specifics.</Notes>
 
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Sea temps, step 6 of 9</p>
+<p class="slide-eyebrow">Sea temps, step 2 of 6</p>
 
-# Interview the data
+<div class="icon-heading">
+  <Database aria-hidden="true" size={44} strokeWidth={2} />
+  <h1>Locating data that can provide the answers</h1>
+</div>
 
-TODO: fill in once we lock the sea-temperature story's reporting specifics.
-
-</Slide>
-
-<Slide>
-
-<p class="slide-eyebrow">Sea temps, step 7 of 9</p>
-
-# Ask and answer questions
-
-TODO: fill in once we lock the sea-temperature story's reporting specifics.
+<Notes>TODO: fill in once we lock the sea-temperature story's reporting specifics.</Notes>
 
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Sea temps, step 8 of 9</p>
+<p class="slide-eyebrow">Sea temps, step 3 of 6</p>
 
-# Ground-truth the findings
+<div class="icon-heading">
+  <Hammer aria-hidden="true" size={44} strokeWidth={2} />
+  <h1>Preparing raw data for rigorous analysis</h1>
+</div>
 
-TODO: fill in once we lock the sea-temperature story's reporting specifics.
+<Notes>TODO: fill in once we lock the sea-temperature story's reporting specifics.</Notes>
 
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Sea temps, step 9 of 9</p>
+<p class="slide-eyebrow">Sea temps, step 4 of 6</p>
 
-# Find the people and places
+<div class="icon-heading">
+  <BarChart3 aria-hidden="true" size={44} strokeWidth={2} />
+  <h1>Interviewing data to develop meaningful findings</h1>
+</div>
 
-TODO: fill in once we lock the sea-temperature story's reporting specifics.
+<Notes>TODO: fill in once we lock the sea-temperature story's reporting specifics.</Notes>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Sea temps, step 5 of 6</p>
+
+<div class="icon-heading">
+  <Map aria-hidden="true" size={44} strokeWidth={2} />
+  <h1>Verifying your findings in the real world</h1>
+</div>
+
+<Notes>TODO: fill in once we lock the sea-temperature story's reporting specifics.</Notes>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Sea temps, step 6 of 6</p>
+
+<div class="icon-heading">
+  <MessageCircle aria-hidden="true" size={44} strokeWidth={2} />
+  <h1>Ensuring subjects have an opportunity to respond</h1>
+</div>
+
+<Notes>TODO: fill in once we lock the sea-temperature story's reporting specifics.</Notes>
 
 </Slide>
 
@@ -712,9 +591,6 @@ TODO: fill in once we lock the sea-temperature story's reporting specifics.
 
 # Practice, practice, practice
 
-The rest of this course is about repeating that nine-step arc until it's
-second nature — like the old line about getting to Carnegie Hall.
-
 </Slide>
 
 <!-- SECTION F: In-class exercise -->
@@ -725,14 +601,11 @@ second nature — like the old line about getting to Carnegie Hall.
 
 # Let's build a spreadsheet, together
 
-We'll survey everyone in the room and turn the results into findings.
-Possible newsworthy question: what skills do people in this class want to
-learn, and what data journalism do they admire?
-
 <Notes>
 
 TODO: finalize the actual survey questions and spreadsheet structure before
-class.
+class. Possible newsworthy question: what skills do people in this class
+want to learn, and what data journalism do they admire?
 
 </Notes>
 
