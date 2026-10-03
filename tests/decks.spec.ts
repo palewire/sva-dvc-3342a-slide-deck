@@ -8,27 +8,29 @@ test('the deck site has no homepage', async ({ request }) => {
 });
 
 test('first lecture starts and advances without an index link', async ({ page }) => {
-  await page.goto('./lectures/sample-opening/');
+  await page.goto('./lectures/social-science-in-a-hurry/');
 
   await expect(page).toHaveTitle(
-    'Interview the Data | Truth-Telling 101: Artists Meet Data Journalism'
+    'Social science in a hurry | Truth-Telling 101: Artists Meet Data Journalism'
   );
   if (canonicalBase) {
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
       'href',
-      `${canonicalBase}/lectures/sample-opening/`
+      `${canonicalBase}/lectures/social-science-in-a-hurry/`
     );
   }
   await expect(page.locator('.reveal')).toHaveClass(/ready/);
-  await expect(page.locator('.slides > section')).toHaveCount(3);
-  await expect(page.locator('.slides > section.present h1')).toHaveText('Interview the Data');
-  await expect(page.locator('aside.notes')).toHaveCount(2);
+  await expect(page.locator('.slides > section')).toHaveCount(46);
+  await expect(page.locator('.slides > section.present h1')).toHaveText(
+    'Social science in a hurry'
+  );
+  await expect(page.locator('aside.notes')).toHaveCount(16);
   await expect(page.getByRole('link', { name: 'All lectures' })).toHaveCount(0);
   await expect(page.locator('body')).not.toContainText('archive.ire.org');
 
   await page.keyboard.press('ArrowRight');
   await expect(page.locator('.slides > section.present h1')).toHaveText(
-    'What do you want to know?'
+    'Hi, I\u2019m Ben Welsh'
   );
 });
 
@@ -37,7 +39,7 @@ test('second lecture has its own slides and placeholder for a visual', async ({ 
 
   await expect(page.locator('.reveal')).toHaveClass(/ready/);
   await expect(page.locator('.slides > section')).toHaveCount(2);
-  await expect(page.locator('.slides > section.present h1')).toHaveText('Your Next Lecture');
+  await expect(page.locator('.slides > section.present h1')).toHaveText('Your next lecture');
   await page.keyboard.press('ArrowRight');
   await expect(page.locator('.slides > section.present h1')).toHaveText('Show, then explain.');
   await expect(
@@ -47,35 +49,35 @@ test('second lecture has its own slides and placeholder for a visual', async ({ 
 });
 
 test('speaker view receives the notes for the current slide', async ({ page }) => {
-  await page.goto('./lectures/sample-opening/');
+  await page.goto('./lectures/social-science-in-a-hurry/');
   await expect(page.locator('.reveal')).toHaveClass(/ready/);
 
   const popupPromise = page.waitForEvent('popup');
   await page.keyboard.press('s');
   const speakerView = await popupPromise;
   await expect(speakerView.locator('.speaker-controls-notes .value')).toContainText(
-    'Replace these sample slides'
+    'Welcome students'
   );
   await speakerView.close();
 });
 
 test('mobile lecture fits in scroll view', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto('./lectures/sample-opening/');
+  await page.goto('./lectures/social-science-in-a-hurry/');
   await expect(page.locator('.reveal')).toHaveClass(/ready/);
   await expect(page.locator('body')).toHaveClass(/reveal-scroll/);
-  await expect(page.locator('.scroll-page')).toHaveCount(3);
-  await expect(page.getByRole('heading', { name: 'Interview the Data' })).toBeVisible();
+  await expect(page.locator('.scroll-page')).toHaveCount(46);
+  await expect(
+    page.getByRole('heading', { name: 'Social science in a hurry', exact: true })
+  ).toBeVisible();
   const deckOverflow = await page.evaluate(
     () => document.documentElement.scrollWidth - document.documentElement.clientWidth
   );
   expect(deckOverflow).toBeLessThanOrEqual(1);
 });
 
-test('uses the syllabus palette and Ringside headings without a logo or old presentation media', async ({
-  page
-}) => {
-  await page.goto('./lectures/sample-opening/');
+test('uses the syllabus palette and Ringside headings', async ({ page }) => {
+  await page.goto('./lectures/social-science-in-a-hurry/');
   await expect(page.locator('.reveal')).toHaveClass(/ready/);
   await page.evaluate(() => document.fonts.ready);
   await expect(page.locator('.title-slide h1')).toHaveCSS(
@@ -87,9 +89,4 @@ test('uses the syllabus palette and Ringside headings without a logo or old pres
     'background-color',
     'rgb(255, 255, 255)'
   );
-  await expect(page.locator('section.title-slide')).toHaveCSS(
-    'border-top-color',
-    'rgb(30, 150, 184)'
-  );
-  await expect(page.locator('img, svg, canvas')).toHaveCount(0);
 });

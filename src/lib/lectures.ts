@@ -4,16 +4,16 @@ export type Lecture = {
   description: string;
 };
 
-// These are starter examples, not scheduled class meetings.
+// sample-next remains a starter example, not a scheduled class meeting.
 export const lectures = [
   {
-    slug: 'sample-opening',
-    title: 'Interview the Data',
-    description: 'A sample opening deck with a title, an idea, and speaker notes.'
+    slug: 'social-science-in-a-hurry',
+    title: 'Social science in a hurry',
+    description: 'Week 1: why data journalism blends statistical analysis with reporting.'
   },
   {
     slug: 'sample-next',
-    title: 'Your Next Lecture',
+    title: 'Your next lecture',
     description: 'A second deck showing how independent lectures share the same design.'
   }
 ] as const satisfies readonly Lecture[];

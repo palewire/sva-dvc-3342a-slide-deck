@@ -35,7 +35,8 @@ export default [
       'node_modules/',
       'test-results/',
       'playwright-report/',
-      'src/lib/presentations/**/*.svx'
+      'src/lib/presentations/**/*.svx',
+      '.github/skills/**'
     ]
   }
 ];

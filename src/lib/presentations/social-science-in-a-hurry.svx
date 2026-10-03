@@ -1,0 +1,739 @@
+<script lang="ts">
+  import Slide from '$lib/components/Slide.svelte';
+  import Notes from '$lib/components/Notes.svelte';
+  import Screenshot from '$lib/components/Screenshot.svelte';
+  import { base } from '$app/paths';
+</script>
+
+<Slide variant="title">
+
+<p class="slide-eyebrow">Truth-Telling 101 · Week 1</p>
+
+# Social science in a hurry
+
+<p class="slide-subtitle">Learn how New York's leading newsrooms turn raw data into compelling journalism.</p>
+
+<Notes>
+
+Welcome students, introduce yourself, and walk through the six-week arc before
+diving into tonight's material.
+
+</Notes>
+
+</Slide>
+
+<!-- SECTION A: Open — who I am -->
+
+<Slide>
+
+<p class="slide-eyebrow">Who I am</p>
+
+# Hi, I'm Ben Welsh
+
+I'm the News Applications Editor at Reuters. Most of my day job is building
+apps and automation that turn public data into daily journalism — not
+one-off stories.
+
+<Notes>
+
+TODO: personalize with more background. Make clear that apps and automation,
+not solo investigative pieces, are most of the job day to day.
+
+</Notes>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">A recent story</p>
+
+# A quick example: sea temperatures
+
+<Screenshot url="reuters.com" label="Placeholder for the sea-temperature story">
+  <div class="screenshot-placeholder">Add the sea-temperature story screenshot here</div>
+</Screenshot>
+
+One recent story — tracking ocean temperature anomalies — shows the reporting
+side of the job.
+
+<Notes>
+
+TODO: swap in the real story link, headline, and the specific finding once
+chosen.
+
+</Notes>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">What I mostly do</p>
+
+# But most of the job is Climate Monitor
+
+<Screenshot url="reuters.com/graphics/climate-monitor" label="Placeholder for the Climate Monitor app">
+  <div class="screenshot-placeholder">Add a Climate Monitor screenshot here</div>
+</Screenshot>
+
+Climate Monitor is an automated pipeline that re-reports climate data every
+month without a reporter re-typing a single number.
+
+<Notes>
+
+TODO: add specifics about what Climate Monitor automates and how often it
+runs.
+
+</Notes>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Tomorrow, same pipeline</p>
+
+# Tomorrow: Brazil's election results
+
+<Screenshot url="reuters.com" label="Placeholder for tomorrow's Brazil results story">
+  <div class="screenshot-placeholder">Add the Brazil results story screenshot here</div>
+</Screenshot>
+
+Tomorrow night, that same kind of automation will turn incoming results into
+a published story in minutes, not hours.
+
+<Notes>
+
+TODO: replace with the actual Brazil story link and headline once it's
+published.
+
+</Notes>
+
+</Slide>
+
+<!-- SECTION B: A model for the course -->
+
+<Slide>
+
+<p class="slide-eyebrow">A question before we start</p>
+
+# When did data journalism start?
+
+Take a guess. Most people say sometime in the last fifteen years.
+
+<Notes>
+
+Ask students for guesses out loud before revealing the answer.
+
+</Notes>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Try 1848</p>
+
+# A sitting congressman named Greeley
+
+<Screenshot url="propublica.org" label="ProPublica story: Antebellum Data Journalism">
+  <img
+    src="{base}/screenshots/social-science-in-a-hurry/propublica-antebellum-data-journalism.png"
+    alt="ProPublica headline 'Antebellum Data Journalism: Or, How Big Data Busted Abe Lincoln,' with a portrait of Horace Greeley"
+  />
+</Screenshot>
+
+In 1848, New York Tribune editor — and sitting congressman — Horace Greeley
+used U.S. Post Office route data to calculate how much each member of
+Congress should have been paid in mileage reimbursement, then compared it to
+what they actually charged. He published the full table. Abraham Lincoln
+came in $677 over, about $18,700 today — among the worst.
+
+<Notes>
+
+Source: Scott Klein, "Antebellum Data Journalism: Or, How Big Data Busted Abe
+Lincoln," ProPublica (2015):
+https://www.propublica.org/nerds/antebellum-data-journalism-busted-abe-lincoln.
+Two future vice presidents (Hamlin, Johnson) and other legends of the era
+also appear on Greeley's list. Data journalism predates Meyer by more than a
+century, and predates FOIA entirely.
+
+</Notes>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Fifty years later, another hero</p>
+
+# W.E.B. Du Bois draws the data
+
+<Screenshot url="loc.gov" label="Du Bois's 1900 chart, Distribution of Negroes in the United States">
+  <img
+    src="{base}/screenshots/social-science-in-a-hurry/du-bois-georgia-negro.png"
+    alt="Du Bois's 1900 hand-drawn map 'Distribution of Negroes in the United States,' color-coded by population density"
+  />
+</Screenshot>
+
+For the 1900 Paris Exposition, sociologist and journalist W.E.B. Du Bois and
+his students at Atlanta University hand-drew dozens of charts and maps —
+"The Georgia Negro" series — turning census data into a rigorous, visual
+argument about Black life in America.
+
+<Notes>
+
+Du Bois was already a trained empirical sociologist (The Philadelphia Negro,
+1899) and would go on to edit The Crisis — bridging social science and
+journalism directly. This is the bridge between Greeley's stunt and Meyer's
+discipline: Du Bois was doing careful, evidence-based social science and
+presenting it for a mass public audience decades before Meyer named it.
+Source: Library of Congress, "Du Bois in Paris – Exposition Universelle,
+1900," https://blogs.loc.gov/inside_adams/2015/02/du-bois-in-paris-exposition-universelle-1900/.
+
+</Notes>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">A hundred and twenty years later</p>
+
+# Philip Meyer and "social science in a hurry"
+
+> "Journalism must become social science in a hurry." — Philip Meyer
+
+In 1967, after the Detroit riots, Meyer argued that newsrooms needed to
+borrow the discipline of social science — survey design, hypothesis
+testing — to report accurately under deadline.
+
+<Notes>
+
+Ask students why this quote still holds up today. Point out that data
+journalism is reporting first, with analysis as a tool, not the other way
+around.
+
+</Notes>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">The Detroit Free Press, 1967</p>
+
+# "People Beyond 12th Street"
+
+After the July 1967 uprising, the conventional wisdom blamed outsiders and
+the least educated. The Free Press — working with the Detroit Urban League
+and the University of Michigan Survey Research Center — surveyed Black
+residents in the riot areas directly. Education didn't cleanly separate
+people who said they took part from those who didn't.
+
+<Notes>
+
+Attribute this to the newsroom and its research partners, not Meyer alone.
+Name the survey's limits: it measures responses, not a single cause. Keep
+the racial and political context visible — don't reduce the uprising to a
+data exercise. Sources: University of Michigan Survey Research Center news
+item on the 1967 survey; Philip Meyer, "A Newspaper's Role Between the
+Riots," Nieman Reports (1968).
+
+</Notes>
+
+</Slide>
+
+<!-- SECTION C: Course framing + the story arc -->
+
+<Slide>
+
+<p class="slide-eyebrow">Tonight's roadmap</p>
+
+# Six weeks, one arc
+
+1. Identifying newsworthy questions
+2. Locating data that can provide the answers
+3. Preparing raw data for rigorous analysis
+4. Interviewing data to develop meaningful findings
+5. Verifying your findings in the real world
+6. Ensuring subjects have an opportunity to respond
+
+<Notes>
+
+Preview that each of these steps will return in future weeks with hands-on
+practice.
+
+</Notes>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Meet your guests</p>
+
+# Three working data journalists will join us
+
+<div class="guest-grid">
+  <figure class="guest-card">
+    <div class="guest-portrait">
+      <img src="{base}/speakers/caitlin-ostroff-transparent.png" alt="Portrait of Caitlin Ostroff" />
+    </div>
+    <figcaption>
+      <p class="guest-name">Caitlin Ostroff</p>
+      <p class="guest-newsroom">The Wall Street Journal</p>
+    </figcaption>
+  </figure>
+  <figure class="guest-card">
+    <div class="guest-portrait">
+      <img src="{base}/speakers/haidee-chu-transparent.png" alt="Portrait of Haidee Chu" />
+    </div>
+    <figcaption>
+      <p class="guest-name">Haidee Chu</p>
+      <p class="guest-newsroom">The City Reporter</p>
+    </figcaption>
+  </figure>
+  <figure class="guest-card">
+    <div class="guest-portrait">
+      <img src="{base}/speakers/bianca-pallaro-transparent.png" alt="Portrait of Bianca Pallaro" />
+    </div>
+    <figcaption>
+      <p class="guest-name">Bianca Pallaro</p>
+      <p class="guest-newsroom">The New York Times</p>
+    </figcaption>
+  </figure>
+</div>
+
+<Notes>
+
+TODO: confirm which classes each guest will actually join before publishing
+the final schedule.
+
+</Notes>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Guest speaker</p>
+
+# Caitlin Ostroff · The Wall Street Journal
+
+<div class="guest-story">
+  <div class="guest-portrait">
+    <img src="{base}/speakers/caitlin-ostroff-transparent.png" alt="Portrait of Caitlin Ostroff" />
+  </div>
+  <Screenshot url="wsj.com" label="WSJ story: $5 billion flurry of nearly identical Kalshi trades draws scrutiny">
+    <img
+      src="{base}/screenshots/guests/ostroff-kalshi-story.png"
+      alt="Wall Street Journal headline: '$5 billion flurry of nearly identical Kalshi trades draws scrutiny,' byline Caitlin Ostroff, Katherine Long, Neil Mehta"
+    />
+  </Screenshot>
+</div>
+
+A Wall Street Journal analysis of public trading data found nearly a million
+trades clustered around the same order size on the prediction market Kalshi —
+activity unusual enough to draw scrutiny from regulators and traders.
+
+<Notes>
+
+TODO: confirm this is still her most recent notable piece by class time, and
+swap in a fresher one if needed.
+
+</Notes>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Guest speaker</p>
+
+# Haidee Chu · The City Reporter
+
+<div class="guest-story">
+  <div class="guest-portrait">
+    <img src="{base}/speakers/haidee-chu-transparent.png" alt="Portrait of Haidee Chu" />
+  </div>
+  <Screenshot url="thecityreporter.nyc" label="The City Reporter story: ICE Arrests in NYC Peaked This July">
+    <img
+      src="{base}/screenshots/guests/chu-ice-arrests-story.png"
+      alt="The City Reporter headline: 'ICE Arrests in NYC Peaked This July, But Many Immigrants Were Released the Same Day,' byline Gwynne Hogan and Haidee Chu"
+    />
+  </Screenshot>
+</div>
+
+Using data obtained by the Deportation Data Project through FOIA lawsuits,
+Chu and a colleague found the vast majority of people ICE apprehended in NYC
+had no interaction with the criminal justice system.
+
+<Notes>
+
+TODO: confirm this is still her most recent notable piece by class time, and
+swap in a fresher one if needed.
+
+</Notes>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Guest speaker</p>
+
+# Bianca Pallaro · The New York Times
+
+<div class="guest-story">
+  <div class="guest-portrait">
+    <img src="{base}/speakers/bianca-pallaro-transparent.png" alt="Portrait of Bianca Pallaro" />
+  </div>
+  <Screenshot url="nytimes.com" label="New York Times story: Top Ukraine weapons firms audited">
+    <img
+      src="{base}/screenshots/guests/pallaro-ukraine-audits-story.png"
+      alt="Headline: 'Top Ukraine weapons firms audited: 7 military contractors win business despite fraud, corruption investigations,' byline Andrew E. Kramer, Bianca Pallaro and Evelina Riabenko, The New York Times"
+    />
+  </Screenshot>
+</div>
+
+Pallaro and her colleagues analyzed secret Ukrainian military audits and found
+seven of the country's top ten weapons contractors won new business despite
+open fraud and corruption investigations.
+
+<Notes>
+
+TODO: confirm this is still her most recent notable piece by class time, and
+swap in a fresher one if needed.
+
+</Notes>
+
+</Slide>
+
+<Slide variant="section">
+
+<p class="slide-eyebrow">A closer look</p>
+
+# The story arc: turn a question into news
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 1 of 9</p>
+
+# Find a newsworthy question
+
+Every data story starts as a question someone cares about — not a
+spreadsheet.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 2 of 9</p>
+
+# Work out how to measure it
+
+Decide what a newsworthy answer would look like, and how you'd know it when
+you saw it.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 3 of 9</p>
+
+# Test the hypothesis
+
+Find out whether the answer is true — like science, but in a hurry.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 4 of 9</p>
+
+# Adopt a database frame of mind
+
+Identify the data you'll need to gather, acquire, or create to answer the
+question.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 5 of 9</p>
+
+# Get or make the data
+
+Download it from a city portal, file a FOIA request, scrape the web,
+digitize public records, or observe it yourself.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 6 of 9</p>
+
+# Interview the data
+
+Treat it like a human source, plus the technical questions that are unique
+to data.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 7 of 9</p>
+
+# Ask and answer questions
+
+Use spreadsheets, databases, and code — sorts, filters, aggregations,
+searches.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 8 of 9</p>
+
+# Ground-truth the findings
+
+Check your results against the real world, other sources, and outside
+standards.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 9 of 9</p>
+
+# Find the people and places
+
+Bring the findings back to the real people the story is about.
+
+</Slide>
+
+<!-- SECTION D: Run the model twice -->
+
+<Slide variant="section">
+
+<p class="slide-eyebrow">Same nine steps, twice</p>
+
+# Run the model twice
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Detroit, step 1 of 9</p>
+
+# Find a newsworthy question
+
+After the 1967 uprising, what happened — and did the popular explanations
+fit the evidence?
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Detroit, step 2 of 9</p>
+
+# Work out how to measure it
+
+Survey residents in the affected neighborhoods; compare responses across
+groups, including education.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Detroit, step 3 of 9</p>
+
+# Test the hypothesis
+
+Challenge the assumption that participants were mostly outsiders or the
+least educated — the survey didn't support a simple education-based story.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Detroit, step 4 of 9</p>
+
+# Adopt a database frame of mind
+
+Treat each completed questionnaire as a record, and each survey question or
+respondent characteristic as a field.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Detroit, step 5 of 9</p>
+
+# Get or make the data
+
+The team created survey data — interviews designed and conducted with the
+Detroit Urban League and the University of Michigan Survey Research Center.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Detroit, step 6 of 9</p>
+
+# Interview the data
+
+Who designed and administered the survey? Who was reachable? How was
+nonresponse handled?
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Detroit, step 7 of 9</p>
+
+# Ask and answer questions
+
+Compare response patterns across groups, rank reported grievances, and
+present results in charts and maps.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Detroit, step 8 of 9</p>
+
+# Ground-truth the findings
+
+Check the survey's claims against other reporting and the lived conditions
+of the neighborhoods.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Detroit, step 9 of 9</p>
+
+# Find the people and places
+
+Return to residents and neighborhoods — keep the racial and political
+context visible.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Sea temps, step 1 of 9</p>
+
+# Find a newsworthy question
+
+TODO: fill in once we lock the sea-temperature story's reporting specifics.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Sea temps, step 2 of 9</p>
+
+# Work out how to measure it
+
+TODO: fill in once we lock the sea-temperature story's reporting specifics.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Sea temps, step 3 of 9</p>
+
+# Test the hypothesis
+
+TODO: fill in once we lock the sea-temperature story's reporting specifics.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Sea temps, step 4 of 9</p>
+
+# Adopt a database frame of mind
+
+TODO: fill in once we lock the sea-temperature story's reporting specifics.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Sea temps, step 5 of 9</p>
+
+# Get or make the data
+
+TODO: fill in once we lock the sea-temperature story's reporting specifics.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Sea temps, step 6 of 9</p>
+
+# Interview the data
+
+TODO: fill in once we lock the sea-temperature story's reporting specifics.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Sea temps, step 7 of 9</p>
+
+# Ask and answer questions
+
+TODO: fill in once we lock the sea-temperature story's reporting specifics.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Sea temps, step 8 of 9</p>
+
+# Ground-truth the findings
+
+TODO: fill in once we lock the sea-temperature story's reporting specifics.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Sea temps, step 9 of 9</p>
+
+# Find the people and places
+
+TODO: fill in once we lock the sea-temperature story's reporting specifics.
+
+</Slide>
+
+<!-- SECTION E: From lecture to practice -->
+
+<Slide>
+
+<p class="slide-eyebrow">From lecture to practice</p>
+
+# Practice, practice, practice
+
+The rest of this course is about repeating that nine-step arc until it's
+second nature — like the old line about getting to Carnegie Hall.
+
+</Slide>
+
+<!-- SECTION F: In-class exercise -->
+
+<Slide variant="section">
+
+<p class="slide-eyebrow">Tonight's exercise</p>
+
+# Let's build a spreadsheet, together
+
+We'll survey everyone in the room and turn the results into findings.
+Possible newsworthy question: what skills do people in this class want to
+learn, and what data journalism do they admire?
+
+<Notes>
+
+TODO: finalize the actual survey questions and spreadsheet structure before
+class.
+
+</Notes>
+
+</Slide>

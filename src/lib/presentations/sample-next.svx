@@ -8,7 +8,7 @@
 
 <p class="slide-eyebrow">Truth-Telling 101 · Another sample</p>
 
-# Your Next Lecture
+# Your next lecture
 
 <p class="slide-subtitle">Each lecture has its own address and its own slides.</p>
 
