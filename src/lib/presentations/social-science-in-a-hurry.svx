@@ -212,12 +212,12 @@ Riots," Nieman Reports (1968).
 # Six weeks, one arc
 
 <ul class="skills-list">
-  <li><Lightbulb aria-hidden="true" size={22} strokeWidth={2.25} /> Identifying newsworthy questions</li>
-  <li><Database aria-hidden="true" size={22} strokeWidth={2.25} /> Locating data that can provide the answers</li>
-  <li><Hammer aria-hidden="true" size={22} strokeWidth={2.25} /> Preparing raw data for rigorous analysis</li>
-  <li><BarChart3 aria-hidden="true" size={22} strokeWidth={2.25} /> Interviewing data to develop meaningful findings</li>
-  <li><Map aria-hidden="true" size={22} strokeWidth={2.25} /> Verifying your findings in the real world</li>
-  <li><MessageCircle aria-hidden="true" size={22} strokeWidth={2.25} /> Ensuring subjects have an opportunity to respond</li>
+  <li><Lightbulb aria-hidden="true" size={22} strokeWidth={2.25} /> Identify newsworthy questions</li>
+  <li><Database aria-hidden="true" size={22} strokeWidth={2.25} /> Locate data that can provide the answers</li>
+  <li><Hammer aria-hidden="true" size={22} strokeWidth={2.25} /> Prepare raw data for rigorous analysis</li>
+  <li><BarChart3 aria-hidden="true" size={22} strokeWidth={2.25} /> Interview data to develop meaningful findings</li>
+  <li><Map aria-hidden="true" size={22} strokeWidth={2.25} /> Verify your findings in the real world</li>
+  <li><MessageCircle aria-hidden="true" size={22} strokeWidth={2.25} /> Ensure subjects have a shot to sound off</li>
 </ul>
 
 <Notes>
@@ -368,8 +368,8 @@ swap in a fresher one if needed.
 <p class="slide-eyebrow">Step 1 of 6</p>
 
 <div class="icon-heading">
-  <Lightbulb aria-hidden="true" size={44} strokeWidth={2} />
-  <h1>Identifying newsworthy questions</h1>
+  <Lightbulb aria-hidden="true" size={88} strokeWidth={1.75} />
+  <h1>Identify newsworthy questions</h1>
 </div>
 
 </Slide>
@@ -379,8 +379,8 @@ swap in a fresher one if needed.
 <p class="slide-eyebrow">Step 2 of 6</p>
 
 <div class="icon-heading">
-  <Database aria-hidden="true" size={44} strokeWidth={2} />
-  <h1>Locating data that can provide the answers</h1>
+  <Database aria-hidden="true" size={88} strokeWidth={1.75} />
+  <h1>Locate data that can provide the answers</h1>
 </div>
 
 </Slide>
@@ -390,8 +390,8 @@ swap in a fresher one if needed.
 <p class="slide-eyebrow">Step 3 of 6</p>
 
 <div class="icon-heading">
-  <Hammer aria-hidden="true" size={44} strokeWidth={2} />
-  <h1>Preparing raw data for rigorous analysis</h1>
+  <Hammer aria-hidden="true" size={88} strokeWidth={1.75} />
+  <h1>Prepare raw data for rigorous analysis</h1>
 </div>
 
 </Slide>
@@ -401,8 +401,8 @@ swap in a fresher one if needed.
 <p class="slide-eyebrow">Step 4 of 6</p>
 
 <div class="icon-heading">
-  <BarChart3 aria-hidden="true" size={44} strokeWidth={2} />
-  <h1>Interviewing data to develop meaningful findings</h1>
+  <BarChart3 aria-hidden="true" size={88} strokeWidth={1.75} />
+  <h1>Interview data to develop meaningful findings</h1>
 </div>
 
 </Slide>
@@ -412,8 +412,8 @@ swap in a fresher one if needed.
 <p class="slide-eyebrow">Step 5 of 6</p>
 
 <div class="icon-heading">
-  <Map aria-hidden="true" size={44} strokeWidth={2} />
-  <h1>Verifying your findings in the real world</h1>
+  <Map aria-hidden="true" size={88} strokeWidth={1.75} />
+  <h1>Verify your findings in the real world</h1>
 </div>
 
 </Slide>
@@ -423,8 +423,8 @@ swap in a fresher one if needed.
 <p class="slide-eyebrow">Step 6 of 6</p>
 
 <div class="icon-heading">
-  <MessageCircle aria-hidden="true" size={44} strokeWidth={2} />
-  <h1>Ensuring subjects have an opportunity to respond</h1>
+  <MessageCircle aria-hidden="true" size={88} strokeWidth={1.75} />
+  <h1>Ensure subjects have a shot to sound off</h1>
 </div>
 
 </Slide>
@@ -444,8 +444,8 @@ swap in a fresher one if needed.
 <p class="slide-eyebrow">Detroit, step 1 of 6</p>
 
 <div class="icon-heading">
-  <Lightbulb aria-hidden="true" size={44} strokeWidth={2} />
-  <h1>Identifying newsworthy questions</h1>
+  <Lightbulb aria-hidden="true" size={88} strokeWidth={1.75} />
+  <h1>Identify newsworthy questions</h1>
 </div>
 
 </Slide>
@@ -455,8 +455,8 @@ swap in a fresher one if needed.
 <p class="slide-eyebrow">Detroit, step 2 of 6</p>
 
 <div class="icon-heading">
-  <Database aria-hidden="true" size={44} strokeWidth={2} />
-  <h1>Locating data that can provide the answers</h1>
+  <Database aria-hidden="true" size={88} strokeWidth={1.75} />
+  <h1>Locate data that can provide the answers</h1>
 </div>
 
 </Slide>
@@ -466,8 +466,8 @@ swap in a fresher one if needed.
 <p class="slide-eyebrow">Detroit, step 3 of 6</p>
 
 <div class="icon-heading">
-  <Hammer aria-hidden="true" size={44} strokeWidth={2} />
-  <h1>Preparing raw data for rigorous analysis</h1>
+  <Hammer aria-hidden="true" size={88} strokeWidth={1.75} />
+  <h1>Prepare raw data for rigorous analysis</h1>
 </div>
 
 </Slide>
@@ -477,8 +477,8 @@ swap in a fresher one if needed.
 <p class="slide-eyebrow">Detroit, step 4 of 6</p>
 
 <div class="icon-heading">
-  <BarChart3 aria-hidden="true" size={44} strokeWidth={2} />
-  <h1>Interviewing data to develop meaningful findings</h1>
+  <BarChart3 aria-hidden="true" size={88} strokeWidth={1.75} />
+  <h1>Interview data to develop meaningful findings</h1>
 </div>
 
 </Slide>
@@ -488,8 +488,8 @@ swap in a fresher one if needed.
 <p class="slide-eyebrow">Detroit, step 5 of 6</p>
 
 <div class="icon-heading">
-  <Map aria-hidden="true" size={44} strokeWidth={2} />
-  <h1>Verifying your findings in the real world</h1>
+  <Map aria-hidden="true" size={88} strokeWidth={1.75} />
+  <h1>Verify your findings in the real world</h1>
 </div>
 
 </Slide>
@@ -499,8 +499,8 @@ swap in a fresher one if needed.
 <p class="slide-eyebrow">Detroit, step 6 of 6</p>
 
 <div class="icon-heading">
-  <MessageCircle aria-hidden="true" size={44} strokeWidth={2} />
-  <h1>Ensuring subjects have an opportunity to respond</h1>
+  <MessageCircle aria-hidden="true" size={88} strokeWidth={1.75} />
+  <h1>Ensure subjects have a shot to sound off</h1>
 </div>
 
 </Slide>
@@ -510,8 +510,8 @@ swap in a fresher one if needed.
 <p class="slide-eyebrow">Sea temps, step 1 of 6</p>
 
 <div class="icon-heading">
-  <Lightbulb aria-hidden="true" size={44} strokeWidth={2} />
-  <h1>Identifying newsworthy questions</h1>
+  <Lightbulb aria-hidden="true" size={88} strokeWidth={1.75} />
+  <h1>Identify newsworthy questions</h1>
 </div>
 
 <Notes>TODO: fill in once we lock the sea-temperature story's reporting specifics.</Notes>
@@ -523,8 +523,8 @@ swap in a fresher one if needed.
 <p class="slide-eyebrow">Sea temps, step 2 of 6</p>
 
 <div class="icon-heading">
-  <Database aria-hidden="true" size={44} strokeWidth={2} />
-  <h1>Locating data that can provide the answers</h1>
+  <Database aria-hidden="true" size={88} strokeWidth={1.75} />
+  <h1>Locate data that can provide the answers</h1>
 </div>
 
 <Notes>TODO: fill in once we lock the sea-temperature story's reporting specifics.</Notes>
@@ -536,8 +536,8 @@ swap in a fresher one if needed.
 <p class="slide-eyebrow">Sea temps, step 3 of 6</p>
 
 <div class="icon-heading">
-  <Hammer aria-hidden="true" size={44} strokeWidth={2} />
-  <h1>Preparing raw data for rigorous analysis</h1>
+  <Hammer aria-hidden="true" size={88} strokeWidth={1.75} />
+  <h1>Prepare raw data for rigorous analysis</h1>
 </div>
 
 <Notes>TODO: fill in once we lock the sea-temperature story's reporting specifics.</Notes>
@@ -549,8 +549,8 @@ swap in a fresher one if needed.
 <p class="slide-eyebrow">Sea temps, step 4 of 6</p>
 
 <div class="icon-heading">
-  <BarChart3 aria-hidden="true" size={44} strokeWidth={2} />
-  <h1>Interviewing data to develop meaningful findings</h1>
+  <BarChart3 aria-hidden="true" size={88} strokeWidth={1.75} />
+  <h1>Interview data to develop meaningful findings</h1>
 </div>
 
 <Notes>TODO: fill in once we lock the sea-temperature story's reporting specifics.</Notes>
@@ -562,8 +562,8 @@ swap in a fresher one if needed.
 <p class="slide-eyebrow">Sea temps, step 5 of 6</p>
 
 <div class="icon-heading">
-  <Map aria-hidden="true" size={44} strokeWidth={2} />
-  <h1>Verifying your findings in the real world</h1>
+  <Map aria-hidden="true" size={88} strokeWidth={1.75} />
+  <h1>Verify your findings in the real world</h1>
 </div>
 
 <Notes>TODO: fill in once we lock the sea-temperature story's reporting specifics.</Notes>
@@ -575,8 +575,8 @@ swap in a fresher one if needed.
 <p class="slide-eyebrow">Sea temps, step 6 of 6</p>
 
 <div class="icon-heading">
-  <MessageCircle aria-hidden="true" size={44} strokeWidth={2} />
-  <h1>Ensuring subjects have an opportunity to respond</h1>
+  <MessageCircle aria-hidden="true" size={88} strokeWidth={1.75} />
+  <h1>Ensure subjects have a shot to sound off</h1>
 </div>
 
 <Notes>TODO: fill in once we lock the sea-temperature story's reporting specifics.</Notes>
