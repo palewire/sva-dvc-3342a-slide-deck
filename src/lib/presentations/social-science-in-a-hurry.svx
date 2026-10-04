@@ -227,7 +227,7 @@ other skill, they require practice, practice, practice.
 
 <ul class="skills-grid">
   <li><Lightbulb aria-hidden="true" size={24} strokeWidth={2.25} /> Identifying measurable questions</li>
-  <li><Database aria-hidden="true" size={24} strokeWidth={2.25} /> Locating data that can provide the answers</li>
+  <li><Database aria-hidden="true" size={24} strokeWidth={2.25} /> Locating data that can provide answers</li>
   <li><Hammer aria-hidden="true" size={24} strokeWidth={2.25} /> Preparing raw data for rigorous analysis</li>
   <li><BarChart3 aria-hidden="true" size={24} strokeWidth={2.25} /> Interviewing prepared data to develop findings</li>
   <li><Map aria-hidden="true" size={24} strokeWidth={2.25} /> Testing your findings against the real world</li>
@@ -351,7 +351,7 @@ other skill, they require practice, practice, practice.
 
 <ul class="skills-grid">
   <li><Lightbulb aria-hidden="true" size={24} strokeWidth={2.25} /> Identifying measurable questions</li>
-  <li><Database aria-hidden="true" size={24} strokeWidth={2.25} /> Locating data that can provide the answers</li>
+  <li><Database aria-hidden="true" size={24} strokeWidth={2.25} /> Locating data that can provide answers</li>
   <li><Hammer aria-hidden="true" size={24} strokeWidth={2.25} /> Preparing raw data for rigorous analysis</li>
   <li><BarChart3 aria-hidden="true" size={24} strokeWidth={2.25} /> Interviewing prepared data to develop findings</li>
   <li><Map aria-hidden="true" size={24} strokeWidth={2.25} /> Testing your findings against the real world</li>
@@ -388,7 +388,7 @@ data — not just by talking to people.
 
 <div class="icon-heading">
   <Database aria-hidden="true" size={48} strokeWidth={1.75} />
-  <h1>Locate data that can provide the answers</h1>
+  <h1>Locate data that can provide answers</h1>
 </div>
 
 It could be on a city data portal. It could require a Freedom of
@@ -571,7 +571,7 @@ This story got kicked off by an email from an editor.
 
 <div class="icon-heading">
   <Database aria-hidden="true" size={48} strokeWidth={1.75} />
-  <h1>Locate data that can provide the answers</h1>
+  <h1>Locate data that can provide answers</h1>
 </div>
 
 I found a dataset with daily sea surface temperatures covering the entire
