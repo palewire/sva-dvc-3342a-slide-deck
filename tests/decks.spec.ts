@@ -20,11 +20,11 @@ test('first lecture starts and advances without an index link', async ({ page })
     );
   }
   await expect(page.locator('.reveal')).toHaveClass(/ready/);
-  await expect(page.locator('.slides > section')).toHaveCount(37);
+  await expect(page.locator('.slides > section')).toHaveCount(34);
   await expect(page.locator('.slides > section.present h1')).toHaveText(
     'Social science in a hurry'
   );
-  await expect(page.locator('aside.notes')).toHaveCount(22);
+  await expect(page.locator('aside.notes')).toHaveCount(0);
   await expect(page.getByRole('link', { name: 'All lectures' })).toHaveCount(0);
   await expect(page.locator('body')).not.toContainText('archive.ire.org');
 
@@ -46,25 +46,12 @@ test('second lecture has its own slides and placeholder for a visual', async ({ 
   await expect(page.locator('.slides')).not.toContainText('What do you want to know?');
 });
 
-test('speaker view receives the notes for the current slide', async ({ page }) => {
-  await page.goto('./lectures/social-science-in-a-hurry/');
-  await expect(page.locator('.reveal')).toHaveClass(/ready/);
-
-  const popupPromise = page.waitForEvent('popup');
-  await page.keyboard.press('s');
-  const speakerView = await popupPromise;
-  await expect(speakerView.locator('.speaker-controls-notes .value')).toContainText(
-    'Welcome students'
-  );
-  await speakerView.close();
-});
-
 test('mobile lecture fits in scroll view', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto('./lectures/social-science-in-a-hurry/');
   await expect(page.locator('.reveal')).toHaveClass(/ready/);
   await expect(page.locator('body')).toHaveClass(/reveal-scroll/);
-  await expect(page.locator('.scroll-page')).toHaveCount(37);
+  await expect(page.locator('.scroll-page')).toHaveCount(34);
   await expect(
     page.getByRole('heading', { name: 'Social science in a hurry', exact: true })
   ).toBeVisible();

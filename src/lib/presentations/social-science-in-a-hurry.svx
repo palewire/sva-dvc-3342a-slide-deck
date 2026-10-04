@@ -1,8 +1,6 @@
 <script lang="ts">
   import Slide from '$lib/components/Slide.svelte';
-  import Notes from '$lib/components/Notes.svelte';
   import Screenshot from '$lib/components/Screenshot.svelte';
-  import Citation from '$lib/components/Citation.svelte';
   import { base } from '$app/paths';
   import { BarChart3, Database, Hammer, Lightbulb, Map, MessageCircle } from '@lucide/svelte';
 </script>
@@ -13,14 +11,7 @@
 
 # Social science in a hurry
 
-<p class="slide-subtitle">How reporters turn numbers into news by using a database state of mind</p>
-
-<Notes>
-
-Welcome students, introduce yourself, and walk through the six-week arc before
-diving into tonight's material.
-
-</Notes>
+<p class="slide-subtitle">How reporters turn numbers into news using a database state of mind</p>
 
 </Slide>
 
@@ -38,16 +29,9 @@ programmer.
 <Screenshot url="palewi.re/who-is-ben-welsh" href="https://palewi.re/who-is-ben-welsh/" label="Ben Welsh's bio page on palewire.com">
   <img
     src="{base}/screenshots/social-science-in-a-hurry/ben-welsh-bio.png"
-    alt="Palewire bio page: headshot of Ben Welsh with the opening lines of his biography describing him as a reporter, editor, and computer programmer at Reuters"
+    alt="Palewire bio page: headshot of Ben Welsh with the opening lines of his biography describing him as a reporter, editor and computer programmer at Reuters"
   />
 </Screenshot>
-
-<Notes>
-
-TODO: personalize with more background. Make clear that apps and automation,
-not solo investigative pieces, are most of the job day to day.
-
-</Notes>
 
 </Slide>
 
@@ -62,19 +46,12 @@ I write traditional stories like this one:
 <Screenshot url="reuters.com" href="https://www.reuters.com/world/europe/how-europes-intensifying-marine-heatwaves-threaten-its-fisheries-2026-09-26/" label="Sea-temperature story demo">
   <video
     src="{base}/screenshots/social-science-in-a-hurry/sea-temp-demo.mp4"
-    autoplay
+    data-autoplay
     loop
     muted
     playsinline
   ></video>
 </Screenshot>
-
-<Notes>
-
-TODO: confirm this is still the best recent example to lead with by class
-time.
-
-</Notes>
 
 </Slide>
 
@@ -89,19 +66,12 @@ We're a new kind of desk that automates the news using data and design.
 <Screenshot url="reuters.com/graphics/climate-monitor" href="https://www.reuters.com/graphics/CLIMATE-AUTOMATED/MONITOR/akpeykqqapr/" label="Climate Monitor demo">
   <video
     src="{base}/screenshots/social-science-in-a-hurry/climate-monitor-demo.mp4"
-    autoplay
+    data-autoplay
     loop
     muted
     playsinline
   ></video>
 </Screenshot>
-
-<Notes>
-
-TODO: add specifics about what Climate Monitor automates and how often it
-runs.
-
-</Notes>
 
 </Slide>
 
@@ -113,32 +83,20 @@ runs.
 
 Data is breaking news every day, all around the world.
 
-<Screenshot url="reuters.com" label="Placeholder for tomorrow's Brazil results story">
-  <div class="screenshot-placeholder">Add the Brazil results story screenshot here</div>
+<Screenshot url="reuters.com/graphics/BRAZIL-ELECTION/RESULTS/znpngxgarvl" href="https://www.reuters.com/graphics/BRAZIL-ELECTION/RESULTS/znpngxgarvl/" label="Reuters: Brazil election results">
+  <img
+    src="{base}/screenshots/social-science-in-a-hurry/brazil-election-results.png"
+    alt="Reuters live results graphic for Brazil's presidential election, showing Lula and Flávio Bolsonaro neck and neck with a state-by-state map"
+  />
 </Screenshot>
-
-<Notes>
-
-TODO: replace with the actual Brazil story link and headline once it's
-published.
-
-</Notes>
 
 </Slide>
 
 <!-- SECTION B: A model for the course -->
 
-<Slide>
+<Slide variant="statement">
 
-<p class="slide-eyebrow">A question before we start</p>
-
-# When did data journalism start?
-
-<Notes>
-
-Ask students for guesses out loud before revealing the answer.
-
-</Notes>
+# When was data journalism invented?
 
 </Slide>
 
@@ -146,7 +104,10 @@ Ask students for guesses out loud before revealing the answer.
 
 <p class="slide-eyebrow">Try 1848</p>
 
-# A sitting congressman named Greeley
+# It's at least as old as the newspaper
+
+Horace Greeley's New York Tribune was using data to hold politicians
+accountable well before the Civil War.
 
 <Screenshot url="propublica.org" href="https://www.propublica.org/nerds/antebellum-data-journalism-busted-abe-lincoln" label="ProPublica story: Antebellum Data Journalism">
   <img
@@ -155,82 +116,102 @@ Ask students for guesses out loud before revealing the answer.
   />
 </Screenshot>
 
-<Notes>
+</Slide>
 
-Source: Scott Klein, "Antebellum Data Journalism: Or, How Big Data Busted Abe
-Lincoln," ProPublica (2015):
-https://www.propublica.org/nerds/antebellum-data-journalism-busted-abe-lincoln.
-Two future vice presidents (Hamlin, Johnson) and other legends of the era
-also appear on Greeley's list. Data journalism predates Meyer by more than a
-century, and predates FOIA entirely.
+<Slide>
 
-</Notes>
+<p class="slide-eyebrow">A crusader's sword</p>
+
+# Reformers took sociology to the streets
+
+Jacob Riis campaigned against poverty in 1890s New York by blending
+reporting, photography and data.
+
+<img
+  src="{base}/screenshots/social-science-in-a-hurry/jacob-riis-how-the-other-half-lives.png"
+  alt="Cover of Jacob A. Riis's 'How the Other Half Lives,' showing a tenement block illustration and a drawing of sleeping children"
+  class="cover-image"
+/>
 
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Fifty years later, another hero</p>
+<p class="slide-eyebrow">The computer age</p>
 
-# W.E.B. Du Bois draws the data
+# A call to professionalize the press
 
-<Screenshot url="loc.gov" href="https://blogs.loc.gov/inside_adams/2015/02/du-bois-in-paris-exposition-universelle-1900/" label="Du Bois's 1900 chart, Distribution of Negroes in the United States">
+A 1973 book by Philip Meyer inspired reporters raised on Watergate to
+combine the methods of sociology with the power of computers.
+
+<img
+  src="{base}/screenshots/social-science-in-a-hurry/meyer-precision-journalism.png"
+  alt="Cover of Philip Meyer's 'Precision Journalism: A Reporter's Introduction to Social Science Methods'"
+  class="cover-image"
+/>
+
+</Slide>
+
+<Slide variant="quote">
+
+> "To cope with the acceleration of social change in today's world,
+> journalism must become social science in a hurry."
+
+<p class="quote-attribution">Philip Meyer</p>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Spreading the gospel</p>
+
+# A new job title is born
+
+IRE and NICAR trained thousands of journalists around the world in what was
+then called computer-assisted reporting.
+
+<img
+  src="{base}/screenshots/social-science-in-a-hurry/nicar-1993-program-cover.png"
+  alt="Cover of the 1993 IRE/NICAR conference program, 'Computing: The News Frontier,' Raleigh, N.C."
+  class="cover-image"
+/>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Here Comes Everybody</p>
+
+# An internet era reboot
+
+The democratization of publishing by the web created opportunities for new
+voices to share their statistical skills and rebrand the work as "data
+journalism."
+
+<Screenshot url="fivethirtyeight.com" href="https://web.archive.org/web/20080512090419/http://fivethirtyeight.com/" label="FiveThirtyEight.com archived May 12, 2008">
   <img
-    src="{base}/screenshots/social-science-in-a-hurry/du-bois-georgia-negro.png"
-    alt="Du Bois's 1900 hand-drawn map 'Distribution of Negroes in the United States,' color-coded by population density"
+    src="{base}/screenshots/social-science-in-a-hurry/fivethirtyeight-2008-archive.png"
+    alt="FiveThirtyEight.com homepage from May 12, 2008, showing election forecast odds, electoral vote pie charts and state-by-state polling tables"
   />
 </Screenshot>
 
-<Notes>
-
-Du Bois was already a trained empirical sociologist (The Philadelphia Negro,
-1899) and would go on to edit The Crisis — bridging social science and
-journalism directly. This is the bridge between Greeley's stunt and Meyer's
-discipline: Du Bois was doing careful, evidence-based social science and
-presenting it for a mass public audience decades before Meyer named it.
-Source: Library of Congress, "Du Bois in Paris – Exposition Universelle,
-1900," https://blogs.loc.gov/inside_adams/2015/02/du-bois-in-paris-exposition-universelle-1900/.
-
-</Notes>
-
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">A hundred and twenty years later</p>
+<p class="slide-eyebrow">Assuming humanity survives</p>
 
-# Philip Meyer and "social science in a hurry"
+# We're all vibecoders now
 
-> "Journalism must become social science in a hurry." — Philip Meyer
+Thanks to AI coding assistants, data journalism has never been easier to
+execute. What happens next is up to us.
 
-<Notes>
-
-Ask students why this quote still holds up today. Point out that data
-journalism is reporting first, with analysis as a tool, not the other way
-around.
-
-</Notes>
-
-</Slide>
-
-<Slide>
-
-<p class="slide-eyebrow">The Detroit Free Press, 1967</p>
-
-# "People Beyond 12th Street"
-
-<Citation href="https://src.isr.umich.edu/news-events/news/1967-survey-discussed-in-detroit-free-press-column/">University of Michigan Survey Research Center, on the 1967 survey</Citation>
-
-<Notes>
-
-Attribute this to the newsroom and its research partners, not Meyer alone.
-Name the survey's limits: it measures responses, not a single cause. Keep
-the racial and political context visible — don't reduce the uprising to a
-data exercise. Sources: University of Michigan Survey Research Center news
-item on the 1967 survey; Philip Meyer, "A Newspaper's Role Between the
-Riots," Nieman Reports (1968).
-
-</Notes>
+<Screenshot url="chatgpt.com" label="ChatGPT generating an image of 'the data journalist of the future'">
+  <img
+    src="{base}/screenshots/social-science-in-a-hurry/chatgpt-data-journalist-of-the-future.png"
+    alt="ChatGPT generating a rendering of 'the data journalist of the future,' shown 96% complete"
+  />
+</Screenshot>
 
 </Slide>
 
@@ -238,33 +219,29 @@ Riots," Nieman Reports (1968).
 
 <Slide>
 
-<p class="slide-eyebrow">Tonight's roadmap</p>
+<p class="slide-eyebrow">How do we get to Carnegie Hall?</p>
 
-# Six weeks, one arc
+# The database state of mind
 
-<ul class="skills-list">
-  <li><Lightbulb aria-hidden="true" size={22} strokeWidth={2.25} /> Identify newsworthy questions</li>
-  <li><Database aria-hidden="true" size={22} strokeWidth={2.25} /> Locate data that can provide the answers</li>
-  <li><Hammer aria-hidden="true" size={22} strokeWidth={2.25} /> Prepare raw data for rigorous analysis</li>
-  <li><BarChart3 aria-hidden="true" size={22} strokeWidth={2.25} /> Interview data to develop meaningful findings</li>
-  <li><Map aria-hidden="true" size={22} strokeWidth={2.25} /> Verify your findings in the real world</li>
-  <li><MessageCircle aria-hidden="true" size={22} strokeWidth={2.25} /> Ensure subjects have a shot to sound off</li>
+These six techniques are common to almost every great data story. Like any
+other skill, they require practice, practice, practice.
+
+<ul class="skills-grid">
+  <li><Lightbulb aria-hidden="true" size={24} strokeWidth={2.25} /> Identifying measurable questions</li>
+  <li><Database aria-hidden="true" size={24} strokeWidth={2.25} /> Locating data that can provide the answers</li>
+  <li><Hammer aria-hidden="true" size={24} strokeWidth={2.25} /> Preparing raw data for rigorous analysis</li>
+  <li><BarChart3 aria-hidden="true" size={24} strokeWidth={2.25} /> Interviewing prepared data to develop meaningful findings</li>
+  <li><Map aria-hidden="true" size={24} strokeWidth={2.25} /> Testing your findings against the real world</li>
+  <li><MessageCircle aria-hidden="true" size={24} strokeWidth={2.25} /> Ensuring your subjects have a say in the story</li>
 </ul>
-
-<Notes>
-
-Preview that each of these steps will return in future weeks with hands-on
-practice.
-
-</Notes>
 
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Meet your guests</p>
+<p class="slide-eyebrow">Don't just take it from me</p>
 
-# Three working data journalists will join us
+# Meet our guest speakers
 
 <div class="guest-grid">
   <figure class="guest-card">
@@ -296,13 +273,6 @@ practice.
   </figure>
 </div>
 
-<Notes>
-
-TODO: confirm which classes each guest will actually join before publishing
-the final schedule.
-
-</Notes>
-
 </Slide>
 
 <Slide>
@@ -318,20 +288,13 @@ the final schedule.
   <Screenshot url="wsj.com" href="https://www.wsj.com/business/media/polymarket-social-media-bets-prediction-market-441cdeb5" label="WSJ story: Polymarket social media bets prediction market">
     <video
       src="{base}/screenshots/guests/ostroff-kalshi-demo.mp4"
-      autoplay
+      data-autoplay
       loop
       muted
       playsinline
     ></video>
   </Screenshot>
 </div>
-
-<Notes>
-
-TODO: confirm the exact headline shown in the video and that this is still
-her most recent notable piece by class time.
-
-</Notes>
 
 </Slide>
 
@@ -348,20 +311,13 @@ her most recent notable piece by class time.
   <Screenshot url="projects.thecity.nyc" href="https://projects.thecity.nyc/ice-street-arrests-investigation-racial-profiling/" label="The City story: ICE street arrests investigation into racial profiling">
     <video
       src="{base}/screenshots/guests/chu-ice-arrests-demo.mp4"
-      autoplay
+      data-autoplay
       loop
       muted
       playsinline
     ></video>
   </Screenshot>
 </div>
-
-<Notes>
-
-TODO: confirm the exact headline shown in the video and that this is still
-her most recent notable piece by class time.
-
-</Notes>
 
 </Slide>
 
@@ -383,20 +339,25 @@ her most recent notable piece by class time.
   </Screenshot>
 </div>
 
-<Notes>
-
-TODO: confirm the exact headline shown in the screenshot and that this is
-still her most recent notable piece by class time.
-
-</Notes>
-
 </Slide>
 
-<Slide variant="section">
+<Slide>
 
-<p class="slide-eyebrow">A closer look</p>
+<p class="slide-eyebrow">Let's take it again from the top</p>
 
-# The story arc: turn a question into news
+# The database state of mind
+
+These six techniques are common to almost every great data story. Like any
+other skill, they require practice, practice, practice.
+
+<ul class="skills-grid">
+  <li><Lightbulb aria-hidden="true" size={24} strokeWidth={2.25} /> Identifying measurable questions</li>
+  <li><Database aria-hidden="true" size={24} strokeWidth={2.25} /> Locating data that can provide the answers</li>
+  <li><Hammer aria-hidden="true" size={24} strokeWidth={2.25} /> Preparing raw data for rigorous analysis</li>
+  <li><BarChart3 aria-hidden="true" size={24} strokeWidth={2.25} /> Interviewing prepared data to develop meaningful findings</li>
+  <li><Map aria-hidden="true" size={24} strokeWidth={2.25} /> Testing your findings against the real world</li>
+  <li><MessageCircle aria-hidden="true" size={24} strokeWidth={2.25} /> Ensuring your subjects have a say in the story</li>
+</ul>
 
 </Slide>
 
@@ -405,8 +366,19 @@ still her most recent notable piece by class time.
 <p class="slide-eyebrow">Step 1 of 6</p>
 
 <div class="icon-heading">
-  <Lightbulb aria-hidden="true" size={88} strokeWidth={1.75} />
-  <h1>Identify newsworthy questions</h1>
+  <Lightbulb aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Identify measurable questions</h1>
+</div>
+
+Come up with questions that can be answered with measurements, numbers and
+data — not just by talking to people.
+
+<div class="step-example">
+  <p class="step-example-label">Example</p>
+  <p>During his campaign, Mayor Mamdani promised New York's buses would be
+  faster and free. Both promises can be measured. Is the average bus trip
+  faster than it was before he took office? Has the price of a bus ticket
+  changed?</p>
 </div>
 
 </Slide>
@@ -416,8 +388,18 @@ still her most recent notable piece by class time.
 <p class="slide-eyebrow">Step 2 of 6</p>
 
 <div class="icon-heading">
-  <Database aria-hidden="true" size={88} strokeWidth={1.75} />
+  <Database aria-hidden="true" size={48} strokeWidth={1.75} />
   <h1>Locate data that can provide the answers</h1>
+</div>
+
+It could be on a city data portal. It could require a Freedom of
+Information Act request. It could require you to measure things yourself.
+
+<div class="step-example">
+  <p class="step-example-label">Example</p>
+  <p>Say you're interested in measuring whether crime this year is up or
+  down. You could download the individual crime reports dataset from the
+  New York City data portal and analyze it by year.</p>
 </div>
 
 </Slide>
@@ -427,8 +409,20 @@ still her most recent notable piece by class time.
 <p class="slide-eyebrow">Step 3 of 6</p>
 
 <div class="icon-heading">
-  <Hammer aria-hidden="true" size={88} strokeWidth={1.75} />
+  <Hammer aria-hidden="true" size={48} strokeWidth={1.75} />
   <h1>Prepare raw data for rigorous analysis</h1>
+</div>
+
+Typically, datasets require careful examination to understand what their
+rows and columns contain. Unless you're very lucky, significant data
+cleaning may be needed.
+
+<div class="step-example">
+  <p class="step-example-label">Example</p>
+  <p>In the Federal Election Commission's database of campaign
+  contributions, donors' names and occupations can be listed differently
+  each time they write a check. Analyzing how much any one person has
+  donated requires you to identify and combine all of the variations.</p>
 </div>
 
 </Slide>
@@ -438,8 +432,22 @@ still her most recent notable piece by class time.
 <p class="slide-eyebrow">Step 4 of 6</p>
 
 <div class="icon-heading">
-  <BarChart3 aria-hidden="true" size={88} strokeWidth={1.75} />
-  <h1>Interview data to develop meaningful findings</h1>
+  <BarChart3 aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Interview prepared data to develop meaningful findings</h1>
+</div>
+
+Treat data the same way you treat a human source. The only difference is
+you can ask your questions using sorts, filters, groups and counts in a
+data analysis tool.
+
+<div class="step-example">
+  <p class="step-example-label">Example</p>
+  <p>If you wanted to ask the city's 311 complaints dataset what
+  neighborhood had the most complaints this year, you would filter the
+  database to the current year, group all of the individual records by
+  their neighborhood column and then count how many records occur in each
+  neighborhood. Finally, sort the result in descending order so the
+  neighborhood with the most appears at the top.</p>
 </div>
 
 </Slide>
@@ -449,8 +457,21 @@ still her most recent notable piece by class time.
 <p class="slide-eyebrow">Step 5 of 6</p>
 
 <div class="icon-heading">
-  <Map aria-hidden="true" size={88} strokeWidth={1.75} />
-  <h1>Verify your findings in the real world</h1>
+  <Map aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Test your findings against the real world</h1>
+</div>
+
+You should be able to follow your findings to the people and places they
+describe. That's where you'll find out whether they're true, whether they
+have any significance and whether there might be more to the story.
+
+<div class="step-example">
+  <p class="step-example-label">Example</p>
+  <p>You could use the city's rental citations database to identify the
+  buildings with the most outstanding violations. But you won't know
+  whether those violations have been fixed, how much they truly matter to
+  residents or what's causing them until you visit the buildings, see them
+  with your own eyes and speak to the people involved.</p>
 </div>
 
 </Slide>
@@ -460,190 +481,208 @@ still her most recent notable piece by class time.
 <p class="slide-eyebrow">Step 6 of 6</p>
 
 <div class="icon-heading">
-  <MessageCircle aria-hidden="true" size={88} strokeWidth={1.75} />
-  <h1>Ensure subjects have a shot to sound off</h1>
+  <MessageCircle aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Ensure subjects have a say in the story</h1>
+</div>
+
+You have an ethical obligation to allow the people you're writing about to
+challenge your findings. Not only is it the right thing to do, but
+listening to the people closest to your story can help make it better.
+
+<div class="step-example">
+  <p class="step-example-label">Example</p>
+  <p>If you've done an analysis that shows a certain fire station has the
+  slowest response times in the city, talking to the people who work there
+  could help you better understand why that's happening. You owe them the
+  opportunity to explain the data before you publish anything critical of
+  their work.</p>
 </div>
 
 </Slide>
 
-<!-- SECTION D: Run the model twice -->
+<!-- SECTION D: Run the model -->
 
-<Slide variant="section">
+<Slide>
 
-<p class="slide-eyebrow">Same six steps, twice</p>
+<p class="slide-eyebrow">Another lap</p>
 
-# Run the model twice
+# Now let's do my story
+
+Here's how I approached each of the six steps.
+
+<Screenshot url="reuters.com" href="https://www.reuters.com/world/europe/how-europes-intensifying-marine-heatwaves-threaten-its-fisheries-2026-09-26/" label="Sea-temperature story demo">
+  <video
+    src="{base}/screenshots/social-science-in-a-hurry/sea-temp-demo.mp4"
+    data-autoplay
+    loop
+    muted
+    playsinline
+  ></video>
+</Screenshot>
 
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Detroit, step 1 of 6</p>
+<p class="slide-eyebrow">Step 1 of 6</p>
 
 <div class="icon-heading">
-  <Lightbulb aria-hidden="true" size={88} strokeWidth={1.75} />
-  <h1>Identify newsworthy questions</h1>
+  <Lightbulb aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Identify measurable questions</h1>
+</div>
+
+This story got kicked off by an email from an editor.
+
+<div class="email-card not-prose">
+  <div class="email-header">
+    <p class="email-field"><span class="email-label">From:</span> <span class="email-value"><span class="redacted">Rachel Armstrong</span></span></p>
+    <p class="email-field"><span class="email-label">To:</span> <span class="email-value">Ben, <span class="redacted">Kate</span></span></p>
+    <p class="email-field email-field-subject"><span class="email-label">Subject:</span> <span class="email-value">Marine heatwave in Europe</span></p>
+    <p class="email-field"><span class="email-label">Date:</span> <span class="email-value">July 23, 2026</span></p>
+  </div>
+  <div class="email-body">
+    <p>Hi <span class="redacted">Kate</span>, Ben,</p>
+    <p>This is (obviously) not my area of expertise, but from looking at the
+    climate monitor during the European heatwave I was noticing how the
+    sea, particularly the Med and the Bay of Biscay, seemed to be fairly
+    consistently around 10 degrees above the historic average temperature,
+    and staying at that level much longer than a lot of land temperatures
+    in the region, which have fluctuated above the average a bit more.</p>
+    <p>I was wondering, first of all, Ben, if there's a way of extracting
+    historical data from the climate monitor to see if that anecdotal
+    finding above is correct or not?</p>
+    <p>And separately, <span class="redacted">Kate</span>, have you seen much compelling data on sea
+    temperatures in Europe this year — I can see some links below from
+    Copernicus and a couple of things on the UK, but not sure if there's
+    anything more current or broader?</p>
+    <p>I was thinking if it's the case that sea temperatures in this region
+    have generally been tracking higher above the average historical
+    temperature than land ones, then maybe there's scope for a story
+    looking at that, and the implications it brings, marrying it with some
+    on-the-ground/water reporting?</p>
+    <p><span class="redacted">Rachel</span></p>
+  </div>
 </div>
 
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Detroit, step 2 of 6</p>
+<p class="slide-eyebrow">Step 2 of 6</p>
 
 <div class="icon-heading">
-  <Database aria-hidden="true" size={88} strokeWidth={1.75} />
+  <Database aria-hidden="true" size={48} strokeWidth={1.75} />
   <h1>Locate data that can provide the answers</h1>
 </div>
 
+I found a dataset with daily sea surface temperatures covering the entire
+globe. I interviewed experts to verify it was reliable.
+
+<Screenshot url="ncei.noaa.gov" href="https://www.ncei.noaa.gov/products/optimum-interpolation-sst" label="NOAA OISST dataset product page">
+  <img
+    src="{base}/screenshots/social-science-in-a-hurry/oisst-dataset.png"
+    alt="NOAA NCEI product page for the Optimum Interpolation Sea Surface Temperature (OISST) dataset"
+  />
+</Screenshot>
+
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Detroit, step 3 of 6</p>
+<p class="slide-eyebrow">Step 3 of 6</p>
 
 <div class="icon-heading">
-  <Hammer aria-hidden="true" size={88} strokeWidth={1.75} />
+  <Hammer aria-hidden="true" size={48} strokeWidth={1.75} />
   <h1>Prepare raw data for rigorous analysis</h1>
 </div>
 
+One challenge I faced was defining what counts as European waters. After
+talking to experts, I went with the regions defined by this government
+agency.
+
+<Screenshot url="eea.europa.eu" href="https://www.eea.europa.eu/en/analysis/maps-and-charts/marine-regions-and-subregions" label="European Environment Agency: Marine regions and subregions">
+  <img
+    src="{base}/screenshots/social-science-in-a-hurry/eea-marine-regions.png"
+    alt="European Environment Agency map titled 'Marine regions and subregions,' showing the official boundaries of EU marine regions"
+  />
+</Screenshot>
+
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Detroit, step 4 of 6</p>
+<p class="slide-eyebrow">Step 4 of 6</p>
 
 <div class="icon-heading">
-  <BarChart3 aria-hidden="true" size={88} strokeWidth={1.75} />
-  <h1>Interview data to develop meaningful findings</h1>
+  <BarChart3 aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Interview prepared data to develop meaningful findings</h1>
 </div>
+
+I used Python and an AI coding assistant to develop a reproducible notebook
+that asked and answered our key questions.
+
+<Screenshot url="github.com" href="https://github.com/palewire/european-marine-heatwave-analysis/blob/main/analysis.ipynb" label="Jupyter notebook: European marine heatwave analysis">
+  <img
+    src="{base}/screenshots/social-science-in-a-hurry/sea-temp-analysis-notebook.png"
+    alt="GitHub-rendered Jupyter notebook showing Python code that averages summer sea-surface temperatures by region and year, with a results table ranking 2026 as the hottest summer on record"
+  />
+</Screenshot>
 
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Detroit, step 5 of 6</p>
+<p class="slide-eyebrow">Step 5 of 6</p>
 
 <div class="icon-heading">
-  <Map aria-hidden="true" size={88} strokeWidth={1.75} />
-  <h1>Verify your findings in the real world</h1>
+  <Map aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Test your findings against the real world</h1>
 </div>
+
+We traveled to the areas with the most extreme temperatures, interviewing
+scientists who study the sea and fishermen who confront the changes every
+day.
+
+<img
+  src="{base}/screenshots/social-science-in-a-hurry/sea-temp-fisherman.jpg"
+  alt="A fisherman points out at the coastline and sea along northern Spain"
+  class="cover-image"
+/>
 
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Detroit, step 6 of 6</p>
+<p class="slide-eyebrow">Step 6 of 6</p>
 
 <div class="icon-heading">
-  <MessageCircle aria-hidden="true" size={88} strokeWidth={1.75} />
-  <h1>Ensure subjects have a shot to sound off</h1>
+  <MessageCircle aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Ensure subjects have a say in the story</h1>
 </div>
 
-</Slide>
+While there was no bad actor to confront, anchoring our findings in the
+real world showed what's at stake and made this story more than a
+statistical exercise.
 
-<Slide>
-
-<p class="slide-eyebrow">Sea temps, step 1 of 6</p>
-
-<div class="icon-heading">
-  <Lightbulb aria-hidden="true" size={88} strokeWidth={1.75} />
-  <h1>Identify newsworthy questions</h1>
-</div>
-
-<Notes>TODO: fill in once we lock the sea-temperature story's reporting specifics.</Notes>
+<Screenshot url="reuters.com" href="https://www.reuters.com/world/europe/how-europes-intensifying-marine-heatwaves-threaten-its-fisheries-2026-09-26/" label="Published story: How Europe's intensifying marine heatwaves threaten its fisheries">
+  <img
+    src="{base}/screenshots/social-science-in-a-hurry/sea-temp-story-published.png"
+    alt="The published Reuters story, showing a fisherman speaking on camera at a harbor about the impact of warming waters on local landings"
+  />
+</Screenshot>
 
 </Slide>
 
-<Slide>
+<!-- SECTION E: Wrap-up -->
 
-<p class="slide-eyebrow">Sea temps, step 2 of 6</p>
+<Slide variant="statement">
 
-<div class="icon-heading">
-  <Database aria-hidden="true" size={88} strokeWidth={1.75} />
-  <h1>Locate data that can provide the answers</h1>
-</div>
-
-<Notes>TODO: fill in once we lock the sea-temperature story's reporting specifics.</Notes>
+# Any questions?
 
 </Slide>
 
-<Slide>
+<Slide variant="statement">
 
-<p class="slide-eyebrow">Sea temps, step 3 of 6</p>
-
-<div class="icon-heading">
-  <Hammer aria-hidden="true" size={88} strokeWidth={1.75} />
-  <h1>Prepare raw data for rigorous analysis</h1>
-</div>
-
-<Notes>TODO: fill in once we lock the sea-temperature story's reporting specifics.</Notes>
-
-</Slide>
-
-<Slide>
-
-<p class="slide-eyebrow">Sea temps, step 4 of 6</p>
-
-<div class="icon-heading">
-  <BarChart3 aria-hidden="true" size={88} strokeWidth={1.75} />
-  <h1>Interview data to develop meaningful findings</h1>
-</div>
-
-<Notes>TODO: fill in once we lock the sea-temperature story's reporting specifics.</Notes>
-
-</Slide>
-
-<Slide>
-
-<p class="slide-eyebrow">Sea temps, step 5 of 6</p>
-
-<div class="icon-heading">
-  <Map aria-hidden="true" size={88} strokeWidth={1.75} />
-  <h1>Verify your findings in the real world</h1>
-</div>
-
-<Notes>TODO: fill in once we lock the sea-temperature story's reporting specifics.</Notes>
-
-</Slide>
-
-<Slide>
-
-<p class="slide-eyebrow">Sea temps, step 6 of 6</p>
-
-<div class="icon-heading">
-  <MessageCircle aria-hidden="true" size={88} strokeWidth={1.75} />
-  <h1>Ensure subjects have a shot to sound off</h1>
-</div>
-
-<Notes>TODO: fill in once we lock the sea-temperature story's reporting specifics.</Notes>
-
-</Slide>
-
-<!-- SECTION E: From lecture to practice -->
-
-<Slide>
-
-<p class="slide-eyebrow">From lecture to practice</p>
-
-# Practice, practice, practice
-
-</Slide>
-
-<!-- SECTION F: In-class exercise -->
-
-<Slide variant="section">
-
-<p class="slide-eyebrow">Tonight's exercise</p>
-
-# Let's build a spreadsheet, together
-
-<Notes>
-
-TODO: finalize the actual survey questions and spreadsheet structure before
-class. Possible newsworthy question: what skills do people in this class
-want to learn, and what data journalism do they admire?
-
-</Notes>
+# Let's get to work
 
 </Slide>
