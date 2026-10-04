@@ -2,6 +2,7 @@
   import Slide from '$lib/components/Slide.svelte';
   import Notes from '$lib/components/Notes.svelte';
   import Screenshot from '$lib/components/Screenshot.svelte';
+  import Citation from '$lib/components/Citation.svelte';
   import { base } from '$app/paths';
   import { BarChart3, Database, Hammer, Lightbulb, Map, MessageCircle } from '@lucide/svelte';
 </script>
@@ -12,7 +13,7 @@
 
 # Social science in a hurry
 
-<p class="slide-subtitle">Learn how New York's leading newsrooms turn raw data into compelling journalism.</p>
+<p class="slide-subtitle">How reporters turn numbers into news by using a database state of mind</p>
 
 <Notes>
 
@@ -29,7 +30,17 @@ diving into tonight's material.
 
 <p class="slide-eyebrow">Who I am</p>
 
-# Headline TK
+# My name is Ben
+
+I have more than 20 years of experience as a reporter, editor and computer
+programmer.
+
+<Screenshot url="palewi.re/who-is-ben-welsh" href="https://palewi.re/who-is-ben-welsh/" label="Ben Welsh's bio page on palewire.com">
+  <img
+    src="{base}/screenshots/social-science-in-a-hurry/ben-welsh-bio.png"
+    alt="Palewire bio page: headshot of Ben Welsh with the opening lines of his biography describing him as a reporter, editor, and computer programmer at Reuters"
+  />
+</Screenshot>
 
 <Notes>
 
@@ -42,18 +53,26 @@ not solo investigative pieces, are most of the job day to day.
 
 <Slide>
 
-<p class="slide-eyebrow">A recent story</p>
+<p class="slide-eyebrow">What I sometimes do</p>
 
-# Headline TK
+# I'm a data journalist
 
-<Screenshot url="reuters.com" label="Placeholder for the sea-temperature story">
-  <div class="screenshot-placeholder">Add the sea-temperature story screenshot here</div>
+I write traditional stories like this one:
+
+<Screenshot url="reuters.com" href="https://www.reuters.com/world/europe/how-europes-intensifying-marine-heatwaves-threaten-its-fisheries-2026-09-26/" label="Sea-temperature story demo">
+  <video
+    src="{base}/screenshots/social-science-in-a-hurry/sea-temp-demo.mp4"
+    autoplay
+    loop
+    muted
+    playsinline
+  ></video>
 </Screenshot>
 
 <Notes>
 
-TODO: swap in the real story link, headline, and the specific finding once
-chosen.
+TODO: confirm this is still the best recent example to lead with by class
+time.
 
 </Notes>
 
@@ -63,10 +82,18 @@ chosen.
 
 <p class="slide-eyebrow">What I mostly do</p>
 
-# Headline TK
+# I lead a team at Reuters
 
-<Screenshot url="reuters.com/graphics/climate-monitor" label="Placeholder for the Climate Monitor app">
-  <div class="screenshot-placeholder">Add a Climate Monitor screenshot here</div>
+We're a new kind of desk that automates the news using data and design.
+
+<Screenshot url="reuters.com/graphics/climate-monitor" href="https://www.reuters.com/graphics/CLIMATE-AUTOMATED/MONITOR/akpeykqqapr/" label="Climate Monitor demo">
+  <video
+    src="{base}/screenshots/social-science-in-a-hurry/climate-monitor-demo.mp4"
+    autoplay
+    loop
+    muted
+    playsinline
+  ></video>
 </Screenshot>
 
 <Notes>
@@ -80,9 +107,11 @@ runs.
 
 <Slide>
 
-<p class="slide-eyebrow">Tomorrow, same pipeline</p>
+<p class="slide-eyebrow">What I did yesterday</p>
 
-# Headline TK
+# There's plenty to cover
+
+Data is breaking news every day, all around the world.
 
 <Screenshot url="reuters.com" label="Placeholder for tomorrow's Brazil results story">
   <div class="screenshot-placeholder">Add the Brazil results story screenshot here</div>
@@ -119,7 +148,7 @@ Ask students for guesses out loud before revealing the answer.
 
 # A sitting congressman named Greeley
 
-<Screenshot url="propublica.org" label="ProPublica story: Antebellum Data Journalism">
+<Screenshot url="propublica.org" href="https://www.propublica.org/nerds/antebellum-data-journalism-busted-abe-lincoln" label="ProPublica story: Antebellum Data Journalism">
   <img
     src="{base}/screenshots/social-science-in-a-hurry/propublica-antebellum-data-journalism.png"
     alt="ProPublica headline 'Antebellum Data Journalism: Or, How Big Data Busted Abe Lincoln,' with a portrait of Horace Greeley"
@@ -145,7 +174,7 @@ century, and predates FOIA entirely.
 
 # W.E.B. Du Bois draws the data
 
-<Screenshot url="loc.gov" label="Du Bois's 1900 chart, Distribution of Negroes in the United States">
+<Screenshot url="loc.gov" href="https://blogs.loc.gov/inside_adams/2015/02/du-bois-in-paris-exposition-universelle-1900/" label="Du Bois's 1900 chart, Distribution of Negroes in the United States">
   <img
     src="{base}/screenshots/social-science-in-a-hurry/du-bois-georgia-negro.png"
     alt="Du Bois's 1900 hand-drawn map 'Distribution of Negroes in the United States,' color-coded by population density"
@@ -189,6 +218,8 @@ around.
 <p class="slide-eyebrow">The Detroit Free Press, 1967</p>
 
 # "People Beyond 12th Street"
+
+<Citation href="https://src.isr.umich.edu/news-events/news/1967-survey-discussed-in-detroit-free-press-column/">University of Michigan Survey Research Center, on the 1967 survey</Citation>
 
 <Notes>
 
@@ -278,24 +309,27 @@ the final schedule.
 
 <p class="slide-eyebrow">Guest speaker</p>
 
-# Caitlin Ostroff · The Wall Street Journal
+# Caitlin Ostroff
 
 <div class="guest-story">
   <div class="guest-portrait">
     <img src="{base}/speakers/caitlin-ostroff-transparent.png" alt="Portrait of Caitlin Ostroff" />
   </div>
-  <Screenshot url="wsj.com" label="WSJ story: $5 billion flurry of nearly identical Kalshi trades draws scrutiny">
-    <img
-      src="{base}/screenshots/guests/ostroff-kalshi-story.png"
-      alt="Wall Street Journal headline: '$5 billion flurry of nearly identical Kalshi trades draws scrutiny,' byline Caitlin Ostroff, Katherine Long, Neil Mehta"
-    />
+  <Screenshot url="wsj.com" href="https://www.wsj.com/business/media/polymarket-social-media-bets-prediction-market-441cdeb5" label="WSJ story: Polymarket social media bets prediction market">
+    <video
+      src="{base}/screenshots/guests/ostroff-kalshi-demo.mp4"
+      autoplay
+      loop
+      muted
+      playsinline
+    ></video>
   </Screenshot>
 </div>
 
 <Notes>
 
-TODO: confirm this is still her most recent notable piece by class time, and
-swap in a fresher one if needed.
+TODO: confirm the exact headline shown in the video and that this is still
+her most recent notable piece by class time.
 
 </Notes>
 
@@ -305,24 +339,27 @@ swap in a fresher one if needed.
 
 <p class="slide-eyebrow">Guest speaker</p>
 
-# Haidee Chu · The City Reporter
+# Haidee Chu
 
 <div class="guest-story">
   <div class="guest-portrait">
     <img src="{base}/speakers/haidee-chu-transparent.png" alt="Portrait of Haidee Chu" />
   </div>
-  <Screenshot url="thecityreporter.nyc" label="The City Reporter story: ICE Arrests in NYC Peaked This July">
-    <img
-      src="{base}/screenshots/guests/chu-ice-arrests-story.png"
-      alt="The City Reporter headline: 'ICE Arrests in NYC Peaked This July, But Many Immigrants Were Released the Same Day,' byline Gwynne Hogan and Haidee Chu"
-    />
+  <Screenshot url="projects.thecity.nyc" href="https://projects.thecity.nyc/ice-street-arrests-investigation-racial-profiling/" label="The City story: ICE street arrests investigation into racial profiling">
+    <video
+      src="{base}/screenshots/guests/chu-ice-arrests-demo.mp4"
+      autoplay
+      loop
+      muted
+      playsinline
+    ></video>
   </Screenshot>
 </div>
 
 <Notes>
 
-TODO: confirm this is still her most recent notable piece by class time, and
-swap in a fresher one if needed.
+TODO: confirm the exact headline shown in the video and that this is still
+her most recent notable piece by class time.
 
 </Notes>
 
@@ -332,24 +369,24 @@ swap in a fresher one if needed.
 
 <p class="slide-eyebrow">Guest speaker</p>
 
-# Bianca Pallaro · The New York Times
+# Bianca Pallaro
 
 <div class="guest-story">
   <div class="guest-portrait">
     <img src="{base}/speakers/bianca-pallaro-transparent.png" alt="Portrait of Bianca Pallaro" />
   </div>
-  <Screenshot url="nytimes.com" label="New York Times story: Top Ukraine weapons firms audited">
+  <Screenshot url="nytimes.com" href="https://www.nytimes.com/2024/06/11/nyregion/campaign-finance-fake-donors.html" label="New York Times story: Fake Donations Helped a Candidate Get $162,000 From Taxpayers">
     <img
-      src="{base}/screenshots/guests/pallaro-ukraine-audits-story.png"
-      alt="Headline: 'Top Ukraine weapons firms audited: 7 military contractors win business despite fraud, corruption investigations,' byline Andrew E. Kramer, Bianca Pallaro and Evelina Riabenko, The New York Times"
+      src="{base}/screenshots/guests/pallaro-fake-donors-story.png"
+      alt="New York Times headline: 'Fake Donations Helped a Candidate Get $162,000 From Taxpayers,' byline Bianca Pallaro"
     />
   </Screenshot>
 </div>
 
 <Notes>
 
-TODO: confirm this is still her most recent notable piece by class time, and
-swap in a fresher one if needed.
+TODO: confirm the exact headline shown in the screenshot and that this is
+still her most recent notable piece by class time.
 
 </Notes>
 

@@ -29,7 +29,7 @@ test('first lecture starts and advances without an index link', async ({ page })
   await expect(page.locator('body')).not.toContainText('archive.ire.org');
 
   await page.keyboard.press('ArrowRight');
-  await expect(page.locator('.slides > section.present h1')).toHaveText('Headline TK');
+  await expect(page.locator('.slides > section.present h1')).toHaveText('My name is Ben');
 });
 
 test('second lecture has its own slides and placeholder for a visual', async ({ page }) => {
