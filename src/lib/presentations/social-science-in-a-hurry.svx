@@ -184,9 +184,8 @@ then called computer-assisted reporting.
 
 # An internet era reboot
 
-The democratization of publishing by the web created opportunities for new
-voices to share their statistical skills and rebrand the work as "data
-journalism."
+The democratization of publishing allowed new voices to share their
+statistical skills, which lead to a rebranding as "data journalism."
 
 <Screenshot url="fivethirtyeight.com" href="https://web.archive.org/web/20080512090419/http://fivethirtyeight.com/" label="FiveThirtyEight.com archived May 12, 2008">
   <img
@@ -232,7 +231,7 @@ other skill, they require practice, practice, practice.
   <li><Hammer aria-hidden="true" size={24} strokeWidth={2.25} /> Preparing raw data for rigorous analysis</li>
   <li><BarChart3 aria-hidden="true" size={24} strokeWidth={2.25} /> Interviewing prepared data to develop findings</li>
   <li><Map aria-hidden="true" size={24} strokeWidth={2.25} /> Testing your findings against the real world</li>
-  <li><MessageCircle aria-hidden="true" size={24} strokeWidth={2.25} /> Ensuring your subjects have a say in the story</li>
+  <li><MessageCircle aria-hidden="true" size={24} strokeWidth={2.25} /> Ensuring your subjects have a say</li>
 </ul>
 
 </Slide>
@@ -356,7 +355,7 @@ other skill, they require practice, practice, practice.
   <li><Hammer aria-hidden="true" size={24} strokeWidth={2.25} /> Preparing raw data for rigorous analysis</li>
   <li><BarChart3 aria-hidden="true" size={24} strokeWidth={2.25} /> Interviewing prepared data to develop findings</li>
   <li><Map aria-hidden="true" size={24} strokeWidth={2.25} /> Testing your findings against the real world</li>
-  <li><MessageCircle aria-hidden="true" size={24} strokeWidth={2.25} /> Ensuring your subjects have a say in the story</li>
+  <li><MessageCircle aria-hidden="true" size={24} strokeWidth={2.25} /> Ensuring your subjects have a say</li>
 </ul>
 
 </Slide>
@@ -482,7 +481,7 @@ have any significance and whether there might be more to the story.
 
 <div class="icon-heading">
   <MessageCircle aria-hidden="true" size={48} strokeWidth={1.75} />
-  <h1>Ensure subjects have a say in the story</h1>
+  <h1>Ensure subjects have a say</h1>
 </div>
 
 You have an ethical obligation to allow the people you're writing about to
@@ -657,7 +656,7 @@ day.
 
 <div class="icon-heading">
   <MessageCircle aria-hidden="true" size={48} strokeWidth={1.75} />
-  <h1>Ensure subjects have a say in the story</h1>
+  <h1>Ensure subjects have a say</h1>
 </div>
 
 While there was no bad actor to confront, anchoring our findings in the
