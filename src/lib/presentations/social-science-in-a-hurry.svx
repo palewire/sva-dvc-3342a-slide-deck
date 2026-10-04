@@ -41,7 +41,7 @@ programmer.
 
 # I'm a data journalist
 
-I write traditional stories like this one:
+Occasionally, I write traditional stories like this one:
 
 <Screenshot url="reuters.com" href="https://www.reuters.com/world/europe/how-europes-intensifying-marine-heatwaves-threaten-its-fisheries-2026-09-26/" label="Sea-temperature story demo">
   <video
@@ -230,7 +230,7 @@ other skill, they require practice, practice, practice.
   <li><Lightbulb aria-hidden="true" size={24} strokeWidth={2.25} /> Identifying measurable questions</li>
   <li><Database aria-hidden="true" size={24} strokeWidth={2.25} /> Locating data that can provide the answers</li>
   <li><Hammer aria-hidden="true" size={24} strokeWidth={2.25} /> Preparing raw data for rigorous analysis</li>
-  <li><BarChart3 aria-hidden="true" size={24} strokeWidth={2.25} /> Interviewing prepared data to develop meaningful findings</li>
+  <li><BarChart3 aria-hidden="true" size={24} strokeWidth={2.25} /> Interviewing prepared data to develop findings</li>
   <li><Map aria-hidden="true" size={24} strokeWidth={2.25} /> Testing your findings against the real world</li>
   <li><MessageCircle aria-hidden="true" size={24} strokeWidth={2.25} /> Ensuring your subjects have a say in the story</li>
 </ul>
@@ -354,7 +354,7 @@ other skill, they require practice, practice, practice.
   <li><Lightbulb aria-hidden="true" size={24} strokeWidth={2.25} /> Identifying measurable questions</li>
   <li><Database aria-hidden="true" size={24} strokeWidth={2.25} /> Locating data that can provide the answers</li>
   <li><Hammer aria-hidden="true" size={24} strokeWidth={2.25} /> Preparing raw data for rigorous analysis</li>
-  <li><BarChart3 aria-hidden="true" size={24} strokeWidth={2.25} /> Interviewing prepared data to develop meaningful findings</li>
+  <li><BarChart3 aria-hidden="true" size={24} strokeWidth={2.25} /> Interviewing prepared data to develop findings</li>
   <li><Map aria-hidden="true" size={24} strokeWidth={2.25} /> Testing your findings against the real world</li>
   <li><MessageCircle aria-hidden="true" size={24} strokeWidth={2.25} /> Ensuring your subjects have a say in the story</li>
 </ul>
@@ -433,7 +433,7 @@ cleaning may be needed.
 
 <div class="icon-heading">
   <BarChart3 aria-hidden="true" size={48} strokeWidth={1.75} />
-  <h1>Interview prepared data to develop meaningful findings</h1>
+  <h1>Interview prepared data to develop findings</h1>
 </div>
 
 Treat data the same way you treat a human source. The only difference is
@@ -615,7 +615,7 @@ agency.
 
 <div class="icon-heading">
   <BarChart3 aria-hidden="true" size={48} strokeWidth={1.75} />
-  <h1>Interview prepared data to develop meaningful findings</h1>
+  <h1>Interview prepared data to develop findings</h1>
 </div>
 
 I used Python and an AI coding assistant to develop a reproducible notebook
