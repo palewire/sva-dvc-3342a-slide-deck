@@ -165,7 +165,7 @@ combine the methods of sociology with the power of computers.
 
 <p class="slide-eyebrow">Spreading the gospel</p>
 
-# A new job title is born
+# A job title is born
 
 IRE and NICAR trained thousands of journalists around the world in what was
 then called computer-assisted reporting.
@@ -184,8 +184,8 @@ then called computer-assisted reporting.
 
 # An internet era reboot
 
-The democratization of publishing allowed new voices to share their
-statistical skills, which lead to a rebranding as "data journalism."
+The democratization of publishing allowed new voices to share their 
+statistical skills, which led to a rebranding as "data journalism."
 
 <Screenshot url="fivethirtyeight.com" href="https://web.archive.org/web/20080512090419/http://fivethirtyeight.com/" label="FiveThirtyEight.com archived May 12, 2008">
   <img
