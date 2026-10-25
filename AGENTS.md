@@ -11,8 +11,11 @@ Welsh's Fall 2026 SVA course. Keep it useful for more than one lecture.
 - There is no deck homepage or index. The syllabus site's matching lesson
   detail page owns the link to each finished deck; do not add a link to a
   placeholder deck or a lesson page that is not ready.
-- The two included decks are examples. Do not present them as scheduled class
-  sessions or invent dates, assignments, guests, or student details.
+- The repo includes the first lecture, the finished fifteen-slide
+  `peeling-the-onion` lecture for Week 4, and the reusable `sample-next`
+  example. Week 4 covers four reporting steps and the Compton firefighter
+  investigation, with no speaker notes. Do not invent dates, assignments,
+  guests, or student details.
 - Keep blank lines around Markdown inside `<Slide>`, `<Notes>`, and other
   Svelte components in `.svx` files.
 - No archive-specific slides, screenshots, people, or deployment settings
@@ -28,7 +31,10 @@ Welsh's Fall 2026 SVA course. Keep it useful for more than one lecture.
   requested.
 - Preserve the static build, configurable `BASE_PATH`, keyboard navigation,
   phone layout, speaker notes, readable contrast, and useful slide semantics.
-- No backend, CMS, authentication, or production deployment is configured.
+- There is no backend, CMS or authentication. The existing deployment
+  workflow publishes `main` under `/docs/sva-dvc-3342a-slide-deck/`; local
+  builds keep `BASE_PATH` and `VITE_CANONICAL_URL` configurable. Check the
+  public lecture route and an asset after deployment.
 
 ## Checks
 

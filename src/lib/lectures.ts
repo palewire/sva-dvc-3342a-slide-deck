@@ -12,6 +12,11 @@ export const lectures = [
     description: 'Week 1: why data journalism blends statistical analysis with reporting.'
   },
   {
+    slug: 'peeling-the-onion',
+    title: 'Peeling the onion',
+    description: 'How reporters verify their findings by working from the outside in'
+  },
+  {
     slug: 'sample-next',
     title: 'Your next lecture',
     description: 'A second deck showing how independent lectures share the same design.'

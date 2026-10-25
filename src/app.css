@@ -209,6 +209,10 @@ body.reveal-scroll .reveal .slides section.lecture-slide {
   font-size: 1.1em;
 }
 
+.reveal .slides section.title-slide .slide-subtitle-wide {
+  max-width: none;
+}
+
 .reveal .slides section.section-slide {
   justify-content: center;
   background: var(--white);
@@ -489,6 +493,13 @@ body.reveal-scroll .reveal .slides .guest-story .screenshot-frame {
   font-family: var(--font-ui);
   font-size: 25px;
   text-align: center;
+}
+
+.reveal .slides .standalone-photo {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: contain;
 }
 
 .reveal .slides .cover-image {

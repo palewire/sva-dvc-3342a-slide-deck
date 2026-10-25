@@ -32,7 +32,7 @@ test('first lecture starts and advances without an index link', async ({ page })
   await expect(page.locator('.slides > section.present h1')).toHaveText('My name is Ben');
 });
 
-test('second lecture has its own slides and placeholder for a visual', async ({ page }) => {
+test('starter example has its own slides and placeholder for a visual', async ({ page }) => {
   await page.goto('./lectures/sample-next/');
 
   await expect(page.locator('.reveal')).toHaveClass(/ready/);
@@ -44,6 +44,51 @@ test('second lecture has its own slides and placeholder for a visual', async ({ 
     page.getByRole('group', { name: 'Placeholder for a chart or screenshot' })
   ).toBeVisible();
   await expect(page.locator('.slides')).not.toContainText('What do you want to know?');
+});
+
+test('verification lecture opens directly and advances through its reporting example', async ({
+  page
+}) => {
+  await page.goto('./lectures/peeling-the-onion/');
+  await expect(page).toHaveTitle(
+    'Peeling the onion | Truth-Telling 101: Artists Meet Data Journalism'
+  );
+  await expect(page.locator('.reveal')).toHaveClass(/ready/);
+  await expect(page.locator('.slides > section')).toHaveCount(15);
+  await expect(page.locator('.slides > section.present h1')).toHaveText('Peeling the onion');
+  await expect(page.locator('aside.notes')).toHaveCount(0);
+
+  await page.keyboard.press('ArrowRight');
+  await expect(page.locator('.slides > section.present h1')).toHaveText('Who are these men?');
+  for (let step = 0; step < 4; step += 1) {
+    await page.keyboard.press('ArrowRight');
+  }
+  await expect(page.getByRole('img', { name: 'Working from the outside in' })).toBeVisible();
+
+  await page.keyboard.press('End');
+  await expect(page.locator('.slides > section.present h1')).toHaveText('Main subject');
+  await expect(page.locator('.slides > section.present')).toContainText(
+    'including the chief himself'
+  );
+  await expect(page.getByRole('link', { name: 'latimes.com', exact: true })).toHaveAttribute(
+    'href',
+    'https://www.latimes.com/local/lanow/la-me-compton-fire-chief-20150707-story.html'
+  );
+
+  await page.keyboard.press('ArrowLeft');
+  await expect(page.locator('.slides > section.present h1')).toHaveText('Human sources');
+  await expect(page.locator('.slides > section.present')).toContainText('the other 14');
+  await expect(page.getByRole('link', { name: 'documentcloud.org' })).toHaveAttribute(
+    'href',
+    'https://embed.documentcloud.org/documents/1695054-la-county-ems-agenc-2014-annual-report/#document/p15'
+  );
+
+  await page.keyboard.press('ArrowLeft');
+  await expect(page.locator('.slides > section.present h1')).toHaveText('Primary documents');
+  await expect(page.locator('.slides > section.present')).toContainText(
+    'public records request'
+  );
+  await expect(page.getByRole('link', { name: 'All lectures' })).toHaveCount(0);
 });
 
 test('mobile lecture fits in scroll view', async ({ page }) => {

@@ -1,0 +1,227 @@
+<script lang="ts">
+  import Slide from '$lib/components/Slide.svelte';
+  import Screenshot from '$lib/components/Screenshot.svelte';
+  import OutsideIn from '$lib/components/OutsideIn.svelte';
+  import { base } from '$app/paths';
+  import { FileSearch, Newspaper, Target, Users } from '@lucide/svelte';
+</script>
+
+<Slide variant="title">
+
+<p class="slide-eyebrow">Truth-Telling 101 · Week 4</p>
+
+# Peeling the onion
+
+<p class="slide-subtitle slide-subtitle-wide">How reporters dig out the truth by working from the outside in</p>
+
+</Slide>
+
+<Slide variant="statement">
+
+# Who are these men?
+
+</Slide>
+
+<Slide>
+
+<img
+  src="{base}/screenshots/peeling-the-onion/woodward-bernstein-1973.jpg"
+  alt="Carl Bernstein, left, and Bob Woodward together in Washington, D.C., in 1973"
+  class="standalone-photo"
+/>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">After Watergate</p>
+
+# Industrializing investigative reporting
+
+The generation of journalists that followed Woodward and Bernstein started writing down the recipes.
+
+<img
+  src="{base}/screenshots/peeling-the-onion/the-new-muckrakers-mockup.png"
+  alt="3D book mockup of The New Muckrakers by Leonard Downie Jr., published in 1976"
+  class="cover-image"
+/>
+
+</Slide>
+
+<Slide variant="statement">
+
+# Working from the outside in
+
+</Slide>
+
+<Slide>
+
+<OutsideIn />
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 1 of 4</p>
+
+<div class="icon-heading">
+  <Newspaper aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Secondary sources</h1>
+</div>
+
+Start with what's already been published. Search for reporting by others on the topic you're interested in. What's already been done? What datasets are other journalists utilizing? What questions could you answer to break new ground and go beyond what's already out there?
+
+<div class="step-example">
+  <p class="step-example-label">Example</p>
+  <p>If you're interested in writing about the mayor's new childcare program, you should seek out every news story you can find online about its creation, as well as any legislation, academic research and other scholarship on the program.</p>
+</div>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 2 of 4</p>
+
+<div class="icon-heading">
+  <FileSearch aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Primary documents</h1>
+</div>
+
+These are the documents and data that directly address your questions and allow you to establish facts and findings. Typically, they are created either by your main subject or by an authoritative source that directly oversees or studies your main subject. You should try to diversify these sources to expand your knowledge and cross-check your findings.
+
+<div class="step-example">
+  <p class="step-example-label">Example</p>
+  <p>The datasets we've been working with from the New York City data portal are examples of primary documents. If you're studying the operations of the New York City Police Department, using the portal's crime reports dataset is one way to analyze the department's activity, but not the only way.</p>
+</div>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 3 of 4</p>
+
+<div class="icon-heading">
+  <Users aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Human sources</h1>
+</div>
+
+Documents and data can take on new meaning after you learn more about the context in which they were created and the events they describe. There's no substitute for interviewing human sources who created your primary documents. If they're not helpful, you can often find experts on the sources you're studying who can help you.
+
+<div class="step-example">
+  <p class="step-example-label">Example</p>
+  <p>Your database analysis may suggest that a certain city employee received an exorbitant paycheck last year. How you interpret that might differ if you learned from the city manager that the paycheck included a large settlement following an on-the-job injury. An auditor who routinely analyzes city budgets could help you understand if such accounting is commonplace.</p>
+</div>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 4 of 4</p>
+
+<div class="icon-heading">
+  <Target aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Main subject</h1>
+</div>
+
+This is the person, place or institution your story will be about. You should always share your evidence with them before you publish, giving them a fair chance to respond and an opportunity to correct your understanding.
+
+<div class="step-example">
+  <p class="step-example-label">Example</p>
+  <p>If you're writing a story about the top campaign donor to a local candidate, you should give them an opportunity to comment, not just to verify your findings, but also to include their motivations and thinking in your reporting, which could help better inform your audience.</p>
+</div>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Another lap</p>
+
+# Now let's do my story
+
+Here's how I approached each of the four steps.
+
+<Screenshot url="latimes.com" href="https://www.latimes.com/local/lanow/la-me-ln-compton-firefighters-without-emt-permit-20150326-story.html" label="Ben Welsh's Compton firefighter investigation">
+  <img
+    src="{base}/screenshots/peeling-the-onion/compton-firefighters-story.png"
+    alt="Los Angeles Times story by Ben Welsh: Nearly 1 in 4 Compton firefighters is working without an EMT permit, showing the headline, fire engines and byline"
+  />
+</Screenshot>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 1 of 4</p>
+
+<div class="icon-heading">
+  <Newspaper aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Secondary sources</h1>
+</div>
+
+The idea for the story came from a secondary source, but it wasn't another journalism outlet or a government report. It came from a tip I got in my direct messages on Twitter.
+
+A source of mine with connections in the firefighting community told me he had heard that Compton's firefighters had lost their EMT licenses, but he didn't know more.
+
+When I searched the web, I found that no one had written about this topic.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 2 of 4</p>
+
+<div class="icon-heading">
+  <FileSearch aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Primary documents</h1>
+</div>
+
+I discovered a database of every EMT and paramedic license in the state on a government data portal. But there was no way to search by agency. So I filed a public records request with Compton for its roster.
+
+<Screenshot url="emsa.ca.gov/caemsa?id=license_search" href="https://www.emsa.ca.gov/caemsa?id=license_search" label="California EMSA personnel license search">
+  <img
+    src="{base}/screenshots/peeling-the-onion/emsa-license-search.png"
+    alt="California EMSA Central Registry Public Portal, showing the personnel verification form with fields for names, license type, status, number and certifying entity"
+  />
+</Screenshot>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 3 of 4</p>
+
+<div class="icon-heading">
+  <Users aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Human sources</h1>
+</div>
+
+I found a government document with the 15 busiest EMS agencies in LA County. I called people at the other 14 and confirmed that they required EMS licenses.
+
+<Screenshot url="documentcloud.org" href="https://embed.documentcloud.org/documents/1695054-la-county-ems-agenc-2014-annual-report/#document/p15" label="LA County EMS Agency 2014 annual report, page 15">
+  <img
+    src="{base}/screenshots/peeling-the-onion/la-county-ems-annual-report-page-15.png"
+    alt="Page 15 of the LA County EMS Agency 2014 annual report in DocumentCloud, showing charts of EMS responses by agency from 2009 through 2013"
+  />
+</Screenshot>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 4 of 4</p>
+
+<div class="icon-heading">
+  <Target aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Main subject</h1>
+</div>
+
+My last call was to the fire chief. Because I had proof that one in four firefighters, including the chief himself, lacked a license and that his agency was the only one without a requirement, this necessary conversation was straightforward and professional.
+
+<Screenshot url="latimes.com" href="https://www.latimes.com/local/lanow/la-me-compton-fire-chief-20150707-story.html" label="Los Angeles Times report on the Compton fire chief">
+  <img
+    src="{base}/screenshots/peeling-the-onion/compton-fire-chief.png"
+    alt="Los Angeles Times article by Ben Welsh headlined Compton fire chief put on administrative leave following Times reports, published July 7, 2015"
+  />
+</Screenshot>
+
+</Slide>
