@@ -1,0 +1,223 @@
+<script lang="ts">
+  import Slide from '$lib/components/Slide.svelte';
+  import Notes from '$lib/components/Notes.svelte';
+  import Citation from '$lib/components/Citation.svelte';
+  import OutsideIn from '$lib/components/OutsideIn.svelte';
+</script>
+
+<Slide variant="title">
+
+<p class="slide-eyebrow">Truth-Telling 101 · Week 4</p>
+
+# Peeling the onion
+
+<p class="slide-subtitle">How reporters verify their findings by working from the outside in</p>
+
+<Notes>
+
+This is the basic scaffold for the second lecture. Add a running example before presenting, ideally returning to the eviction reporting from Week 2. Carry the same finding through every verification step.
+
+</Notes>
+
+</Slide>
+
+<Slide variant="statement">
+
+# A finding still needs reporting
+
+<Notes>
+
+Opening discussion: You have a number in a spreadsheet. What would convince you that it describes the world accurately? What could change your interpretation?
+
+Add the finding from the running example here.
+
+</Notes>
+
+</Slide>
+
+<Slide>
+
+# The outside-in model
+
+<OutsideIn />
+
+<Citation>
+
+Source: *The Investigative Reporter's Handbook*, chapter 1, Investigative Reporters and Editors.
+
+</Citation>
+
+<Notes>
+
+Credit the handbook, edited across editions by Brant Houston, with Len Bruzzese and Steve Weinberg on earlier editions.
+
+The chapter describes the approach this way: "Rendered graphically, the approach would resemble concentric circles, with the outermost circle labeled 'secondary sources,' the middle circle called 'primary documents,' and the inner circle, 'human sources.' The main subject of the investigation is at the center."
+
+The diagram shows the handbook's three rings and its center. This class adapts that model into seven practical steps by starting with a check of our own data analysis and separating the human-source groups. The seven-step sequence is our classroom adaptation.
+
+</Notes>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 1 · Your analysis</p>
+
+# Retracing the finding
+
+Reproduce every step from the original data to your result.
+
+Can someone else follow your work and get the same answer?
+
+<Notes>
+
+Add the filters, joins and calculations behind the running example. Show the first place a mistake could change the result.
+
+</Notes>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 2 · Secondary sources</p>
+
+# What's already published
+
+Search for previous reporting on your finding or dataset.
+
+Has anyone identified a limitation you need to check?
+
+<Notes>
+
+Add a prior story or published explanation of the example dataset. Ask whether it offers independent evidence or repeats the same source.
+
+</Notes>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 3 · Primary documents</p>
+
+# An independent check
+
+Find another dataset or set of records that measures the same thing.
+
+Do the numbers agree? If they differ, why?
+
+<Notes>
+
+Add an independent source of records for the running example. Compare definitions, time periods and coverage before comparing totals.
+
+Connect this to Week 3: Census figures add context to an eviction story, but they do not independently confirm an eviction count.
+
+</Notes>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 4 · Human sources</p>
+
+# The people behind the data
+
+Talk to someone inside the institution that created your dataset.
+
+Have you understood what the records measure and how they were collected?
+
+<Notes>
+
+Add the relevant data-producing institution and a role to contact. Prepare questions about definitions, missing records and the analysis.
+
+</Notes>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 5 · Human sources</p>
+
+# Independent experts
+
+Talk to someone with real topic knowledge outside the institution that produced the data.
+
+What explanation or limitation have you missed?
+
+<Notes>
+
+Add a relevant expert for the running example. Explain what makes them independent and what knowledge they bring.
+
+</Notes>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 6 · Human sources</p>
+
+# People in the findings
+
+Report on the real people and places behind your numbers.
+
+Does the finding hold up against their experience?
+
+<Notes>
+
+Add a person or place to visit in the running example. Lived experience can reveal something the data misses. One interview cannot establish how common an experience is.
+
+</Notes>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 7 · The center</p>
+
+# The subject's response
+
+Put your specific findings to the person or institution they implicate before you publish.
+
+Give them a fair chance to respond, then check what they tell you.
+
+<Notes>
+
+Add the subject for the running example. Draft the questions and evidence you would send, with a reasonable response deadline. A response can point to facts that require more reporting.
+
+</Notes>
+
+</Slide>
+
+<Slide>
+
+# Your story's reporting plan
+
+Identify at least one person in each group:
+
+- Inside the institution
+- An independent outside expert
+- A person in your findings
+- Someone who can respond for the subject
+
+Record their role, how to contact them and what you want to ask.
+
+**Bonus points:** Actually contact them.
+
+<Notes>
+
+Use the homework on the Week 4 syllabus page. Students should also review prior reporting, retrace their analysis and look for independent records. Next week they will share their finding, source list and what remains unverified.
+
+</Notes>
+
+</Slide>
+
+<Slide variant="statement">
+
+# What could change your finding?
+
+<Notes>
+
+Close by returning to the running example. Ask students which check they would do next and how a different answer could change the story.
+
+</Notes>
+
+</Slide>

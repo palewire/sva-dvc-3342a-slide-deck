@@ -32,7 +32,7 @@ test('first lecture starts and advances without an index link', async ({ page })
   await expect(page.locator('.slides > section.present h1')).toHaveText('My name is Ben');
 });
 
-test('second lecture has its own slides and placeholder for a visual', async ({ page }) => {
+test('starter example has its own slides and placeholder for a visual', async ({ page }) => {
   await page.goto('./lectures/sample-next/');
 
   await expect(page.locator('.reveal')).toHaveClass(/ready/);
@@ -44,6 +44,33 @@ test('second lecture has its own slides and placeholder for a visual', async ({ 
     page.getByRole('group', { name: 'Placeholder for a chart or screenshot' })
   ).toBeVisible();
   await expect(page.locator('.slides')).not.toContainText('What do you want to know?');
+});
+
+test('verification lecture opens directly and advances through its reporting plan', async ({
+  page
+}) => {
+  await page.goto('./lectures/peeling-the-onion/');
+  await expect(page).toHaveTitle(
+    'Peeling the onion | Truth-Telling 101: Artists Meet Data Journalism'
+  );
+  await expect(page.locator('.reveal')).toHaveClass(/ready/);
+  await expect(page.locator('.slides > section.present h1')).toHaveText('Peeling the onion');
+  await expect(page.locator('aside.notes').first()).toBeHidden();
+
+  await page.keyboard.press('ArrowRight');
+  await expect(page.locator('.slides > section.present h1')).toHaveText(
+    'A finding still needs reporting'
+  );
+  await page.keyboard.press('ArrowRight');
+  await expect(page.getByRole('img', { name: 'Working from the outside in' })).toBeVisible();
+
+  await page.keyboard.press('End');
+  await expect(page.locator('.slides > section.present h1')).toHaveText(
+    'What could change your finding?'
+  );
+  await page.keyboard.press('ArrowLeft');
+  await expect(page.locator('.slides > section.present')).toContainText('Bonus points:');
+  await expect(page.getByRole('link', { name: 'All lectures' })).toHaveCount(0);
 });
 
 test('mobile lecture fits in scroll view', async ({ page }) => {
