@@ -11,10 +11,11 @@ Welsh's Fall 2026 SVA course. Keep it useful for more than one lecture.
 - There is no deck homepage or index. The syllabus site's matching lesson
   detail page owns the link to each finished deck; do not add a link to a
   placeholder deck or a lesson page that is not ready.
-- The repo includes the first lecture, a basic `peeling-the-onion` scaffold
-  for Week 4, and the reusable `sample-next` example. Keep the scaffold
-  unlinked from the syllabus until it is ready. Do not invent dates,
-  assignments, guests, or student details.
+- The repo includes the first lecture, the finished fifteen-slide
+  `peeling-the-onion` lecture for Week 4, and the reusable `sample-next`
+  example. Week 4 covers four reporting steps and the Compton firefighter
+  investigation, with no speaker notes. Do not invent dates, assignments,
+  guests, or student details.
 - Keep blank lines around Markdown inside `<Slide>`, `<Notes>`, and other
   Svelte components in `.svx` files.
 - No archive-specific slides, screenshots, people, or deployment settings

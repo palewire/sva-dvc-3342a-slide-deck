@@ -2,14 +2,14 @@
 
 A clean, multi-lecture presentation starter for Ben Welsh's School of Visual Arts
 course, **Truth-Telling 101: Artists Meet Data Journalism**. It uses SvelteKit,
-Reveal.js, and MDsveX. The repo contains the first lecture, a basic scaffold for
-“Peeling the onion,” and a reusable sample deck.
+Reveal.js, and MDsveX. The repo contains the first lecture, the finished Week 4
+lecture “Peeling the onion,” and a reusable sample deck.
 
 The shared design follows the course syllabus: Ringside headings, a white
 canvas, red and cyan accents, and thin blue rules. The “Peeling the onion”
-scaffold has twelve slides covering the credited outside-in model, seven
-verification steps and the Week 4 homework. Its speaker notes mark where to add
-a running example before presenting.
+lecture has fifteen slides covering the outside-in model and four reporting
+steps, illustrated by Ben Welsh’s Compton firefighter investigation. It has no
+speaker notes.
 
 ## Run it
 
@@ -30,8 +30,7 @@ screens, Reveal.js switches to a vertically scrollable view. Add
 
 The syllabus site owns navigation. Once a real lecture and its matching lesson
 detail page are ready, link to the deck's published direct URL from that lesson
-page. Keep the “Peeling the onion” scaffold unlinked until it is ready.
-The sample deck is not linked from the syllabus.
+page. The sample deck is not linked from the syllabus.
 
 ## Add a lecture
 

@@ -1,8 +1,9 @@
 <script lang="ts">
   import Slide from '$lib/components/Slide.svelte';
-  import Notes from '$lib/components/Notes.svelte';
-  import Citation from '$lib/components/Citation.svelte';
+  import Screenshot from '$lib/components/Screenshot.svelte';
   import OutsideIn from '$lib/components/OutsideIn.svelte';
+  import { base } from '$app/paths';
+  import { FileSearch, Newspaper, Target, Users } from '@lucide/svelte';
 </script>
 
 <Slide variant="title">
@@ -11,213 +12,216 @@
 
 # Peeling the onion
 
-<p class="slide-subtitle">How reporters verify their findings by working from the outside in</p>
-
-<Notes>
-
-This is the basic scaffold for the second lecture. Add a running example before presenting, ideally returning to the eviction reporting from Week 2. Carry the same finding through every verification step.
-
-</Notes>
+<p class="slide-subtitle slide-subtitle-wide">How reporters dig out the truth by working from the outside in</p>
 
 </Slide>
 
 <Slide variant="statement">
 
-# A finding still needs reporting
-
-<Notes>
-
-Opening discussion: You have a number in a spreadsheet. What would convince you that it describes the world accurately? What could change your interpretation?
-
-Add the finding from the running example here.
-
-</Notes>
+# Who are these men?
 
 </Slide>
 
 <Slide>
 
-# The outside-in model
+<img
+  src="{base}/screenshots/peeling-the-onion/woodward-bernstein-1973.jpg"
+  alt="Carl Bernstein, left, and Bob Woodward together in Washington, D.C., in 1973"
+  class="standalone-photo"
+/>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">After Watergate</p>
+
+# Industrializing investigative reporting
+
+The generation of journalists that followed Woodward and Bernstein started writing down the recipes.
+
+<img
+  src="{base}/screenshots/peeling-the-onion/the-new-muckrakers-mockup.png"
+  alt="3D book mockup of The New Muckrakers by Leonard Downie Jr., published in 1976"
+  class="cover-image"
+/>
+
+</Slide>
+
+<Slide variant="statement">
+
+# Working from the outside in
+
+</Slide>
+
+<Slide>
 
 <OutsideIn />
 
-<Citation>
+</Slide>
 
-Source: *The Investigative Reporter's Handbook*, chapter 1, Investigative Reporters and Editors.
+<Slide>
 
-</Citation>
+<p class="slide-eyebrow">Step 1 of 4</p>
 
-<Notes>
+<div class="icon-heading">
+  <Newspaper aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Secondary sources</h1>
+</div>
 
-Credit the handbook, edited across editions by Brant Houston, with Len Bruzzese and Steve Weinberg on earlier editions.
+Start with what's already been published. Search for reporting by others on the topic you're interested in. What's already been done? What datasets are other journalists utilizing? What questions could you answer to break new ground and go beyond what's already out there?
 
-The chapter describes the approach this way: "Rendered graphically, the approach would resemble concentric circles, with the outermost circle labeled 'secondary sources,' the middle circle called 'primary documents,' and the inner circle, 'human sources.' The main subject of the investigation is at the center."
-
-The diagram shows the handbook's three rings and its center. This class adapts that model into seven practical steps by starting with a check of our own data analysis and separating the human-source groups. The seven-step sequence is our classroom adaptation.
-
-</Notes>
+<div class="step-example">
+  <p class="step-example-label">Example</p>
+  <p>If you're interested in writing about the mayor's new childcare program, you should seek out every news story you can find online about its creation, as well as any legislation, academic research and other scholarship on the program.</p>
+</div>
 
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Step 1 · Your analysis</p>
+<p class="slide-eyebrow">Step 2 of 4</p>
 
-# Retracing the finding
+<div class="icon-heading">
+  <FileSearch aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Primary documents</h1>
+</div>
 
-Reproduce every step from the original data to your result.
+These are the documents and data that directly address your questions and allow you to establish facts and findings. Typically, they are created either by your main subject or by an authoritative source that directly oversees or studies your main subject. You should try to diversify these sources to expand your knowledge and cross-check your findings.
 
-Can someone else follow your work and get the same answer?
-
-<Notes>
-
-Add the filters, joins and calculations behind the running example. Show the first place a mistake could change the result.
-
-</Notes>
-
-</Slide>
-
-<Slide>
-
-<p class="slide-eyebrow">Step 2 · Secondary sources</p>
-
-# What's already published
-
-Search for previous reporting on your finding or dataset.
-
-Has anyone identified a limitation you need to check?
-
-<Notes>
-
-Add a prior story or published explanation of the example dataset. Ask whether it offers independent evidence or repeats the same source.
-
-</Notes>
+<div class="step-example">
+  <p class="step-example-label">Example</p>
+  <p>The datasets we've been working with from the New York City data portal are examples of primary documents. If you're studying the operations of the New York City Police Department, using the portal's crime reports dataset is one way to analyze the department's activity, but not the only way.</p>
+</div>
 
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Step 3 · Primary documents</p>
+<p class="slide-eyebrow">Step 3 of 4</p>
 
-# An independent check
+<div class="icon-heading">
+  <Users aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Human sources</h1>
+</div>
 
-Find another dataset or set of records that measures the same thing.
+Documents and data can take on new meaning after you learn more about the context in which they were created and the events they describe. There's no substitute for interviewing human sources who created your primary documents. If they're not helpful, you can often find experts on the sources you're studying who can help you.
 
-Do the numbers agree? If they differ, why?
-
-<Notes>
-
-Add an independent source of records for the running example. Compare definitions, time periods and coverage before comparing totals.
-
-Connect this to Week 3: Census figures add context to an eviction story, but they do not independently confirm an eviction count.
-
-</Notes>
+<div class="step-example">
+  <p class="step-example-label">Example</p>
+  <p>Your database analysis may suggest that a certain city employee received an exorbitant paycheck last year. How you interpret that might differ if you learned from the city manager that the paycheck included a large settlement following an on-the-job injury. An auditor who routinely analyzes city budgets could help you understand if such accounting is commonplace.</p>
+</div>
 
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Step 4 · Human sources</p>
+<p class="slide-eyebrow">Step 4 of 4</p>
 
-# The people behind the data
+<div class="icon-heading">
+  <Target aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Main subject</h1>
+</div>
 
-Talk to someone inside the institution that created your dataset.
+This is the person, place or institution your story will be about. You should always share your evidence with them before you publish, giving them a fair chance to respond and an opportunity to correct your understanding.
 
-Have you understood what the records measure and how they were collected?
-
-<Notes>
-
-Add the relevant data-producing institution and a role to contact. Prepare questions about definitions, missing records and the analysis.
-
-</Notes>
-
-</Slide>
-
-<Slide>
-
-<p class="slide-eyebrow">Step 5 · Human sources</p>
-
-# Independent experts
-
-Talk to someone with real topic knowledge outside the institution that produced the data.
-
-What explanation or limitation have you missed?
-
-<Notes>
-
-Add a relevant expert for the running example. Explain what makes them independent and what knowledge they bring.
-
-</Notes>
+<div class="step-example">
+  <p class="step-example-label">Example</p>
+  <p>If you're writing a story about the top campaign donor to a local candidate, you should give them an opportunity to comment, not just to verify your findings, but also to include their motivations and thinking in your reporting, which could help better inform your audience.</p>
+</div>
 
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Step 6 · Human sources</p>
+<p class="slide-eyebrow">Another lap</p>
 
-# People in the findings
+# Now let's do my story
 
-Report on the real people and places behind your numbers.
+Here's how I approached each of the four steps.
 
-Does the finding hold up against their experience?
-
-<Notes>
-
-Add a person or place to visit in the running example. Lived experience can reveal something the data misses. One interview cannot establish how common an experience is.
-
-</Notes>
-
-</Slide>
-
-<Slide>
-
-<p class="slide-eyebrow">Step 7 · The center</p>
-
-# The subject's response
-
-Put your specific findings to the person or institution they implicate before you publish.
-
-Give them a fair chance to respond, then check what they tell you.
-
-<Notes>
-
-Add the subject for the running example. Draft the questions and evidence you would send, with a reasonable response deadline. A response can point to facts that require more reporting.
-
-</Notes>
+<Screenshot url="latimes.com" href="https://www.latimes.com/local/lanow/la-me-ln-compton-firefighters-without-emt-permit-20150326-story.html" label="Ben Welsh's Compton firefighter investigation">
+  <img
+    src="{base}/screenshots/peeling-the-onion/compton-firefighters-story.png"
+    alt="Los Angeles Times story by Ben Welsh: Nearly 1 in 4 Compton firefighters is working without an EMT permit, showing the headline, fire engines and byline"
+  />
+</Screenshot>
 
 </Slide>
 
 <Slide>
 
-# Your story's reporting plan
+<p class="slide-eyebrow">Step 1 of 4</p>
 
-Identify at least one person in each group:
+<div class="icon-heading">
+  <Newspaper aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Secondary sources</h1>
+</div>
 
-- Inside the institution
-- An independent outside expert
-- A person in your findings
-- Someone who can respond for the subject
+The idea for the story came from a secondary source, but it wasn't another journalism outlet or a government report. It came from a tip I got in my direct messages on Twitter.
 
-Record their role, how to contact them and what you want to ask.
+A source of mine with connections in the firefighting community told me he had heard that Compton's firefighters had lost their EMT licenses, but he didn't know more.
 
-**Bonus points:** Actually contact them.
-
-<Notes>
-
-Use the homework on the Week 4 syllabus page. Students should also review prior reporting, retrace their analysis and look for independent records. Next week they will share their finding, source list and what remains unverified.
-
-</Notes>
+When I searched the web, I found that no one had written about this topic.
 
 </Slide>
 
-<Slide variant="statement">
+<Slide>
 
-# What could change your finding?
+<p class="slide-eyebrow">Step 2 of 4</p>
 
-<Notes>
+<div class="icon-heading">
+  <FileSearch aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Primary documents</h1>
+</div>
 
-Close by returning to the running example. Ask students which check they would do next and how a different answer could change the story.
+I discovered a database of every EMT and paramedic license in the state on a government data portal. But there was no way to search by agency. So I filed a public records request with Compton for its roster.
 
-</Notes>
+<Screenshot url="emsa.ca.gov/caemsa?id=license_search" href="https://www.emsa.ca.gov/caemsa?id=license_search" label="California EMSA personnel license search">
+  <img
+    src="{base}/screenshots/peeling-the-onion/emsa-license-search.png"
+    alt="California EMSA Central Registry Public Portal, showing the personnel verification form with fields for names, license type, status, number and certifying entity"
+  />
+</Screenshot>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 3 of 4</p>
+
+<div class="icon-heading">
+  <Users aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Human sources</h1>
+</div>
+
+I found a government document with the 15 busiest EMS agencies in LA County. I called people at the other 14 and confirmed that they required EMS licenses.
+
+<Screenshot url="documentcloud.org" href="https://embed.documentcloud.org/documents/1695054-la-county-ems-agenc-2014-annual-report/#document/p15" label="LA County EMS Agency 2014 annual report, page 15">
+  <img
+    src="{base}/screenshots/peeling-the-onion/la-county-ems-annual-report-page-15.png"
+    alt="Page 15 of the LA County EMS Agency 2014 annual report in DocumentCloud, showing charts of EMS responses by agency from 2009 through 2013"
+  />
+</Screenshot>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Step 4 of 4</p>
+
+<div class="icon-heading">
+  <Target aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Main subject</h1>
+</div>
+
+My last call was to the fire chief. Because I had proof that one in four firefighters, including the chief himself, lacked a license and that his agency was the only one without a requirement, this necessary conversation was straightforward and professional.
+
+<Screenshot url="latimes.com" href="https://www.latimes.com/local/lanow/la-me-compton-fire-chief-20150707-story.html" label="Los Angeles Times report on the Compton fire chief">
+  <img
+    src="{base}/screenshots/peeling-the-onion/compton-fire-chief.png"
+    alt="Los Angeles Times article by Ben Welsh headlined Compton fire chief put on administrative leave following Times reports, published July 7, 2015"
+  />
+</Screenshot>
 
 </Slide>
