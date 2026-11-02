@@ -141,12 +141,12 @@ A sweeping paragraph that establishes the stakes and tells readers why the story
   <h1>The findings</h1>
 </div>
 
-The specific, newsworthy pattern in the data. A comparison gives the number meaning.
+The specific numbers that support the story with clearly stated sourcing.
 
 <div class="step-example">
-  <p class="step-example-label">Example</p>
-  <p>“The score proved remarkably unreliable in forecasting violent crime: Only 20 percent of the people predicted to commit violent crimes actually went on to do so.”</p>
-  <p class="step-example-source">“Machine Bias” · ProPublica · May 23, 2016</p>
+  <p class="step-example-label">Examples</p>
+  <p>“Of the roughly $146,000 in donations reported for the filing period of July 12 to Oct. 7, only $250 was contributed after news broke of his indictment, according to the New York City Campaign Finance Board.”</p>
+  <p>“Drawing on thousands of pages of court records, disciplinary data and interviews with dozens of current and former inmates, The Times identified more than 120 instances in the past decade in which guards were described as having punched, kicked or stomped on prisoners, smashed their fingers in cell doors, held their legs apart and struck their genitals with batons, and even waterboarded them — all while the prisoners were handcuffed or otherwise restrained.”</p>
 </div>
 
 </Slide>
