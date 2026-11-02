@@ -188,7 +188,10 @@ Here’s how we provided each of the four elements.
 
 <p class="slide-eyebrow">Element 1 of 4</p>
 
-# The delayed lead
+<div class="icon-heading">
+  <PenLine aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>The delayed lead</h1>
+</div>
 
 <blockquote class="excerpt">
 
@@ -210,7 +213,10 @@ A Times analysis of wildfire hazard across California found that hundreds of com
 
 <p class="slide-eyebrow">Element 2 of 4</p>
 
-# The nut graf
+<div class="icon-heading">
+  <Nut aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>The nut graf</h1>
+</div>
 
 <blockquote class="excerpt">
 
@@ -226,7 +232,10 @@ The findings follow a fire season of unprecedented destruction — nearly 20,000
 
 <p class="slide-eyebrow">Element 3 of 4</p>
 
-# The findings
+<div class="icon-heading">
+  <ChartColumn aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>The findings</h1>
+</div>
 
 <blockquote class="excerpt">
 
@@ -244,7 +253,10 @@ San Diego is second with more than 88,000 structures. Among the top 10 are Santa
 
 <p class="slide-eyebrow">Element 4 of 4</p>
 
-# The caveats
+<div class="icon-heading">
+  <TriangleAlert aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>The caveats</h1>
+</div>
 
 <blockquote class="excerpt">
 
