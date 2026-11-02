@@ -1,0 +1,217 @@
+<script lang="ts">
+  import Slide from '$lib/components/Slide.svelte';
+  import Citation from '$lib/components/Citation.svelte';
+  import {
+    ArrowRight,
+    BarChart3,
+    Heading1,
+    TriangleAlert
+  } from '@lucide/svelte';
+</script>
+
+<Slide variant="title">
+
+<p class="slide-eyebrow">Truth-Telling 101 · Week 5</p>
+
+# Take it from the top
+
+<p class="slide-subtitle slide-subtitle-wide">The stereotypical elements every data story’s opening is built from</p>
+
+</Slide>
+
+<Slide variant="statement">
+
+# Verification tells us if a finding is true.
+
+## The top tells readers why it matters.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Element 1 of 5</p>
+
+<div class="icon-heading">
+  <Heading1 aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Headline</h1>
+</div>
+
+The one-line claim of the story. Make the finding clear enough that a reader can grasp what is newsworthy at a glance.
+
+<div class="step-example">
+  <p class="step-example-label">Ask</p>
+  <p>What is the most important thing we learned?</p>
+</div>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Element 2 of 5</p>
+
+<div class="icon-heading">
+  <ArrowRight aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Lead</h1>
+</div>
+
+Two basic forms, described by writing instructor Melvin Mencher:
+
+<div class="step-example">
+  <p class="step-example-label">Direct</p>
+  <p>State the finding immediately, like a bulletin.</p>
+</div>
+
+<div class="step-example">
+  <p class="step-example-label">Delayed</p>
+  <p>Begin with a person, scene, question or comparison; arrive at the finding later.</p>
+</div>
+
+<p class="slide-citation">Melvin Mencher, “The Lead”</p>
+
+<p class="slide-citation">Anecdotal, question and other named lead types are variations on these two forms.</p>
+
+</Slide>
+
+<Slide variant="quote">
+
+<p class="slide-eyebrow">Element 3 of 5 · Nut graf</p>
+
+# “Its nut graf should tell a reader why it is important and include a rough outline of the story that could emerge.”
+
+<p class="quote-attribution">Sarah Cohen · Columbia University Stabile Seminar syllabus, 2014</p>
+
+<p class="slide-citation">Why it matters, who is affected, and what the story will explain.</p>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Element 4 of 5</p>
+
+<div class="icon-heading">
+  <BarChart3 aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>The finding</h1>
+</div>
+
+Show the specific, newsworthy pattern. A comparison gives the number meaning: a rate against a benchmark, or this year against last.
+
+<div class="step-example">
+  <p class="step-example-label">Make it concrete</p>
+  <p>How much? Compared with what?</p>
+</div>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Element 5 of 5</p>
+
+<div class="icon-heading">
+  <TriangleAlert aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>Caveats</h1>
+</div>
+
+State the honest limits of the data plainly. Tell readers what the analysis cannot show, and what it leaves out.
+
+<div class="step-example">
+  <p class="step-example-label">A useful reminder</p>
+  <p>“Editors are not interested in process. Don’t fill the memo with what steps you took.”</p>
+</div>
+
+<p class="slide-citation">— Mussenden</p>
+
+</Slide>
+
+<Slide variant="statement">
+
+# Now let’s find all five in a real story.
+
+## Doug Smith and Ben Welsh · Los Angeles Times · Dec. 18, 2018
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Element 1 · Headline</p>
+
+# A million California buildings face wildfire risk.
+
+## “Extraordinary steps” are needed to protect them.
+
+<p class="slide-citation">Doug Smith and Ben Welsh · Los Angeles Times · Dec. 18, 2018</p>
+
+<Citation href="https://web.archive.org/web/20181218194516/https://www.latimes.com/projects/la-me-california-buildings-in-fire-zones/">Archived story · Los Angeles Times</Citation>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Element 2 · Lead</p>
+
+# Delayed
+
+> “Minutes after fire broke out in Woolsey Canyon, a community 12 miles to the south went into action.”
+
+The story gives readers a scene first. The finding arrives four paragraphs later.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Element 3 · Nut graf</p>
+
+> “A Times analysis of wildfire hazard across California found that hundreds of communities from Redding to San Diego are at high risk of deadly wildfires like those in Paradise and Malibu last month.”
+
+## The stakes
+
+“The findings follow a fire season of unprecedented destruction — nearly 20,000 homes lost, more than 100 people killed.”
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Element 4 · The finding</p>
+
+# More than 1.1 million structures
+
+## Roughly 1 in 10 buildings in California
+
+lie within the highest-risk fire zones.
+
+Los Angeles tops the list with at least 114,000 structures; San Diego is second with more than 88,000.
+
+<Citation href="https://web.archive.org/web/20181218194516/https://www.latimes.com/projects/la-me-california-buildings-in-fire-zones/">Story map: “At least 1.1 million California buildings are in a very severe hazard zone” · archived Los Angeles Times story</Citation>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Element 5 · Caveats</p>
+
+# The total is probably higher.
+
+> “The Microsoft database of building footprints employed in the analysis, among the most complete lists available, is not comprehensive.”
+
+The analysis also excludes portions of the state under federal responsibility.
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Showing your work</p>
+
+# Make the method inspectable.
+
+The story’s methodology note names Cal Fire hazard maps, Census Bureau place boundaries and Microsoft’s building-footprint database.
+
+<Citation href="https://github.com/datadesk/california-fire-zone-analysis">Open-source analysis · github.com/datadesk/california-fire-zone-analysis</Citation>
+
+</Slide>
+
+<Slide variant="statement">
+
+# Now it’s your turn.
+
+## Sketch the top of your story.
+
+</Slide>

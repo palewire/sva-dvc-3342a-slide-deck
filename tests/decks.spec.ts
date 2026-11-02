@@ -91,6 +91,32 @@ test('verification lecture opens directly and advances through its reporting exa
   await expect(page.getByRole('link', { name: 'All lectures' })).toHaveCount(0);
 });
 
+test('Week 5 lecture presents the five elements and the wildfire example', async ({
+  page
+}) => {
+  await page.goto('./lectures/take-it-from-the-top/');
+
+  await expect(page).toHaveTitle(
+    'Take it from the top | Truth-Telling 101: Artists Meet Data Journalism'
+  );
+  await expect(page.locator('.reveal')).toHaveClass(/ready/);
+  await expect(page.locator('.slides > section')).toHaveCount(15);
+  await expect(page.locator('.slides > section.present h1')).toHaveText(
+    'Take it from the top'
+  );
+
+  await page.keyboard.press('End');
+  await expect(page.locator('.slides > section.present h1')).toHaveText('Now it’s your turn.');
+  await page.keyboard.press('ArrowLeft');
+  await expect(page.locator('.slides > section.present')).toContainText(
+    'california-fire-zone-analysis'
+  );
+  await page.keyboard.press('ArrowLeft');
+  await expect(page.locator('.slides > section.present h1')).toHaveText(
+    'The total is probably higher.'
+  );
+});
+
 test('mobile lecture fits in scroll view', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto('./lectures/social-science-in-a-hurry/');

@@ -17,6 +17,11 @@ export const lectures = [
     description: 'How reporters verify their findings by working from the outside in'
   },
   {
+    slug: 'take-it-from-the-top',
+    title: 'Take it from the top',
+    description: 'Five elements of a data story’s opening, from headline to caveats.'
+  },
+  {
     slug: 'sample-next',
     title: 'Your next lecture',
     description: 'A second deck showing how independent lectures share the same design.'
