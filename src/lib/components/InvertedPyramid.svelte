@@ -1,14 +1,14 @@
 <svg
   class="inverted-pyramid"
-  viewBox="0 0 600 600"
+  viewBox="0 0 800 600"
   role="img"
   aria-labelledby="inverted-pyramid-title inverted-pyramid-description"
 >
   <title id="inverted-pyramid-title">The inverted pyramid</title>
   <desc id="inverted-pyramid-description">
-    A downward-pointing triangle in three blue layers that grow lighter and narrower from top
-    to bottom: the lead with the most important facts, key details with evidence, and
-    background with context.
+    A downward-pointing triangle in three blue layers that fade from strong at the top to faint
+    at the bottom. An arrow beside it runs from "Most important" at the top to "Least
+    important" at the bottom.
   </desc>
   <defs>
     <clipPath id="inverted-pyramid-clip">
@@ -20,18 +20,10 @@
     <rect class="details" x="0" y="200" width="600" height="160" />
     <rect class="background" x="0" y="360" width="600" height="220" />
   </g>
-  <text class="layer-label" x="300" y="115">
-    <tspan x="300">The lead</tspan>
-    <tspan class="layer-sub" x="300" dy="30">Who, what, when, where, why</tspan>
-  </text>
-  <text class="layer-label dark" x="300" y="268">
-    <tspan x="300">Key details</tspan>
-    <tspan class="layer-sub" x="300" dy="30">Evidence, quotes, numbers</tspan>
-  </text>
-  <text class="layer-label dark" x="300" y="402">
-    <tspan x="300">Background</tspan>
-    <tspan class="layer-sub" x="300" dy="26">Context, history</tspan>
-  </text>
+  <line class="arrow" x1="680" y1="150" x2="680" y2="490" />
+  <polygon class="arrowhead" points="656,485 704,485 680,525" />
+  <text class="end-label" x="680" y="108">Most important</text>
+  <text class="end-label faint" x="680" y="568">Least important</text>
 </svg>
 
 <style>
@@ -49,26 +41,31 @@
   }
 
   .details {
-    fill: color-mix(in srgb, var(--sva-blue) 70%, var(--white));
+    fill: color-mix(in srgb, var(--sva-blue) 55%, var(--white));
   }
 
   .background {
-    fill: color-mix(in srgb, var(--sva-blue) 50%, var(--white));
+    fill: color-mix(in srgb, var(--sva-blue) 25%, var(--white));
   }
 
-  .layer-label {
-    fill: var(--white);
-    text-anchor: middle;
-    font-size: 28px;
-    font-weight: 700;
+  .arrow {
+    stroke: var(--sva-charcoal);
+    stroke-width: 5;
+    stroke-linecap: round;
   }
 
-  .layer-label.dark {
+  .arrowhead {
     fill: var(--sva-charcoal);
   }
 
-  .layer-sub {
-    font-size: 19px;
-    font-weight: 600;
+  .end-label {
+    fill: var(--sva-charcoal);
+    text-anchor: middle;
+    font-size: 34px;
+    font-weight: 700;
+  }
+
+  .end-label.faint {
+    fill: color-mix(in srgb, var(--sva-charcoal) 75%, var(--white));
   }
 </style>
