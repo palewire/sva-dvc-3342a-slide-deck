@@ -191,7 +191,13 @@ Here’s how I approached each of the four steps.
 
 # Delayed
 
-> “Minutes after fire broke out in Woolsey Canyon, a community 12 miles to the south went into action.”
+> Minutes after fire broke out in Woolsey Canyon, a community 12 miles to the south went into action.
+>
+> Alerted by 911 calls they were monitoring on a red-flag day, volunteers with the Topanga Coalition for Emergency Preparedness headed to the town’s emergency operations center to open back channels to county sheriff’s and fire officials, answer hotline calls, tweet updates and, if it came to that, help send out the evacuation order.
+>
+> In one sense Topanga is a rarity — a hypervigilant community still roused by the memory of a 1993 fire that left three people dead and destroyed nearly 400 houses.
+>
+> But there is nothing unusual about the risk of living there.
 
 The story gives readers a scene first. The finding arrives four paragraphs later.
 
