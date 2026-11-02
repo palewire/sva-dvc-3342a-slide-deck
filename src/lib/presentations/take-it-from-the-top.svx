@@ -105,8 +105,8 @@ The opening of the story. A direct lead states the finding right away, like a bu
 
 <div class="step-example">
   <p class="step-example-label">Example</p>
-  <p>“On a spring afternoon in 2014, Brisha Borden was running late to pick up her god-sister from school when she spotted an unlocked kid’s blue Huffy bicycle and a silver Razor scooter.”</p>
-  <p class="step-example-source">“Machine Bias” · ProPublica · May 23, 2016</p>
+  <p>“Trump administration special envoy Steve Witkoff and several other wealthy property owners are getting an expensive surprise, courtesy of New York City Mayor Zohran Mamdani’s new pied-à-terre tax.”</p>
+  <p class="step-example-source">Caitlin Ostoff · The Wall Street Journal</p>
 </div>
 
 </Slide>
