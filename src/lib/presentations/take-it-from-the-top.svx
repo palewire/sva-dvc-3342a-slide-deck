@@ -12,7 +12,7 @@
 
 # Take it from the top
 
-<p class="slide-subtitle slide-subtitle-wide">The standard structure of a data-driven news story</p>
+<p class="slide-subtitle slide-subtitle-wide">The four fundamentals of a data-driven news story</p>
 
 </Slide>
 
