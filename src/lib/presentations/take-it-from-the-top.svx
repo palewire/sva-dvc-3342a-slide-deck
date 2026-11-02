@@ -39,21 +39,17 @@
 
 <Slide>
 
-<img
-  src="{base}/screenshots/take-it-from-the-top/newspaper-row.jpg"
-  alt="Newspaper Row in New York City around 1900, with the gold-domed Pulitzer Building, home of the New York World, beside the Tribune Building and its clock tower"
-  class="standalone-photo"
-/>
-
-</Slide>
-
-<Slide>
-
 <p class="slide-eyebrow">The Progressive Era</p>
 
 # Facts first, in a neutral voice
 
 Publishers like Joseph Pulitzer championed journalism schools and a new generation of college-educated reporters. Trained in science and reform, they dropped the ornate storytelling of the 1800s for a direct, neutral style that put the facts first.
+
+<img
+  src="{base}/screenshots/take-it-from-the-top/newspaper-row.jpg"
+  alt="Newspaper Row in New York City around 1900, with the gold-domed Pulitzer Building, home of the New York World, beside the Tribune Building and its clock tower"
+  class="cover-image"
+/>
 
 </Slide>
 
