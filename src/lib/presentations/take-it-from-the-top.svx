@@ -1,6 +1,7 @@
 <script lang="ts">
   import Slide from '$lib/components/Slide.svelte';
   import Citation from '$lib/components/Citation.svelte';
+  import Screenshot from '$lib/components/Screenshot.svelte';
   import InvertedPyramid from '$lib/components/InvertedPyramid.svelte';
   import { base } from '$app/paths';
   import { ChartColumn, Nut, PenLine, TriangleAlert } from '@lucide/svelte';
@@ -167,11 +168,20 @@ The honest limits of the data, stated plainly. What the analysis cannot show, an
 
 </Slide>
 
-<Slide variant="statement">
+<Slide>
 
-# Now let’s find all four in a real story.
+<p class="slide-eyebrow">Another lap</p>
 
-## Doug Smith and Ben Welsh · Los Angeles Times · Dec. 18, 2018
+# Now let’s do my story
+
+Here’s how I approached each of the four steps.
+
+<Screenshot url="latimes.com" href="https://web.archive.org/web/20181218194516/https://www.latimes.com/projects/la-me-california-buildings-in-fire-zones/" label="Doug Smith and Ben Welsh's Los Angeles Times story on California buildings in wildfire zones">
+  <img
+    src="{base}/screenshots/take-it-from-the-top/la-times-wildfire-story.jpg"
+    alt="Los Angeles Times story by Doug Smith and Ben Welsh, dated Dec. 18, 2018: A million California buildings face wildfire risk. ‘Extraordinary steps’ are needed to protect them, over a photo of smoke rising behind hillside homes"
+  />
+</Screenshot>
 
 </Slide>
 
