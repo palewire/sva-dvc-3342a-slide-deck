@@ -1,6 +1,8 @@
 <script lang="ts">
   import Slide from '$lib/components/Slide.svelte';
   import Citation from '$lib/components/Citation.svelte';
+  import InvertedPyramid from '$lib/components/InvertedPyramid.svelte';
+  import { base } from '$app/paths';
   import {
     ArrowRight,
     BarChart3,
@@ -15,7 +17,55 @@
 
 # Take it from the top
 
-<p class="slide-subtitle slide-subtitle-wide">The stereotypical elements every data story’s opening is built from</p>
+<p class="slide-subtitle slide-subtitle-wide">The standard structure of a data-driven news story</p>
+
+</Slide>
+
+<Slide variant="statement">
+
+# Who is this man?
+
+</Slide>
+
+<Slide>
+
+<img
+  src="{base}/screenshots/take-it-from-the-top/joseph-pulitzer.jpg"
+  alt="Joseph Pulitzer in profile, facing left, photographed by Benjamin J. Falk around 1884"
+  class="standalone-photo"
+/>
+
+</Slide>
+
+<Slide>
+
+<img
+  src="{base}/screenshots/take-it-from-the-top/newspaper-row.jpg"
+  alt="Newspaper Row in New York City around 1900, with the gold-domed Pulitzer Building, home of the New York World, beside the Tribune Building and its clock tower"
+  class="standalone-photo"
+/>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">The Progressive Era</p>
+
+# Facts first, in a neutral voice
+
+Publishers like Joseph Pulitzer championed journalism schools and a new generation of college-educated reporters. Trained in science and reform, they dropped the ornate storytelling of the 1800s for a direct, neutral style that put the facts first.
+
+</Slide>
+
+<Slide variant="statement">
+
+# The inverted pyramid
+
+</Slide>
+
+<Slide>
+
+<InvertedPyramid />
 
 </Slide>
 
