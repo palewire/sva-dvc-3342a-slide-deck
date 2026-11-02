@@ -6,8 +6,8 @@
 >
   <title id="inverted-pyramid-title">The inverted pyramid</title>
   <desc id="inverted-pyramid-description">
-    A downward-pointing triangle in three blue layers that grow lighter and narrower from top to
-    bottom: the lead with the most important facts, key details, and background.
+    A downward-pointing triangle in three blue layers that grow lighter and narrower from top
+    to bottom: the lead with the most important facts, key details, and background.
   </desc>
   <defs>
     <clipPath id="inverted-pyramid-clip">
