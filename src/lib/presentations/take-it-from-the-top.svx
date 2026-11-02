@@ -106,9 +106,9 @@ The opening of the story. A direct lead states the finding right away, like a bu
 <div class="step-example">
   <p class="step-example-label">Examples</p>
   <p>“Trump administration special envoy Steve Witkoff and several other wealthy property owners are getting an expensive surprise, courtesy of New York City Mayor Zohran Mamdani’s new pied-à-terre tax.”</p>
-  <p class="step-example-source">Direct · Caitlin Ostoff · The Wall Street Journal</p>
+  <p class="step-example-source">Direct</p>
   <p>“The day Israel voted in its consequential election this week, Kalshi Chief Executive Tarek Mansour was in Midtown Manhattan defending the accuracy of his platform.”</p>
-  <p class="step-example-source">Delayed · Caitlin Ostoff · The Wall Street Journal</p>
+  <p class="step-example-source">Delayed</p>
 </div>
 
 </Slide>
