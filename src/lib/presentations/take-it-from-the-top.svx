@@ -1,0 +1,273 @@
+<script lang="ts">
+  import Slide from '$lib/components/Slide.svelte';
+  import Screenshot from '$lib/components/Screenshot.svelte';
+  import InvertedPyramid from '$lib/components/InvertedPyramid.svelte';
+  import { base } from '$app/paths';
+  import { ChartColumn, Nut, PenLine, TriangleAlert } from '@lucide/svelte';
+</script>
+
+<Slide variant="title">
+
+<p class="slide-eyebrow">Truth-Telling 101 · Week 5</p>
+
+# Take it from the top
+
+<p class="slide-subtitle slide-subtitle-wide">The four fundamentals of data-driven news writing</p>
+
+</Slide>
+
+<Slide variant="statement">
+
+# Who is this man?
+
+</Slide>
+
+<Slide>
+
+<img
+  src="{base}/screenshots/take-it-from-the-top/samuel-morse.jpg"
+  alt="Samuel F. B. Morse standing in a dark overcoat, one hand resting on a telegraph apparatus, photographed by Mathew Brady around 1850"
+  class="standalone-photo"
+/>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">The antebellum internet</p>
+
+# Bare facts first
+
+The telegram created a new market for short, direct dispatches.
+
+<img
+  src="{base}/screenshots/take-it-from-the-top/reuters-memorandum.jpg"
+  alt="Memorandum from Reuter's Telegram Company to agents and correspondents, dated London, November 1883, asking that the bare fact be first telegraphed with the utmost promptitude, followed by a descriptive account"
+  class="cover-image"
+/>
+
+</Slide>
+
+<Slide variant="statement">
+
+# Who is this man?
+
+</Slide>
+
+<Slide>
+
+<img
+  src="{base}/screenshots/take-it-from-the-top/joseph-pulitzer.jpg"
+  alt="Joseph Pulitzer in profile, facing left, photographed by Benjamin J. Falk around 1884"
+  class="standalone-photo"
+/>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">The progressive voice</p>
+
+# Playing it straight
+
+In the 1890s, reformers championed a more “scientific” approach to news writing.
+
+<img
+  src="{base}/screenshots/take-it-from-the-top/newspaper-row.jpg"
+  alt="Newspaper Row in New York City around 1900, with the gold-domed Pulitzer Building, home of the New York World, beside the Tribune Building and its clock tower"
+  class="cover-image"
+/>
+
+</Slide>
+
+<Slide variant="statement">
+
+# The inverted pyramid
+
+</Slide>
+
+<Slide>
+
+<InvertedPyramid />
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Element 1 of 4</p>
+
+<div class="icon-heading">
+  <PenLine aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>The lead</h1>
+</div>
+
+The opening hook of the story. Comes in many shapes and sizes. Direct leads state the finding right away. Delayed leads use an anecdote or writerly trick to entice the reader.
+
+<div class="step-example">
+  <p class="step-example-label">Examples</p>
+  <p>“Traders on the prediction market Kalshi have made almost one million trades in a single market since August that were in nearly identical amounts, unusual activity that has caught the eyes of federal regulators and traders.”</p>
+  <p class="step-example-source">Direct</p>
+  <p>“The day Israel voted in its consequential election this week, Kalshi Chief Executive Tarek Mansour was in Midtown Manhattan defending the accuracy of his platform.”</p>
+  <p class="step-example-source">Delayed</p>
+</div>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Element 2 of 4</p>
+
+<div class="icon-heading">
+  <Nut aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>The nut graf</h1>
+</div>
+
+A sweeping paragraph that establishes the stakes and tells readers why the story matters.
+
+<div class="step-example">
+  <p class="step-example-label">Example</p>
+  <p>“The widespread lack of up-to-date testing raises the potential for Legionella to spread, as it did on the Upper East Side and Carnegie Hill over the last month, sickening 60 New Yorkers, including 15 of whom remained hospitalized as of Tuesday.”</p>
+</div>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Element 3 of 4</p>
+
+<div class="icon-heading">
+  <ChartColumn aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>The findings</h1>
+</div>
+
+The specific numbers that support the story with clearly stated sourcing.
+
+<div class="step-example">
+  <p class="step-example-label">Example</p>
+  <p>“Drawing on thousands of pages of court records, disciplinary data and interviews with dozens of current and former inmates, The Times identified more than 120 instances in the past decade in which guards were described as having punched, kicked or stomped on prisoners, smashed their fingers in cell doors, held their legs apart and struck their genitals with batons, and even waterboarded them — all while the prisoners were handcuffed or otherwise restrained.”</p>
+</div>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Element 4 of 4</p>
+
+<div class="icon-heading">
+  <TriangleAlert aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>The caveats</h1>
+</div>
+
+The honest limits of the data, stated plainly. What the analysis cannot show, and what it leaves out.
+
+<div class="step-example">
+  <p class="step-example-label">Example</p>
+  <p>“The database was not designed to capture detailed information on maternal health, so beyond the mother’s age, it does not include information on pre-existing risk factors such as diabetes or high blood pressure, or socioeconomic status.”</p>
+</div>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Another lap</p>
+
+# Now let’s do my story
+
+Here’s how we provided each of the four elements.
+
+<Screenshot url="latimes.com" href="https://web.archive.org/web/20181218194516/https://www.latimes.com/projects/la-me-california-buildings-in-fire-zones/" label="Doug Smith and Ben Welsh's Los Angeles Times story on California buildings in wildfire zones">
+  <img
+    src="{base}/screenshots/take-it-from-the-top/la-times-wildfire-story.jpg"
+    alt="Los Angeles Times story by Doug Smith and Ben Welsh, dated Dec. 18, 2018: A million California buildings face wildfire risk. ‘Extraordinary steps’ are needed to protect them, over a photo of smoke rising behind hillside homes"
+  />
+</Screenshot>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Element 1 of 4</p>
+
+<div class="icon-heading">
+  <PenLine aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>The delayed lead</h1>
+</div>
+
+<blockquote class="excerpt">
+
+Minutes after fire broke out in Woolsey Canyon, a community 12 miles to the south went into action.
+
+Alerted by 911 calls they were monitoring on a red-flag day, volunteers with the Topanga Coalition for Emergency Preparedness headed to the town’s emergency operations center to open back channels to county sheriff’s and fire officials, answer hotline calls, tweet updates and, if it came to that, help send out the evacuation order.
+
+In one sense Topanga is a rarity — a hypervigilant community still roused by the memory of a 1993 fire that left three people dead and destroyed nearly 400 houses.
+
+But there is nothing unusual about the risk of living there.
+
+A Times analysis of wildfire hazard across California found that hundreds of communities from Redding to San Diego are at high risk of deadly wildfires like those in Paradise and Malibu last month.
+
+</blockquote>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Element 2 of 4</p>
+
+<div class="icon-heading">
+  <Nut aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>The nut graf</h1>
+</div>
+
+<blockquote class="excerpt">
+
+The findings follow a fire season of unprecedented destruction — nearly 20,000 homes lost, more than 100 people killed — that showed what damage can be done if Californians fail to address a widespread risk.
+
+“Now that they’ve got these areas mapped out, what’s going to happen?” said Richard Halsey, director of the California Chaparral Institute, a nonprofit that advocates for government and private interventions. “It’s so frustrating. Everybody sees the information, and they sit on their thumbs and talk.”
+
+</blockquote>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Element 3 of 4</p>
+
+<div class="icon-heading">
+  <ChartColumn aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>The findings</h1>
+</div>
+
+<blockquote class="excerpt">
+
+More than 1.1 million structures, or roughly 1 in 10 buildings in California, lie within the highest-risk fire zones in maps drawn by the Department of Forestry and Fire Protection, the analysis showed.
+
+Los Angeles tops the list with at least 114,000 structures in the highest hazard zone, including tens of thousands of Westside and San Fernando Valley houses in the Santa Monica, Santa Susana and San Gabriel mountains. Those include houses, businesses, factories and other buildings, such as barns.
+
+San Diego is second with more than 88,000 structures. Among the top 10 are Santa Clarita, Thousand Oaks and Glendale, along with the combined four cities of the Palos Verdes Peninsula, whose 23,000 structures are nearly all in the highest severity zone.
+
+</blockquote>
+
+</Slide>
+
+<Slide>
+
+<p class="slide-eyebrow">Element 4 of 4</p>
+
+<div class="icon-heading">
+  <TriangleAlert aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>The caveats</h1>
+</div>
+
+<blockquote class="excerpt">
+
+The total number at risk is probably higher, because the Microsoft database of building footprints employed in the analysis, among the most complete lists available, is not comprehensive.
+
+</blockquote>
+
+</Slide>
+
+<Slide variant="statement">
+
+# Now it’s your turn.
+
+</Slide>
