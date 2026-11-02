@@ -96,14 +96,6 @@ In the 1890s, reformers championed a more “scientific” approach to news writ
 
 </Slide>
 
-<Slide variant="statement">
-
-# Verification tells us if a finding is true.
-
-## The top tells readers why it matters.
-
-</Slide>
-
 <Slide>
 
 <p class="slide-eyebrow">Element 1 of 4</p>
