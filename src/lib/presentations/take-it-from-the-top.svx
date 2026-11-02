@@ -122,12 +122,11 @@ The opening hook of the story. Comes in many shapes and sizes. Direct leads stat
   <h1>The nut graf</h1>
 </div>
 
-The paragraph that tells readers why the story matters and what it will explain.
+A sweeping paragraph that establishes the stakes and tells readers why the story matters.
 
 <div class="step-example">
   <p class="step-example-label">Example</p>
-  <p>“Scores like this — known as risk assessments — are increasingly common in courtrooms across the nation.”</p>
-  <p class="step-example-source">“Machine Bias” · ProPublica · May 23, 2016</p>
+  <p>“The widespread lack of up-to-date testing raises the potential for Legionella to spread, as it did on the Upper East Side and Carnegie Hill over the last month, sickening 60 New Yorkers, including 15 of whom remained hospitalized as of Tuesday.”</p>
 </div>
 
 </Slide>
