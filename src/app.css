@@ -563,6 +563,10 @@ body.reveal-scroll .reveal .slides .icon-heading svg {
   font-size: 0.95em;
 }
 
+.reveal .slides .step-example p.step-example-source + p {
+  margin-top: 18px;
+}
+
 .reveal .slides .step-example p.step-example-source {
   margin-top: 8px;
   color: var(--sva-copy);
