@@ -112,9 +112,7 @@ test('Week 5 lecture presents the four elements and the wildfire example', async
     'california-fire-zone-analysis'
   );
   await page.keyboard.press('ArrowLeft');
-  await expect(page.locator('.slides > section.present h1')).toHaveText(
-    'The total is probably higher.'
-  );
+  await expect(page.locator('.slides > section.present h1')).toHaveText('The caveats');
 });
 
 test('mobile lecture fits in scroll view', async ({ page }) => {

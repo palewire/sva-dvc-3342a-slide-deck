@@ -245,11 +245,13 @@ San Diego is second with more than 88,000 structures. Among the top 10 are Santa
 
 <p class="slide-eyebrow">Element 4 of 4</p>
 
-# The total is probably higher.
+# The caveats
 
-> “The Microsoft database of building footprints employed in the analysis, among the most complete lists available, is not comprehensive.”
+<blockquote class="excerpt">
 
-The analysis also excludes portions of the state under federal responsibility.
+The total number at risk is probably higher, because the Microsoft database of building footprints employed in the analysis, among the most complete lists available, is not comprehensive.
+
+</blockquote>
 
 </Slide>
 
