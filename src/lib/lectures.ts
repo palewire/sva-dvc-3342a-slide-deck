@@ -19,7 +19,7 @@ export const lectures = [
   {
     slug: 'take-it-from-the-top',
     title: 'Take it from the top',
-    description: 'Five elements of a data story’s opening, from headline to caveats.'
+    description: 'Four elements of a data story’s opening, from lead to caveats.'
   },
   {
     slug: 'sample-next',

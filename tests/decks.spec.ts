@@ -91,7 +91,7 @@ test('verification lecture opens directly and advances through its reporting exa
   await expect(page.getByRole('link', { name: 'All lectures' })).toHaveCount(0);
 });
 
-test('Week 5 lecture presents the five elements and the wildfire example', async ({
+test('Week 5 lecture presents the four elements and the wildfire example', async ({
   page
 }) => {
   await page.goto('./lectures/take-it-from-the-top/');
@@ -100,7 +100,7 @@ test('Week 5 lecture presents the five elements and the wildfire example', async
     'Take it from the top | Truth-Telling 101: Artists Meet Data Journalism'
   );
   await expect(page.locator('.reveal')).toHaveClass(/ready/);
-  await expect(page.locator('.slides > section')).toHaveCount(23);
+  await expect(page.locator('.slides > section')).toHaveCount(21);
   await expect(page.locator('.slides > section.present h1')).toHaveText(
     'Take it from the top'
   );

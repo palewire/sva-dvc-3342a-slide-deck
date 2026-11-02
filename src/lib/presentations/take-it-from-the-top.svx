@@ -6,7 +6,6 @@
   import {
     ArrowRight,
     BarChart3,
-    Heading1,
     TriangleAlert
   } from '@lucide/svelte';
 </script>
@@ -107,25 +106,7 @@ In the 1890s, reformers championed a more “scientific” approach to news writ
 
 <Slide>
 
-<p class="slide-eyebrow">Element 1 of 5</p>
-
-<div class="icon-heading">
-  <Heading1 aria-hidden="true" size={48} strokeWidth={1.75} />
-  <h1>Headline</h1>
-</div>
-
-The one-line claim of the story. Make the finding clear enough that a reader can grasp what is newsworthy at a glance.
-
-<div class="step-example">
-  <p class="step-example-label">Ask</p>
-  <p>What is the most important thing we learned?</p>
-</div>
-
-</Slide>
-
-<Slide>
-
-<p class="slide-eyebrow">Element 2 of 5</p>
+<p class="slide-eyebrow">Element 1 of 4</p>
 
 <div class="icon-heading">
   <ArrowRight aria-hidden="true" size={48} strokeWidth={1.75} />
@@ -152,7 +133,7 @@ Two basic forms, described by writing instructor Melvin Mencher:
 
 <Slide variant="quote">
 
-<p class="slide-eyebrow">Element 3 of 5 · Nut graf</p>
+<p class="slide-eyebrow">Element 2 of 4 · Nut graf</p>
 
 # “Its nut graf should tell a reader why it is important and include a rough outline of the story that could emerge.”
 
@@ -164,7 +145,7 @@ Two basic forms, described by writing instructor Melvin Mencher:
 
 <Slide>
 
-<p class="slide-eyebrow">Element 4 of 5</p>
+<p class="slide-eyebrow">Element 3 of 4</p>
 
 <div class="icon-heading">
   <BarChart3 aria-hidden="true" size={48} strokeWidth={1.75} />
@@ -182,7 +163,7 @@ Show the specific, newsworthy pattern. A comparison gives the number meaning: a 
 
 <Slide>
 
-<p class="slide-eyebrow">Element 5 of 5</p>
+<p class="slide-eyebrow">Element 4 of 4</p>
 
 <div class="icon-heading">
   <TriangleAlert aria-hidden="true" size={48} strokeWidth={1.75} />
@@ -202,7 +183,7 @@ State the honest limits of the data plainly. Tell readers what the analysis cann
 
 <Slide variant="statement">
 
-# Now let’s find all five in a real story.
+# Now let’s find all four in a real story.
 
 ## Doug Smith and Ben Welsh · Los Angeles Times · Dec. 18, 2018
 
@@ -210,21 +191,7 @@ State the honest limits of the data plainly. Tell readers what the analysis cann
 
 <Slide>
 
-<p class="slide-eyebrow">Element 1 · Headline</p>
-
-# A million California buildings face wildfire risk.
-
-## “Extraordinary steps” are needed to protect them.
-
-<p class="slide-citation">Doug Smith and Ben Welsh · Los Angeles Times · Dec. 18, 2018</p>
-
-<Citation href="https://web.archive.org/web/20181218194516/https://www.latimes.com/projects/la-me-california-buildings-in-fire-zones/">Archived story · Los Angeles Times</Citation>
-
-</Slide>
-
-<Slide>
-
-<p class="slide-eyebrow">Element 2 · Lead</p>
+<p class="slide-eyebrow">Element 1 · Lead</p>
 
 # Delayed
 
@@ -236,7 +203,7 @@ The story gives readers a scene first. The finding arrives four paragraphs later
 
 <Slide>
 
-<p class="slide-eyebrow">Element 3 · Nut graf</p>
+<p class="slide-eyebrow">Element 2 · Nut graf</p>
 
 > “A Times analysis of wildfire hazard across California found that hundreds of communities from Redding to San Diego are at high risk of deadly wildfires like those in Paradise and Malibu last month.”
 
@@ -248,7 +215,7 @@ The story gives readers a scene first. The finding arrives four paragraphs later
 
 <Slide>
 
-<p class="slide-eyebrow">Element 4 · The finding</p>
+<p class="slide-eyebrow">Element 3 · The finding</p>
 
 # More than 1.1 million structures
 
@@ -264,7 +231,7 @@ Los Angeles tops the list with at least 114,000 structures; San Diego is second 
 
 <Slide>
 
-<p class="slide-eyebrow">Element 5 · Caveats</p>
+<p class="slide-eyebrow">Element 4 · Caveats</p>
 
 # The total is probably higher.
 
