@@ -105,7 +105,7 @@ The opening hook of the story. Comes in many shapes and sizes. Direct leads stat
 
 <div class="step-example">
   <p class="step-example-label">Examples</p>
-  <p>“Trump administration special envoy Steve Witkoff and several other wealthy property owners are getting an expensive surprise, courtesy of New York City Mayor Zohran Mamdani’s new pied-à-terre tax.”</p>
+  <p>“Traders on the prediction market Kalshi have made almost one million trades in a single market since August that were in nearly identical amounts, unusual activity that has caught the eyes of federal regulators and traders.”</p>
   <p class="step-example-source">Direct</p>
   <p>“The day Israel voted in its consequential election this week, Kalshi Chief Executive Tarek Mansour was in Midtown Manhattan defending the accuracy of his platform.”</p>
   <p class="step-example-source">Delayed</p>
