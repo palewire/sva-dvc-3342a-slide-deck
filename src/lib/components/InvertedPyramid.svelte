@@ -20,9 +20,9 @@
     <rect class="details" x="0" y="200" width="600" height="160" />
     <rect class="background" x="0" y="360" width="600" height="220" />
   </g>
-  <line class="arrow" x1="300" y1="150" x2="300" y2="345" />
-  <polygon class="arrowhead" points="278,340 322,340 300,382" />
-  <text class="end-label top" x="300" y="112">Most important</text>
+  <line class="arrow" x1="300" y1="162" x2="300" y2="355" />
+  <polygon class="arrowhead" points="288,352 312,352 300,378" />
+  <text class="end-label top" x="300" y="135">Most important</text>
   <text class="end-label bottom" x="300" y="420">
     <tspan x="300">Least</tspan>
     <tspan x="300" dy="25">important</tspan>
@@ -66,10 +66,6 @@
     text-anchor: middle;
     font-size: 30px;
     font-weight: 700;
-  }
-
-  .end-label.top {
-    fill: var(--white);
   }
 
   .end-label.bottom {
