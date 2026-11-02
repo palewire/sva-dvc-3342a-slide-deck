@@ -187,25 +187,29 @@ Here’s how I approached each of the four steps.
 
 <Slide>
 
-<p class="slide-eyebrow">Element 1 · Lead</p>
+<p class="slide-eyebrow">Element 1 of 4</p>
 
 # The delayed lead
 
-> Minutes after fire broke out in Woolsey Canyon, a community 12 miles to the south went into action.
->
-> Alerted by 911 calls they were monitoring on a red-flag day, volunteers with the Topanga Coalition for Emergency Preparedness headed to the town’s emergency operations center to open back channels to county sheriff’s and fire officials, answer hotline calls, tweet updates and, if it came to that, help send out the evacuation order.
->
-> In one sense Topanga is a rarity — a hypervigilant community still roused by the memory of a 1993 fire that left three people dead and destroyed nearly 400 houses.
->
-> But there is nothing unusual about the risk of living there.
->
-> A Times analysis of wildfire hazard across California found that hundreds of communities from Redding to San Diego are at high risk of deadly wildfires like those in Paradise and Malibu last month.
+<blockquote class="excerpt">
+
+Minutes after fire broke out in Woolsey Canyon, a community 12 miles to the south went into action.
+
+Alerted by 911 calls they were monitoring on a red-flag day, volunteers with the Topanga Coalition for Emergency Preparedness headed to the town’s emergency operations center to open back channels to county sheriff’s and fire officials, answer hotline calls, tweet updates and, if it came to that, help send out the evacuation order.
+
+In one sense Topanga is a rarity — a hypervigilant community still roused by the memory of a 1993 fire that left three people dead and destroyed nearly 400 houses.
+
+But there is nothing unusual about the risk of living there.
+
+A Times analysis of wildfire hazard across California found that hundreds of communities from Redding to San Diego are at high risk of deadly wildfires like those in Paradise and Malibu last month.
+
+</blockquote>
 
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Element 2 · Nut graf</p>
+<p class="slide-eyebrow">Element 2 of 4</p>
 
 # The nut graf
 
@@ -221,7 +225,7 @@ The findings follow a fire season of unprecedented destruction — nearly 20,000
 
 <Slide>
 
-<p class="slide-eyebrow">Element 3 · The finding</p>
+<p class="slide-eyebrow">Element 3 of 4</p>
 
 # The findings
 
@@ -235,13 +239,11 @@ San Diego is second with more than 88,000 structures. Among the top 10 are Santa
 
 </blockquote>
 
-<Citation href="https://web.archive.org/web/20181218194516/https://www.latimes.com/projects/la-me-california-buildings-in-fire-zones/">Story map: “At least 1.1 million California buildings are in a very severe hazard zone” · archived Los Angeles Times story</Citation>
-
 </Slide>
 
 <Slide>
 
-<p class="slide-eyebrow">Element 4 · Caveats</p>
+<p class="slide-eyebrow">Element 4 of 4</p>
 
 # The total is probably higher.
 
