@@ -100,17 +100,13 @@ test('Week 5 lecture presents the four elements and the wildfire example', async
     'Take it from the top | Truth-Telling 101: Artists Meet Data Journalism'
   );
   await expect(page.locator('.reveal')).toHaveClass(/ready/);
-  await expect(page.locator('.slides > section')).toHaveCount(20);
+  await expect(page.locator('.slides > section')).toHaveCount(19);
   await expect(page.locator('.slides > section.present h1')).toHaveText(
     'Take it from the top'
   );
 
   await page.keyboard.press('End');
   await expect(page.locator('.slides > section.present h1')).toHaveText('Now it’s your turn.');
-  await page.keyboard.press('ArrowLeft');
-  await expect(page.locator('.slides > section.present')).toContainText(
-    'california-fire-zone-analysis'
-  );
   await page.keyboard.press('ArrowLeft');
   await expect(page.locator('.slides > section.present h1')).toHaveText('The caveats');
 });

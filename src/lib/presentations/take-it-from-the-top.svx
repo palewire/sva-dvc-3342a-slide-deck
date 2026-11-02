@@ -1,6 +1,5 @@
 <script lang="ts">
   import Slide from '$lib/components/Slide.svelte';
-  import Citation from '$lib/components/Citation.svelte';
   import Screenshot from '$lib/components/Screenshot.svelte';
   import InvertedPyramid from '$lib/components/InvertedPyramid.svelte';
   import { base } from '$app/paths';
@@ -174,7 +173,7 @@ The honest limits of the data, stated plainly. What the analysis cannot show, an
 
 # Now let’s do my story
 
-Here’s how I approached each of the four steps.
+Here’s how we provided each of the four elements.
 
 <Screenshot url="latimes.com" href="https://web.archive.org/web/20181218194516/https://www.latimes.com/projects/la-me-california-buildings-in-fire-zones/" label="Doug Smith and Ben Welsh's Los Angeles Times story on California buildings in wildfire zones">
   <img
@@ -255,22 +254,8 @@ The total number at risk is probably higher, because the Microsoft database of b
 
 </Slide>
 
-<Slide>
-
-<p class="slide-eyebrow">Showing your work</p>
-
-# Make the method inspectable.
-
-The story’s methodology note names Cal Fire hazard maps, Census Bureau place boundaries and Microsoft’s building-footprint database.
-
-<Citation href="https://github.com/datadesk/california-fire-zone-analysis">Open-source analysis · github.com/datadesk/california-fire-zone-analysis</Citation>
-
-</Slide>
-
 <Slide variant="statement">
 
 # Now it’s your turn.
-
-## Sketch the top of your story.
 
 </Slide>
