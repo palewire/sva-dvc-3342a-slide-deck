@@ -37,6 +37,22 @@
 
 </Slide>
 
+<Slide>
+
+<p class="slide-eyebrow">The antebellum internet</p>
+
+# Bare facts first
+
+The telegram created a new market for short, direct dispatches.
+
+<img
+  src="{base}/screenshots/take-it-from-the-top/reuters-memorandum.jpg"
+  alt="Memorandum from Reuter's Telegram Company to agents and correspondents, dated London, November 1883, asking that the bare fact be first telegraphed with the utmost promptitude, followed by a descriptive account"
+  class="cover-image"
+/>
+
+</Slide>
+
 <Slide variant="statement">
 
 # Who is this man?
