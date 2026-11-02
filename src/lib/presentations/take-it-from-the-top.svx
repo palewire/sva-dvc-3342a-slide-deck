@@ -189,7 +189,7 @@ Here’s how I approached each of the four steps.
 
 <p class="slide-eyebrow">Element 1 · Lead</p>
 
-# Delayed
+# The delayed lead
 
 > Minutes after fire broke out in Woolsey Canyon, a community 12 miles to the south went into action.
 >
@@ -198,8 +198,8 @@ Here’s how I approached each of the four steps.
 > In one sense Topanga is a rarity — a hypervigilant community still roused by the memory of a 1993 fire that left three people dead and destroyed nearly 400 houses.
 >
 > But there is nothing unusual about the risk of living there.
-
-The story gives readers a scene first. The finding arrives four paragraphs later.
+>
+> A Times analysis of wildfire hazard across California found that hundreds of communities from Redding to San Diego are at high risk of deadly wildfires like those in Paradise and Malibu last month.
 
 </Slide>
 
