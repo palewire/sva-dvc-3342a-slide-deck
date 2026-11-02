@@ -125,8 +125,9 @@ The opening hook of the story. Comes in many shapes and sizes. Direct leads stat
 A sweeping paragraph that establishes the stakes and tells readers why the story matters.
 
 <div class="step-example">
-  <p class="step-example-label">Example</p>
+  <p class="step-example-label">Examples</p>
   <p>“The widespread lack of up-to-date testing raises the potential for Legionella to spread, as it did on the Upper East Side and Carnegie Hill over the last month, sickening 60 New Yorkers, including 15 of whom remained hospitalized as of Tuesday.”</p>
+  <p>“Overall, Asians make up about 21% of the city’s voting-age population and span neighborhoods across the boroughs. Capturing their votes presents both an opportunity and a challenge for candidates, who must engage each community in culturally specific ways, strategists and community representatives say.”</p>
 </div>
 
 </Slide>
