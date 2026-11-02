@@ -125,9 +125,8 @@ The opening hook of the story. Comes in many shapes and sizes. Direct leads stat
 A sweeping paragraph that establishes the stakes and tells readers why the story matters.
 
 <div class="step-example">
-  <p class="step-example-label">Examples</p>
+  <p class="step-example-label">Example</p>
   <p>“The widespread lack of up-to-date testing raises the potential for Legionella to spread, as it did on the Upper East Side and Carnegie Hill over the last month, sickening 60 New Yorkers, including 15 of whom remained hospitalized as of Tuesday.”</p>
-  <p>“Overall, Asians make up about 21% of the city’s voting-age population and span neighborhoods across the boroughs. Capturing their votes presents both an opportunity and a challenge for candidates, who must engage each community in culturally specific ways, strategists and community representatives say.”</p>
 </div>
 
 </Slide>
@@ -144,8 +143,7 @@ A sweeping paragraph that establishes the stakes and tells readers why the story
 The specific numbers that support the story with clearly stated sourcing.
 
 <div class="step-example">
-  <p class="step-example-label">Examples</p>
-  <p>“Of the roughly $146,000 in donations reported for the filing period of July 12 to Oct. 7, only $250 was contributed after news broke of his indictment, according to the New York City Campaign Finance Board.”</p>
+  <p class="step-example-label">Example</p>
   <p>“Drawing on thousands of pages of court records, disciplinary data and interviews with dozens of current and former inmates, The Times identified more than 120 instances in the past decade in which guards were described as having punched, kicked or stomped on prisoners, smashed their fingers in cell doors, held their legs apart and struck their genitals with batons, and even waterboarded them — all while the prisoners were handcuffed or otherwise restrained.”</p>
 </div>
 
