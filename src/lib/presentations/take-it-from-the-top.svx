@@ -162,8 +162,7 @@ The honest limits of the data, stated plainly. What the analysis cannot show, an
 
 <div class="step-example">
   <p class="step-example-label">Example</p>
-  <p>“[Northpointe] does not publicly disclose the calculations used to arrive at defendants’ risk scores, so it is not possible for either defendants or the public to see what might be driving the disparity.”</p>
-  <p class="step-example-source">“Machine Bias” · ProPublica · May 23, 2016</p>
+  <p>“The database was not designed to capture detailed information on maternal health, so beyond the mother’s age, it does not include information on pre-existing risk factors such as diabetes or high blood pressure, or socioeconomic status.”</p>
 </div>
 
 </Slide>
