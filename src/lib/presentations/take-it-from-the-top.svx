@@ -207,11 +207,15 @@ Here’s how I approached each of the four steps.
 
 <p class="slide-eyebrow">Element 2 · Nut graf</p>
 
-> “A Times analysis of wildfire hazard across California found that hundreds of communities from Redding to San Diego are at high risk of deadly wildfires like those in Paradise and Malibu last month.”
+# The nut graf
 
-## The stakes
+<blockquote class="excerpt">
 
-“The findings follow a fire season of unprecedented destruction — nearly 20,000 homes lost, more than 100 people killed.”
+The findings follow a fire season of unprecedented destruction — nearly 20,000 homes lost, more than 100 people killed — that showed what damage can be done if Californians fail to address a widespread risk.
+
+“Now that they’ve got these areas mapped out, what’s going to happen?” said Richard Halsey, director of the California Chaparral Institute, a nonprofit that advocates for government and private interventions. “It’s so frustrating. Everybody sees the information, and they sit on their thumbs and talk.”
+
+</blockquote>
 
 </Slide>
 

@@ -689,3 +689,9 @@ body.reveal-scroll .reveal .slides .icon-heading svg {
     color: #000 !important;
   }
 }
+
+/* Excerpts that carry their own quotation marks: skip the automatic outer quotes. */
+.reveal .slides blockquote.excerpt p::before,
+.reveal .slides blockquote.excerpt p::after {
+  content: none;
+}
