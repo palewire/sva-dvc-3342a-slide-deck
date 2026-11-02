@@ -39,11 +39,11 @@
 
 <Slide>
 
-<p class="slide-eyebrow">The Progressive Era</p>
+<p class="slide-eyebrow">The progressive voice</p>
 
-# Facts first, in a neutral voice
+# Bare facts first
 
-Publishers like Joseph Pulitzer championed journalism schools and a new generation of college-educated reporters. Trained in science and reform, they dropped the ornate storytelling of the 1800s for a direct, neutral style that put the facts first.
+In the 1890s, reformers championed a more “scientific” approach to news writing.
 
 <img
   src="{base}/screenshots/take-it-from-the-top/newspaper-row.jpg"
