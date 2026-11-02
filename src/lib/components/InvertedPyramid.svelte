@@ -7,7 +7,8 @@
   <title id="inverted-pyramid-title">The inverted pyramid</title>
   <desc id="inverted-pyramid-description">
     A downward-pointing triangle in three blue layers that grow lighter and narrower from top
-    to bottom: the lead with the most important facts, key details, and background.
+    to bottom: the lead with the most important facts, key details with evidence, and
+    background with context.
   </desc>
   <defs>
     <clipPath id="inverted-pyramid-clip">
@@ -23,8 +24,14 @@
     <tspan x="300">The lead</tspan>
     <tspan class="layer-sub" x="300" dy="30">Who, what, when, where, why</tspan>
   </text>
-  <text class="layer-label dark" x="300" y="287">Key details</text>
-  <text class="layer-label dark" x="300" y="415">Background</text>
+  <text class="layer-label dark" x="300" y="268">
+    <tspan x="300">Key details</tspan>
+    <tspan class="layer-sub" x="300" dy="30">Evidence, quotes, numbers</tspan>
+  </text>
+  <text class="layer-label dark" x="300" y="402">
+    <tspan x="300">Background</tspan>
+    <tspan class="layer-sub" x="300" dy="26">Context, history</tspan>
+  </text>
 </svg>
 
 <style>
