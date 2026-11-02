@@ -100,7 +100,7 @@ test('Week 5 lecture presents the five elements and the wildfire example', async
     'Take it from the top | Truth-Telling 101: Artists Meet Data Journalism'
   );
   await expect(page.locator('.reveal')).toHaveClass(/ready/);
-  await expect(page.locator('.slides > section')).toHaveCount(20);
+  await expect(page.locator('.slides > section')).toHaveCount(22);
   await expect(page.locator('.slides > section.present h1')).toHaveText(
     'Take it from the top'
   );

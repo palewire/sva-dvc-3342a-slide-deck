@@ -30,6 +30,22 @@
 <Slide>
 
 <img
+  src="{base}/screenshots/take-it-from-the-top/samuel-morse.jpg"
+  alt="Samuel F. B. Morse standing in a dark overcoat, one hand resting on a telegraph apparatus, photographed by Mathew Brady around 1850"
+  class="standalone-photo"
+/>
+
+</Slide>
+
+<Slide variant="statement">
+
+# Who is this man?
+
+</Slide>
+
+<Slide>
+
+<img
   src="{base}/screenshots/take-it-from-the-top/joseph-pulitzer.jpg"
   alt="Joseph Pulitzer in profile, facing left, photographed by Benjamin J. Falk around 1884"
   class="standalone-photo"
