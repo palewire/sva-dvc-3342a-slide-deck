@@ -223,13 +223,13 @@ The findings follow a fire season of unprecedented destruction — nearly 20,000
 
 <p class="slide-eyebrow">Element 3 · The finding</p>
 
-# More than 1.1 million structures
+# The findings
 
-## Roughly 1 in 10 buildings in California
+<blockquote class="excerpt">
 
-lie within the highest-risk fire zones.
+More than 1.1 million structures, or roughly 1 in 10 buildings in California, lie within the highest-risk fire zones in maps drawn by the Department of Forestry and Fire Protection, the analysis showed.
 
-Los Angeles tops the list with at least 114,000 structures; San Diego is second with more than 88,000.
+</blockquote>
 
 <Citation href="https://web.archive.org/web/20181218194516/https://www.latimes.com/projects/la-me-california-buildings-in-fire-zones/">Story map: “At least 1.1 million California buildings are in a very severe hazard zone” · archived Los Angeles Times story</Citation>
 
