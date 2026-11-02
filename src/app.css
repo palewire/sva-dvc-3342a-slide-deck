@@ -563,6 +563,13 @@ body.reveal-scroll .reveal .slides .icon-heading svg {
   font-size: 0.95em;
 }
 
+.reveal .slides .step-example p.step-example-source {
+  margin-top: 8px;
+  color: var(--sva-copy);
+  font-family: var(--font-ui);
+  font-size: 0.85em;
+}
+
 .reveal .slides .email-card {
   max-width: 820px;
   margin-top: 12px;

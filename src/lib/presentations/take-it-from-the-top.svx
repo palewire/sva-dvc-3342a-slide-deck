@@ -3,11 +3,7 @@
   import Citation from '$lib/components/Citation.svelte';
   import InvertedPyramid from '$lib/components/InvertedPyramid.svelte';
   import { base } from '$app/paths';
-  import {
-    ArrowRight,
-    BarChart3,
-    TriangleAlert
-  } from '@lucide/svelte';
+  import { ChartColumn, Nut, PenLine, TriangleAlert } from '@lucide/svelte';
 </script>
 
 <Slide variant="title">
@@ -101,37 +97,36 @@ In the 1890s, reformers championed a more “scientific” approach to news writ
 <p class="slide-eyebrow">Element 1 of 4</p>
 
 <div class="icon-heading">
-  <ArrowRight aria-hidden="true" size={48} strokeWidth={1.75} />
-  <h1>Lead</h1>
+  <PenLine aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>The lead</h1>
 </div>
 
-Two basic forms, described by writing instructor Melvin Mencher:
+The opening of the story. A direct lead states the finding right away, like a bulletin. A delayed lead starts with a person or scene and arrives at the finding later.
 
 <div class="step-example">
-  <p class="step-example-label">Direct</p>
-  <p>State the finding immediately, like a bulletin.</p>
+  <p class="step-example-label">Example</p>
+  <p>“Minutes after fire broke out in Woolsey Canyon, a community 12 miles to the south went into action.”</p>
+  <p class="step-example-source">Los Angeles Times · Dec. 18, 2018</p>
 </div>
-
-<div class="step-example">
-  <p class="step-example-label">Delayed</p>
-  <p>Begin with a person, scene, question or comparison; arrive at the finding later.</p>
-</div>
-
-<p class="slide-citation">Melvin Mencher, “The Lead”</p>
-
-<p class="slide-citation">Anecdotal, question and other named lead types are variations on these two forms.</p>
 
 </Slide>
 
-<Slide variant="quote">
+<Slide>
 
-<p class="slide-eyebrow">Element 2 of 4 · Nut graf</p>
+<p class="slide-eyebrow">Element 2 of 4</p>
 
-# “Its nut graf should tell a reader why it is important and include a rough outline of the story that could emerge.”
+<div class="icon-heading">
+  <Nut aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>The nut graf</h1>
+</div>
 
-<p class="quote-attribution">Sarah Cohen · Columbia University Stabile Seminar syllabus, 2014</p>
+The paragraph that tells readers why the story matters and what it will explain.
 
-<p class="slide-citation">Why it matters, who is affected, and what the story will explain.</p>
+<div class="step-example">
+  <p class="step-example-label">Example</p>
+  <p>“A Times analysis of wildfire hazard across California found that hundreds of communities from Redding to San Diego are at high risk of deadly wildfires like those in Paradise and Malibu last month.”</p>
+  <p class="step-example-source">Los Angeles Times · Dec. 18, 2018</p>
+</div>
 
 </Slide>
 
@@ -140,15 +135,16 @@ Two basic forms, described by writing instructor Melvin Mencher:
 <p class="slide-eyebrow">Element 3 of 4</p>
 
 <div class="icon-heading">
-  <BarChart3 aria-hidden="true" size={48} strokeWidth={1.75} />
-  <h1>The finding</h1>
+  <ChartColumn aria-hidden="true" size={48} strokeWidth={1.75} />
+  <h1>The findings</h1>
 </div>
 
-Show the specific, newsworthy pattern. A comparison gives the number meaning: a rate against a benchmark, or this year against last.
+The specific, newsworthy pattern in the data. A comparison gives the number meaning.
 
 <div class="step-example">
-  <p class="step-example-label">Make it concrete</p>
-  <p>How much? Compared with what?</p>
+  <p class="step-example-label">Example</p>
+  <p>More than 1.1 million structures, roughly 1 in 10 buildings in California, lie within the highest-risk fire zones.</p>
+  <p class="step-example-source">Los Angeles Times · Dec. 18, 2018</p>
 </div>
 
 </Slide>
@@ -159,17 +155,16 @@ Show the specific, newsworthy pattern. A comparison gives the number meaning: a 
 
 <div class="icon-heading">
   <TriangleAlert aria-hidden="true" size={48} strokeWidth={1.75} />
-  <h1>Caveats</h1>
+  <h1>The caveats</h1>
 </div>
 
-State the honest limits of the data plainly. Tell readers what the analysis cannot show, and what it leaves out.
+The honest limits of the data, stated plainly. What the analysis cannot show, and what it leaves out.
 
 <div class="step-example">
-  <p class="step-example-label">A useful reminder</p>
-  <p>“Editors are not interested in process. Don’t fill the memo with what steps you took.”</p>
+  <p class="step-example-label">Example</p>
+  <p>“The Microsoft database of building footprints employed in the analysis, among the most complete lists available, is not comprehensive.”</p>
+  <p class="step-example-source">Los Angeles Times · Dec. 18, 2018</p>
 </div>
-
-<p class="slide-citation">— Mussenden</p>
 
 </Slide>
 
