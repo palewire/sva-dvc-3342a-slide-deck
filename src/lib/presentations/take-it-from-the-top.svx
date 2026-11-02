@@ -105,8 +105,8 @@ The opening of the story. A direct lead states the finding right away, like a bu
 
 <div class="step-example">
   <p class="step-example-label">Example</p>
-  <p>“Minutes after fire broke out in Woolsey Canyon, a community 12 miles to the south went into action.”</p>
-  <p class="step-example-source">Los Angeles Times · Dec. 18, 2018</p>
+  <p>“On a spring afternoon in 2014, Brisha Borden was running late to pick up her god-sister from school when she spotted an unlocked kid’s blue Huffy bicycle and a silver Razor scooter.”</p>
+  <p class="step-example-source">“Machine Bias” · ProPublica · May 23, 2016</p>
 </div>
 
 </Slide>
@@ -124,8 +124,8 @@ The paragraph that tells readers why the story matters and what it will explain.
 
 <div class="step-example">
   <p class="step-example-label">Example</p>
-  <p>“A Times analysis of wildfire hazard across California found that hundreds of communities from Redding to San Diego are at high risk of deadly wildfires like those in Paradise and Malibu last month.”</p>
-  <p class="step-example-source">Los Angeles Times · Dec. 18, 2018</p>
+  <p>“Scores like this — known as risk assessments — are increasingly common in courtrooms across the nation.”</p>
+  <p class="step-example-source">“Machine Bias” · ProPublica · May 23, 2016</p>
 </div>
 
 </Slide>
@@ -143,8 +143,8 @@ The specific, newsworthy pattern in the data. A comparison gives the number mean
 
 <div class="step-example">
   <p class="step-example-label">Example</p>
-  <p>More than 1.1 million structures, roughly 1 in 10 buildings in California, lie within the highest-risk fire zones.</p>
-  <p class="step-example-source">Los Angeles Times · Dec. 18, 2018</p>
+  <p>“The score proved remarkably unreliable in forecasting violent crime: Only 20 percent of the people predicted to commit violent crimes actually went on to do so.”</p>
+  <p class="step-example-source">“Machine Bias” · ProPublica · May 23, 2016</p>
 </div>
 
 </Slide>
@@ -162,8 +162,8 @@ The honest limits of the data, stated plainly. What the analysis cannot show, an
 
 <div class="step-example">
   <p class="step-example-label">Example</p>
-  <p>“The Microsoft database of building footprints employed in the analysis, among the most complete lists available, is not comprehensive.”</p>
-  <p class="step-example-source">Los Angeles Times · Dec. 18, 2018</p>
+  <p>“[Northpointe] does not publicly disclose the calculations used to arrive at defendants’ risk scores, so it is not possible for either defendants or the public to see what might be driving the disparity.”</p>
+  <p class="step-example-source">“Machine Bias” · ProPublica · May 23, 2016</p>
 </div>
 
 </Slide>
