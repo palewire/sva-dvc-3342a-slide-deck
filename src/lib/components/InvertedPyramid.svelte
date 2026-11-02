@@ -25,7 +25,7 @@
   <text class="end-label top" x="300" y="112">Most important</text>
   <text class="end-label bottom" x="300" y="420">
     <tspan x="300">Least</tspan>
-    <tspan x="300" dy="28">important</tspan>
+    <tspan x="300" dy="25">important</tspan>
   </text>
 </svg>
 
@@ -52,19 +52,19 @@
   }
 
   .arrow {
-    stroke: var(--sva-charcoal);
+    stroke: black;
     stroke-width: 5;
     stroke-linecap: round;
   }
 
   .arrowhead {
-    fill: var(--sva-charcoal);
+    fill: black;
   }
 
   .end-label {
-    fill: var(--sva-charcoal);
+    fill: black;
     text-anchor: middle;
-    font-size: 34px;
+    font-size: 30px;
     font-weight: 700;
   }
 
@@ -73,6 +73,6 @@
   }
 
   .end-label.bottom {
-    font-size: 28px;
+    font-size: 24px;
   }
 </style>
